@@ -10,7 +10,7 @@ import UIKit
 class CollectViewController: ItemListViewController {
 
     override var items: [String] {
-        return ["Cell-CellViewController"]
+        return ["Picker-CRSSinglePickerController"]
     }
     
     override func viewDidLoad() {

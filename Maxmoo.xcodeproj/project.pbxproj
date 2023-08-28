@@ -26,6 +26,9 @@
 		B3C45E4C2A9C3AF500AD3586 /* ExpandCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E4B2A9C3AF500AD3586 /* ExpandCellViewController.swift */; };
 		B3C45E4E2A9C3B1800AD3586 /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E4D2A9C3B1800AD3586 /* CellViewController.swift */; };
 		B3C45E502A9C3C6B00AD3586 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E4F2A9C3C6B00AD3586 /* ItemListViewController.swift */; };
+		B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E5B2A9C6A9E00AD3586 /* ExpandTableViewCell.swift */; };
+		B3C45E5E2A9C6A9E00AD3586 /* ExpandTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C45E5C2A9C6A9E00AD3586 /* ExpandTableViewCell.xib */; };
+		B3C45E612A9C6B3B00AD3586 /* ExpandCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E602A9C6B3B00AD3586 /* ExpandCellItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		B3C45E4B2A9C3AF500AD3586 /* ExpandCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandCellViewController.swift; sourceTree = "<group>"; };
 		B3C45E4D2A9C3B1800AD3586 /* CellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
 		B3C45E4F2A9C3C6B00AD3586 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		B3C45E5B2A9C6A9E00AD3586 /* ExpandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandTableViewCell.swift; sourceTree = "<group>"; };
+		B3C45E5C2A9C6A9E00AD3586 /* ExpandTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandTableViewCell.xib; sourceTree = "<group>"; };
+		B3C45E602A9C6B3B00AD3586 /* ExpandCellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandCellItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +216,9 @@
 		B3C45E352A98AB8F00AD3586 /* Study */ = {
 			isa = PBXGroup;
 			children = (
-				B3C45E4A2A9C3ABC00AD3586 /* Cell */,
-				B3C45E382A98ABC600AD3586 /* StudyViewController.swift */,
+				B3C45E532A9C6A1500AD3586 /* Controller */,
+				B3C45E522A9C6A0D00AD3586 /* View */,
+				B3C45E512A9C6A0200AD3586 /* Model */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -219,7 +226,9 @@
 		B3C45E362A98AB9600AD3586 /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				B3C45E3A2A98ABD400AD3586 /* ThirdViewController.swift */,
+				B3C45E562A9C6A3800AD3586 /* Controller */,
+				B3C45E552A9C6A3300AD3586 /* View */,
+				B3C45E542A9C6A2900AD3586 /* Model */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -227,7 +236,9 @@
 		B3C45E372A98AB9C00AD3586 /* Collect */ = {
 			isa = PBXGroup;
 			children = (
-				B3C45E3C2A98ABE000AD3586 /* CollectViewController.swift */,
+				B3C45E592A9C6A5100AD3586 /* Controller */,
+				B3C45E582A9C6A4C00AD3586 /* View */,
+				B3C45E572A9C6A4400AD3586 /* Model */,
 			);
 			path = Collect;
 			sourceTree = "<group>";
@@ -281,11 +292,89 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		B3C45E4A2A9C3ABC00AD3586 /* Cell */ = {
+		B3C45E4A2A9C3ABC00AD3586 /* CellStudy */ = {
 			isa = PBXGroup;
 			children = (
 				B3C45E4B2A9C3AF500AD3586 /* ExpandCellViewController.swift */,
 				B3C45E4D2A9C3B1800AD3586 /* CellViewController.swift */,
+			);
+			path = CellStudy;
+			sourceTree = "<group>";
+		};
+		B3C45E512A9C6A0200AD3586 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45E602A9C6B3B00AD3586 /* ExpandCellItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3C45E522A9C6A0D00AD3586 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45E5A2A9C6A6500AD3586 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3C45E532A9C6A1500AD3586 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45E4A2A9C3ABC00AD3586 /* CellStudy */,
+				B3C45E382A98ABC600AD3586 /* StudyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3C45E542A9C6A2900AD3586 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3C45E552A9C6A3300AD3586 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3C45E562A9C6A3800AD3586 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45E3A2A98ABD400AD3586 /* ThirdViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3C45E572A9C6A4400AD3586 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3C45E582A9C6A4C00AD3586 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3C45E592A9C6A5100AD3586 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45E3C2A98ABE000AD3586 /* CollectViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3C45E5A2A9C6A6500AD3586 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45E5B2A9C6A9E00AD3586 /* ExpandTableViewCell.swift */,
+				B3C45E5C2A9C6A9E00AD3586 /* ExpandTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -399,6 +488,7 @@
 				B3C45E0C2A98754D00AD3586 /* LaunchScreen.storyboard in Resources */,
 				B3C45E092A98754D00AD3586 /* Assets.xcassets in Resources */,
 				B3C45E072A98754C00AD3586 /* Main.storyboard in Resources */,
+				B3C45E5E2A9C6A9E00AD3586 /* ExpandTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +557,8 @@
 			files = (
 				B3C45E412A98AC9100AD3586 /* CCBaseViewController.swift in Sources */,
 				B3C45E472A98AF0700AD3586 /* UIColor+CC.swift in Sources */,
+				B3C45E612A9C6B3B00AD3586 /* ExpandCellItem.swift in Sources */,
+				B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */,
 				B3C45E392A98ABC600AD3586 /* StudyViewController.swift in Sources */,
 				B3C45E042A98754C00AD3586 /* ViewController.swift in Sources */,
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,

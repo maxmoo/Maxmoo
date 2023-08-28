@@ -9,18 +9,14 @@ import UIKit
 
 class ExpandCellViewController: CCBaseViewController {
     
-    struct CellItem {
-        let name: String
-        var isExtra: Bool
-    }
-
-    var items: [CellItem] = []
+    var items: [ExpandCellItem] = []
     
     lazy var tableView: UITableView = {
         let table = UITableView(frame: view.bounds, style: .plain)
         table.delegate = self
         table.dataSource = self
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+//        table.register(UITableViewCell.self, forCellReuseIdentifier: "ExpandTableViewCell")
+        table.register(UINib(nibName: "ExpandTableViewCell", bundle: nil), forCellReuseIdentifier: "ExpandTableViewCell")
         return table
     }()
     
@@ -33,7 +29,7 @@ class ExpandCellViewController: CCBaseViewController {
     
     func initData() {
         for i in 0...10 {
-            let item = CellItem(name: "第\(i)个", isExtra: false)
+            let item = ExpandCellItem(name: "第\(i)个", isExtra: false)
             items.append(item)
         }
     }
@@ -48,15 +44,18 @@ extension ExpandCellViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let item = items[indexPath.row]
         if item.isExtra {
-            return 100
+            return 120
         } else {
             return 44
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = items[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExpandTableViewCell",
+                                                 for: indexPath) as! ExpandTableViewCell
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "ExpandTableViewCell", for: indexPath)
+//        cell.textLabel?.text = items[indexPath.row].name
+        cell.item = items[indexPath.row]
         return cell
     }
     

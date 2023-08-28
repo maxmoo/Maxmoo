@@ -33,6 +33,13 @@
 		B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E652A9C77F100AD3586 /* CRSSinglePickerController.swift */; };
 		B3C45E682A9C7F7F00AD3586 /* UIView+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E672A9C7F7F00AD3586 /* UIView+CC.swift */; };
 		B3C45E6A2A9C7F8E00AD3586 /* CALayer+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E692A9C7F8E00AD3586 /* CALayer+CC.swift */; };
+		B3C45E6D2A9C819D00AD3586 /* CCMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E6C2A9C819D00AD3586 /* CCMacro.swift */; };
+		B3C45E6F2A9C829600AD3586 /* CCPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E6E2A9C829600AD3586 /* CCPublic.swift */; };
+		B3C45E712A9C839E00AD3586 /* Double+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E702A9C839E00AD3586 /* Double+CC.swift */; };
+		B3C45E732A9C83AF00AD3586 /* Int+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E722A9C83AF00AD3586 /* Int+CC.swift */; };
+		B3C45E752A9C83C400AD3586 /* Array+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E742A9C83C400AD3586 /* Array+CC.swift */; };
+		B3C45E772A9C851F00AD3586 /* UIImage+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E762A9C851F00AD3586 /* UIImage+CC.swift */; };
+		B3C45E7B2A9C85C900AD3586 /* UIViewController+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E7A2A9C85C900AD3586 /* UIViewController+CC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +92,13 @@
 		B3C45E652A9C77F100AD3586 /* CRSSinglePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSSinglePickerController.swift; sourceTree = "<group>"; };
 		B3C45E672A9C7F7F00AD3586 /* UIView+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CC.swift"; sourceTree = "<group>"; };
 		B3C45E692A9C7F8E00AD3586 /* CALayer+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+CC.swift"; sourceTree = "<group>"; };
+		B3C45E6C2A9C819D00AD3586 /* CCMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMacro.swift; sourceTree = "<group>"; };
+		B3C45E6E2A9C829600AD3586 /* CCPublic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPublic.swift; sourceTree = "<group>"; };
+		B3C45E702A9C839E00AD3586 /* Double+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+CC.swift"; sourceTree = "<group>"; };
+		B3C45E722A9C83AF00AD3586 /* Int+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CC.swift"; sourceTree = "<group>"; };
+		B3C45E742A9C83C400AD3586 /* Array+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+CC.swift"; sourceTree = "<group>"; };
+		B3C45E762A9C851F00AD3586 /* UIImage+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CC.swift"; sourceTree = "<group>"; };
+		B3C45E7A2A9C85C900AD3586 /* UIViewController+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +218,7 @@
 		B3C45E332A98A76600AD3586 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				B3C45E6B2A9C818C00AD3586 /* Common */,
 				B3C45E452A98AE8500AD3586 /* Manager */,
 				B3C45E442A98AE7500AD3586 /* Extension */,
 			);
@@ -287,10 +302,8 @@
 		B3C45E442A98AE7500AD3586 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B3C45E462A98AF0700AD3586 /* UIColor+CC.swift */,
-				B3C45E482A9C334A00AD3586 /* String+CC.swift */,
-				B3C45E672A9C7F7F00AD3586 /* UIView+CC.swift */,
-				B3C45E692A9C7F8E00AD3586 /* CALayer+CC.swift */,
+				B3C45E792A9C85A800AD3586 /* Data */,
+				B3C45E782A9C859100AD3586 /* UI */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -397,6 +410,38 @@
 				B3C45E652A9C77F100AD3586 /* CRSSinglePickerController.swift */,
 			);
 			path = Picker;
+			sourceTree = "<group>";
+		};
+		B3C45E6B2A9C818C00AD3586 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45E6C2A9C819D00AD3586 /* CCMacro.swift */,
+				B3C45E6E2A9C829600AD3586 /* CCPublic.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B3C45E782A9C859100AD3586 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45E672A9C7F7F00AD3586 /* UIView+CC.swift */,
+				B3C45E462A98AF0700AD3586 /* UIColor+CC.swift */,
+				B3C45E692A9C7F8E00AD3586 /* CALayer+CC.swift */,
+				B3C45E762A9C851F00AD3586 /* UIImage+CC.swift */,
+				B3C45E7A2A9C85C900AD3586 /* UIViewController+CC.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B3C45E792A9C85A800AD3586 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45E482A9C334A00AD3586 /* String+CC.swift */,
+				B3C45E702A9C839E00AD3586 /* Double+CC.swift */,
+				B3C45E722A9C83AF00AD3586 /* Int+CC.swift */,
+				B3C45E742A9C83C400AD3586 /* Array+CC.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,8 +626,15 @@
 				B3C45E682A9C7F7F00AD3586 /* UIView+CC.swift in Sources */,
 				B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */,
 				B3C45E392A98ABC600AD3586 /* StudyViewController.swift in Sources */,
+				B3C45E752A9C83C400AD3586 /* Array+CC.swift in Sources */,
+				B3C45E6F2A9C829600AD3586 /* CCPublic.swift in Sources */,
+				B3C45E712A9C839E00AD3586 /* Double+CC.swift in Sources */,
+				B3C45E7B2A9C85C900AD3586 /* UIViewController+CC.swift in Sources */,
+				B3C45E6D2A9C819D00AD3586 /* CCMacro.swift in Sources */,
+				B3C45E732A9C83AF00AD3586 /* Int+CC.swift in Sources */,
 				B3C45E042A98754C00AD3586 /* ViewController.swift in Sources */,
 				B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */,
+				B3C45E772A9C851F00AD3586 /* UIImage+CC.swift in Sources */,
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
 				B3C45E502A9C3C6B00AD3586 /* ItemListViewController.swift in Sources */,
 				B3C45E3B2A98ABD400AD3586 /* ThirdViewController.swift in Sources */,

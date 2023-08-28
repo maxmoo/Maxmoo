@@ -8,6 +8,50 @@
 import UIKit
 
 extension UIView {
+    // 转图片
+    // 将某个view 转换成图像
+    func image(rect: CGRect? = nil) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, UIScreen.main.scale)
+        let context = UIGraphicsGetCurrentContext()
+        guard let _ = context else {return nil}
+
+        self.drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+        var image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        if let rect = rect {
+            image = image?.clipImage(rect: rect)
+        }
+        
+        return image
+    }
+    
+    func gesturesEnable(_ enable: Bool) {
+        if let gests = self.gestureRecognizers {
+            for ges in gests {
+                ges.isEnabled = enable
+            }
+        }
+    }
+
+    // 边界与区域的转换
+    func rect(from edgeInsets: UIEdgeInsets) -> CGRect {
+        return CGRect(x: edgeInsets.left,
+                      y: edgeInsets.top,
+                      width: self.frame.size.width - edgeInsets.right - edgeInsets.left,
+                      height: self.frame.size.height - edgeInsets.bottom - edgeInsets.top)
+    }
+    
+    func insets(from rect: CGRect) -> UIEdgeInsets {
+        return UIEdgeInsets(top: rect.origin.y,
+                            left: rect.origin.x,
+                            bottom: self.frame.size.height - (rect.origin.y + rect.size.height),
+                            right: self.frame.size.width - (rect.origin.x + rect.size.width))
+    }
+    
+}
+
+extension UIView {
     
     var height: CGFloat {
         get {

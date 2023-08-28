@@ -39,17 +39,7 @@
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9b4-U8-ROy">
                         <rect key="frame" x="0.0" y="44" width="320" height="76"/>
-                        <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6bW-F3-afT">
-                                <rect key="frame" x="0.0" y="20" width="320" height="36"/>
-                            </datePicker>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6bW-F3-afT" firstAttribute="centerX" secondItem="9b4-U8-ROy" secondAttribute="centerX" id="YT9-A9-QFA"/>
-                            <constraint firstItem="6bW-F3-afT" firstAttribute="centerY" secondItem="9b4-U8-ROy" secondAttribute="centerY" id="nc2-0w-72H"/>
-                            <constraint firstItem="6bW-F3-afT" firstAttribute="leading" secondItem="9b4-U8-ROy" secondAttribute="leading" id="wyU-Si-ul7"/>
-                        </constraints>
                     </view>
                 </subviews>
                 <constraints>

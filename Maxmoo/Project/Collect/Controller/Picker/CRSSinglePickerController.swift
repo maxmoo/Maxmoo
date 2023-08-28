@@ -10,7 +10,7 @@ import UIKit
 class CRSSinglePickerController: CCBaseViewController {
 
     // 选项是否循环
-    var isLoop = false {
+    var isLoop = true {
         didSet {
             yearPickerView.isLoop = isLoop
             monthPickerView.isLoop = isLoop
@@ -52,8 +52,8 @@ class CRSSinglePickerController: CCBaseViewController {
     }()
     
     private lazy var backView: UIView = {
-        let view = UIView(frame: CGRect(x: 0, y: 200, width: 300, height: 100))
-        view.backgroundColor = .red
+        let view = UIView(frame: CGRect(x: 0, y: 200, width: kScreenWidth, height: 200))
+        view.backgroundColor = .randomColor
         return view
     }()
     

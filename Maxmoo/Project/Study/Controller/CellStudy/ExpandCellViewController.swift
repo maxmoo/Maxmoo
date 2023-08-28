@@ -44,7 +44,7 @@ extension ExpandCellViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let item = items[indexPath.row]
         if item.isExtra {
-            return 120
+            return 160
         } else {
             return 44
         }

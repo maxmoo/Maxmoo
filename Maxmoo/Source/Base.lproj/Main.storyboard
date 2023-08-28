@@ -28,7 +28,7 @@
         <!--Third-->
         <scene sceneID="kgS-dD-ypd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aFp-Jw-hh6" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="aFp-Jw-hh6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Third" image="books.vertical" catalog="system" id="5LT-ic-e93"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YrC-55-fxR">
@@ -82,7 +82,7 @@
         <!--Study-->
         <scene sceneID="dIU-yf-FNl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="haQ-Rh-Dct" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="haQ-Rh-Dct" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Study" image="note.text" catalog="system" id="Bey-wV-vvm"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -118,7 +118,7 @@
         <!--Collect-->
         <scene sceneID="a6K-1V-kpR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eDI-9R-2sg" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="eDI-9R-2sg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Collect" image="tray.full" catalog="system" id="zn4-Xf-WaX"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

@@ -7,12 +7,15 @@
 
 import UIKit
 
-class ThirdViewController: CCBaseViewController {
+class ThirdViewController: ItemListViewController {
 
+    override var items: [String] {
+        return ["Cell-CellViewController"]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
-        // Do any additional setup after loading the view.
+        title = "Third"
     }
 
 }

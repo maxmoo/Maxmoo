@@ -15,6 +15,7 @@ class StudyViewController: ItemListViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Study"
     }
 
 }

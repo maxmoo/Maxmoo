@@ -7,12 +7,15 @@
 
 import UIKit
 
-class CollectViewController: CCBaseViewController {
+class CollectViewController: ItemListViewController {
 
+    override var items: [String] {
+        return ["Cell-CellViewController"]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
-        // Do any additional setup after loading the view.
+        title = "Collect"
     }
 
 }

@@ -15,6 +15,7 @@ class CellViewController: ItemListViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Cell"
     }
 
 }

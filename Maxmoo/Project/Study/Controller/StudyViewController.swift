@@ -10,7 +10,8 @@ import UIKit
 class StudyViewController: ItemListViewController {
 
     override var items: [String] {
-        return ["Cell-CellViewController"]
+        return ["Cell-CellViewController",
+                "Page-PageStudyViewController"]
     }
     
     override func viewDidLoad() {

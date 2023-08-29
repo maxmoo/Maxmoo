@@ -49,7 +49,6 @@ class PageGuideViewController: CCBaseViewController {
 
     func setupUI() {
         addChild(pageController)
-        pageController.view.frame = CGRect(x: 0, y: 0, width: view.width, height: view.height)
         view.addSubview(pageController.view)
         view.addSubview(preButton)
         preButton.snp.makeConstraints { make in
@@ -83,10 +82,8 @@ class PageGuideViewController: CCBaseViewController {
     
     func index(of controller: UIViewController?) -> Int? {
         guard let controller = controller else { return nil }
-        for (index, c) in childControllers.enumerated() {
-            if c == controller {
-                return index
-            }
+        for (index, c) in childControllers.enumerated() where c == controller {
+           return index
         }
         return nil
     }

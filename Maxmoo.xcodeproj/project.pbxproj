@@ -45,6 +45,8 @@
 		B3C45E832A9C93B500AD3586 /* PageGuide1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E822A9C93B500AD3586 /* PageGuide1ViewController.swift */; };
 		B3C45E852A9C93C300AD3586 /* PageGuide2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E842A9C93C300AD3586 /* PageGuide2ViewController.swift */; };
 		B3C45E872A9C93CF00AD3586 /* PageGuide3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E862A9C93CF00AD3586 /* PageGuide3ViewController.swift */; };
+		B3C45E8A2A9DCD6200AD3586 /* CollectionViewStudyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E892A9DCD6200AD3586 /* CollectionViewStudyController.swift */; };
+		B3C45E8C2A9DCDE400AD3586 /* VWatchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E8B2A9DCDE400AD3586 /* VWatchCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		B3C45E822A9C93B500AD3586 /* PageGuide1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageGuide1ViewController.swift; sourceTree = "<group>"; };
 		B3C45E842A9C93C300AD3586 /* PageGuide2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageGuide2ViewController.swift; sourceTree = "<group>"; };
 		B3C45E862A9C93CF00AD3586 /* PageGuide3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageGuide3ViewController.swift; sourceTree = "<group>"; };
+		B3C45E892A9DCD6200AD3586 /* CollectionViewStudyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewStudyController.swift; sourceTree = "<group>"; };
+		B3C45E8B2A9DCDE400AD3586 /* VWatchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VWatchCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +357,7 @@
 		B3C45E532A9C6A1500AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3C45E882A9DCD3200AD3586 /* CollectionView */,
 				B3C45E7C2A9C92D400AD3586 /* Page */,
 				B3C45E4A2A9C3ABC00AD3586 /* CellStudy */,
 				B3C45E382A98ABC600AD3586 /* StudyViewController.swift */,
@@ -473,6 +478,15 @@
 				B3C45E862A9C93CF00AD3586 /* PageGuide3ViewController.swift */,
 			);
 			path = PageGuide;
+			sourceTree = "<group>";
+		};
+		B3C45E882A9DCD3200AD3586 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45E892A9DCD6200AD3586 /* CollectionViewStudyController.swift */,
+				B3C45E8B2A9DCDE400AD3586 /* VWatchCollectionViewController.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -658,6 +672,7 @@
 				B3C45E832A9C93B500AD3586 /* PageGuide1ViewController.swift in Sources */,
 				B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */,
 				B3C45E392A98ABC600AD3586 /* StudyViewController.swift in Sources */,
+				B3C45E8C2A9DCDE400AD3586 /* VWatchCollectionViewController.swift in Sources */,
 				B3C45E752A9C83C400AD3586 /* Array+CC.swift in Sources */,
 				B3C45E6F2A9C829600AD3586 /* CCPublic.swift in Sources */,
 				B3C45E712A9C839E00AD3586 /* Double+CC.swift in Sources */,
@@ -676,6 +691,7 @@
 				B3C45E3B2A98ABD400AD3586 /* ThirdViewController.swift in Sources */,
 				B3C45E4C2A9C3AF500AD3586 /* ExpandCellViewController.swift in Sources */,
 				B3C45E4E2A9C3B1800AD3586 /* CellViewController.swift in Sources */,
+				B3C45E8A2A9DCD6200AD3586 /* CollectionViewStudyController.swift in Sources */,
 				B3C45E6A2A9C7F8E00AD3586 /* CALayer+CC.swift in Sources */,
 				B3C45E632A9C76F400AD3586 /* CRSSingleRowPickerView.swift in Sources */,
 				B3C45E002A98754C00AD3586 /* AppDelegate.swift in Sources */,

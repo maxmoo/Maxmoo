@@ -8,6 +8,14 @@
 import UIKit
 
 extension UIView {
+    
+    // 移除所有的子视图
+    func removeAllSubviews() {
+        for v in self.subviews {
+            v.removeFromSuperview()
+        }
+    }
+    
     // 转图片
     // 将某个view 转换成图像
     func image(rect: CGRect? = nil) -> UIImage? {

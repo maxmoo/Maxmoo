@@ -11,7 +11,8 @@ class StudyViewController: ItemListViewController {
 
     override var items: [String] {
         return ["Cell-CellViewController",
-                "Page-PageStudyViewController"]
+                "Page-PageStudyViewController",
+                "CollectionView-CollectionViewStudyController"]
     }
     
     override func viewDidLoad() {

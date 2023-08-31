@@ -49,6 +49,8 @@
 		B3C45E8C2A9DCDE400AD3586 /* VWatchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E8B2A9DCDE400AD3586 /* VWatchCollectionViewController.swift */; };
 		B3C45E8E2A9F1E8800AD3586 /* AddAnimateCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E8D2A9F1E8800AD3586 /* AddAnimateCollectionController.swift */; };
 		B3C45E902A9F26DA00AD3586 /* TableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E8F2A9F26DA00AD3586 /* TableCollectionController.swift */; };
+		B3C45EA32AA025B200AD3586 /* AppleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EA22AA025B200AD3586 /* AppleMapViewController.swift */; };
+		B3C45EA52AA0260B00AD3586 /* AppleMapStyleChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EA42AA0260B00AD3586 /* AppleMapStyleChangeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		B3C45E8B2A9DCDE400AD3586 /* VWatchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VWatchCollectionViewController.swift; sourceTree = "<group>"; };
 		B3C45E8D2A9F1E8800AD3586 /* AddAnimateCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimateCollectionController.swift; sourceTree = "<group>"; };
 		B3C45E8F2A9F26DA00AD3586 /* TableCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCollectionController.swift; sourceTree = "<group>"; };
+		B3C45EA22AA025B200AD3586 /* AppleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapViewController.swift; sourceTree = "<group>"; };
+		B3C45EA42AA0260B00AD3586 /* AppleMapStyleChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapStyleChangeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +365,7 @@
 		B3C45E532A9C6A1500AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3C45EA12AA0258F00AD3586 /* AppleMap */,
 				B3C45E882A9DCD3200AD3586 /* CollectionView */,
 				B3C45E7C2A9C92D400AD3586 /* Page */,
 				B3C45E4A2A9C3ABC00AD3586 /* CellStudy */,
@@ -493,6 +498,15 @@
 				B3C45E8F2A9F26DA00AD3586 /* TableCollectionController.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		B3C45EA12AA0258F00AD3586 /* AppleMap */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45EA22AA025B200AD3586 /* AppleMapViewController.swift */,
+				B3C45EA42AA0260B00AD3586 /* AppleMapStyleChangeController.swift */,
+			);
+			path = AppleMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -692,6 +706,7 @@
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
 				B3C45E852A9C93C300AD3586 /* PageGuide2ViewController.swift in Sources */,
 				B3C45E802A9C934700AD3586 /* PageGuideViewController.swift in Sources */,
+				B3C45EA52AA0260B00AD3586 /* AppleMapStyleChangeController.swift in Sources */,
 				B3C45E872A9C93CF00AD3586 /* PageGuide3ViewController.swift in Sources */,
 				B3C45E902A9F26DA00AD3586 /* TableCollectionController.swift in Sources */,
 				B3C45E502A9C3C6B00AD3586 /* ItemListViewController.swift in Sources */,
@@ -704,6 +719,7 @@
 				B3C45E632A9C76F400AD3586 /* CRSSingleRowPickerView.swift in Sources */,
 				B3C45E002A98754C00AD3586 /* AppDelegate.swift in Sources */,
 				B3C45E302A98A6B800AD3586 /* SceneDelegate.swift in Sources */,
+				B3C45EA32AA025B200AD3586 /* AppleMapViewController.swift in Sources */,
 				B3C45E3D2A98ABE000AD3586 /* CollectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

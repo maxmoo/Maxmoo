@@ -12,7 +12,8 @@ class StudyViewController: ItemListViewController {
     override var items: [String] {
         return ["Cell-CellViewController",
                 "Page-PageStudyViewController",
-                "CollectionView-CollectionViewStudyController"]
+                "CollectionView-CollectionViewStudyController",
+                "苹果地图-AppleMapViewController"]
     }
     
     override func viewDidLoad() {

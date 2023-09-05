@@ -51,6 +51,8 @@
 		B3C45E902A9F26DA00AD3586 /* TableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E8F2A9F26DA00AD3586 /* TableCollectionController.swift */; };
 		B3C45EA32AA025B200AD3586 /* AppleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EA22AA025B200AD3586 /* AppleMapViewController.swift */; };
 		B3C45EA52AA0260B00AD3586 /* AppleMapStyleChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EA42AA0260B00AD3586 /* AppleMapStyleChangeController.swift */; };
+		B3C45EE72AA71BE700AD3586 /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EE62AA71BE700AD3586 /* SegmentViewController.swift */; };
+		B3C45EE92AA71C1D00AD3586 /* CRSPageSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EE82AA71C1D00AD3586 /* CRSPageSegmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,8 @@
 		B3C45E8F2A9F26DA00AD3586 /* TableCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCollectionController.swift; sourceTree = "<group>"; };
 		B3C45EA22AA025B200AD3586 /* AppleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapViewController.swift; sourceTree = "<group>"; };
 		B3C45EA42AA0260B00AD3586 /* AppleMapStyleChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapStyleChangeController.swift; sourceTree = "<group>"; };
+		B3C45EE62AA71BE700AD3586 /* SegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
+		B3C45EE82AA71C1D00AD3586 /* CRSPageSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSPageSegmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				B3C45E622A9C76F400AD3586 /* CRSSingleRowPickerView.swift */,
+				B3C45EE82AA71C1D00AD3586 /* CRSPageSegmentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -414,6 +419,7 @@
 		B3C45E592A9C6A5100AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3C45EE52AA71BBD00AD3586 /* Segment */,
 				B3C45E642A9C77C500AD3586 /* Picker */,
 				B3C45E3C2A98ABE000AD3586 /* CollectViewController.swift */,
 			);
@@ -507,6 +513,14 @@
 				B3C45EA42AA0260B00AD3586 /* AppleMapStyleChangeController.swift */,
 			);
 			path = AppleMap;
+			sourceTree = "<group>";
+		};
+		B3C45EE52AA71BBD00AD3586 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				B3C45EE62AA71BE700AD3586 /* SegmentViewController.swift */,
+			);
+			path = Segment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -698,8 +712,10 @@
 				B3C45E712A9C839E00AD3586 /* Double+CC.swift in Sources */,
 				B3C45E7B2A9C85C900AD3586 /* UIViewController+CC.swift in Sources */,
 				B3C45E6D2A9C819D00AD3586 /* CCMacro.swift in Sources */,
+				B3C45EE92AA71C1D00AD3586 /* CRSPageSegmentView.swift in Sources */,
 				B3C45E7E2A9C930600AD3586 /* PageStudyViewController.swift in Sources */,
 				B3C45E732A9C83AF00AD3586 /* Int+CC.swift in Sources */,
+				B3C45EE72AA71BE700AD3586 /* SegmentViewController.swift in Sources */,
 				B3C45E042A98754C00AD3586 /* ViewController.swift in Sources */,
 				B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */,
 				B3C45E772A9C851F00AD3586 /* UIImage+CC.swift in Sources */,

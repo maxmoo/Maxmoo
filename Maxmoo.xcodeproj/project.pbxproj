@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6FC19D61FED503596430B238 /* Pods_Maxmoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4FEF59AF8E0D802738BE7B /* Pods_Maxmoo.framework */; };
+		B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */; };
+		B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */; };
+		B3B1EFCB2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFCA2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift */; };
 		B3C45E002A98754C00AD3586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45DFF2A98754C00AD3586 /* AppDelegate.swift */; };
 		B3C45E042A98754C00AD3586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E032A98754C00AD3586 /* ViewController.swift */; };
 		B3C45E072A98754C00AD3586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C45E052A98754C00AD3586 /* Main.storyboard */; };
@@ -53,6 +56,9 @@
 		B3C45EA52AA0260B00AD3586 /* AppleMapStyleChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EA42AA0260B00AD3586 /* AppleMapStyleChangeController.swift */; };
 		B3C45EE72AA71BE700AD3586 /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EE62AA71BE700AD3586 /* SegmentViewController.swift */; };
 		B3C45EE92AA71C1D00AD3586 /* CRSPageSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EE82AA71C1D00AD3586 /* CRSPageSegmentView.swift */; };
+		B3C45EF32AA81AE100AD3586 /* CellEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EF22AA81AE100AD3586 /* CellEditViewController.swift */; };
+		B3C45EF62AA81CDA00AD3586 /* CellEditMoveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EF42AA81CDA00AD3586 /* CellEditMoveCell.swift */; };
+		B3C45EF72AA81CDA00AD3586 /* CellEditMoveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C45EF52AA81CDA00AD3586 /* CellEditMoveCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +82,9 @@
 		1E4FEF59AF8E0D802738BE7B /* Pods_Maxmoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maxmoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F76971B15181D9E3E6D4CB0 /* Pods-Maxmoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maxmoo.release.xcconfig"; path = "Target Support Files/Pods-Maxmoo/Pods-Maxmoo.release.xcconfig"; sourceTree = "<group>"; };
 		8215677A8014EFD0213139E6 /* Pods-Maxmoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maxmoo.debug.xcconfig"; path = "Target Support Files/Pods-Maxmoo/Pods-Maxmoo.debug.xcconfig"; sourceTree = "<group>"; };
+		B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchScrollController.swift; sourceTree = "<group>"; };
+		B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoPageView.swift; sourceTree = "<group>"; };
+		B3B1EFCA2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoDataScreenController.swift; sourceTree = "<group>"; };
 		B3C45DFC2A98754C00AD3586 /* Maxmoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maxmoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C45DFF2A98754C00AD3586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3C45E032A98754C00AD3586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +134,9 @@
 		B3C45EA42AA0260B00AD3586 /* AppleMapStyleChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapStyleChangeController.swift; sourceTree = "<group>"; };
 		B3C45EE62AA71BE700AD3586 /* SegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 		B3C45EE82AA71C1D00AD3586 /* CRSPageSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSPageSegmentView.swift; sourceTree = "<group>"; };
+		B3C45EF22AA81AE100AD3586 /* CellEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEditViewController.swift; sourceTree = "<group>"; };
+		B3C45EF42AA81CDA00AD3586 /* CellEditMoveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEditMoveCell.swift; sourceTree = "<group>"; };
+		B3C45EF52AA81CDA00AD3586 /* CellEditMoveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellEditMoveCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +180,14 @@
 				1F76971B15181D9E3E6D4CB0 /* Pods-Maxmoo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3B1EFC72AA99F6E005E6E06 /* CRSWatch */ = {
+			isa = PBXGroup;
+			children = (
+				B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */,
+			);
+			path = CRSWatch;
 			sourceTree = "<group>";
 		};
 		B3C45DF32A98754C00AD3586 = {
@@ -346,6 +366,7 @@
 			children = (
 				B3C45E4B2A9C3AF500AD3586 /* ExpandCellViewController.swift */,
 				B3C45E4D2A9C3B1800AD3586 /* CellViewController.swift */,
+				B3C45EF22AA81AE100AD3586 /* CellEditViewController.swift */,
 			);
 			path = CellStudy;
 			sourceTree = "<group>";
@@ -361,6 +382,7 @@
 		B3C45E522A9C6A0D00AD3586 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B3B1EFC72AA99F6E005E6E06 /* CRSWatch */,
 				B3C45E5A2A9C6A6500AD3586 /* Cell */,
 			);
 			path = View;
@@ -431,6 +453,8 @@
 			children = (
 				B3C45E5B2A9C6A9E00AD3586 /* ExpandTableViewCell.swift */,
 				B3C45E5C2A9C6A9E00AD3586 /* ExpandTableViewCell.xib */,
+				B3C45EF42AA81CDA00AD3586 /* CellEditMoveCell.swift */,
+				B3C45EF52AA81CDA00AD3586 /* CellEditMoveCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -502,6 +526,8 @@
 				B3C45E8B2A9DCDE400AD3586 /* VWatchCollectionViewController.swift */,
 				B3C45E8D2A9F1E8800AD3586 /* AddAnimateCollectionController.swift */,
 				B3C45E8F2A9F26DA00AD3586 /* TableCollectionController.swift */,
+				B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */,
+				B3B1EFCA2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -631,6 +657,7 @@
 			files = (
 				B3C45E0C2A98754D00AD3586 /* LaunchScreen.storyboard in Resources */,
 				B3C45E092A98754D00AD3586 /* Assets.xcassets in Resources */,
+				B3C45EF72AA81CDA00AD3586 /* CellEditMoveCell.xib in Resources */,
 				B3C45E072A98754C00AD3586 /* Main.storyboard in Resources */,
 				B3C45E5E2A9C6A9E00AD3586 /* ExpandTableViewCell.xib in Resources */,
 			);
@@ -699,10 +726,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C45EF32AA81AE100AD3586 /* CellEditViewController.swift in Sources */,
 				B3C45E412A98AC9100AD3586 /* CCBaseViewController.swift in Sources */,
 				B3C45E472A98AF0700AD3586 /* UIColor+CC.swift in Sources */,
 				B3C45E612A9C6B3B00AD3586 /* ExpandCellItem.swift in Sources */,
+				B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */,
 				B3C45E682A9C7F7F00AD3586 /* UIView+CC.swift in Sources */,
+				B3B1EFCB2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift in Sources */,
 				B3C45E832A9C93B500AD3586 /* PageGuide1ViewController.swift in Sources */,
 				B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */,
 				B3C45E392A98ABC600AD3586 /* StudyViewController.swift in Sources */,
@@ -717,6 +747,7 @@
 				B3C45E732A9C83AF00AD3586 /* Int+CC.swift in Sources */,
 				B3C45EE72AA71BE700AD3586 /* SegmentViewController.swift in Sources */,
 				B3C45E042A98754C00AD3586 /* ViewController.swift in Sources */,
+				B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */,
 				B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */,
 				B3C45E772A9C851F00AD3586 /* UIImage+CC.swift in Sources */,
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
@@ -728,6 +759,7 @@
 				B3C45E502A9C3C6B00AD3586 /* ItemListViewController.swift in Sources */,
 				B3C45E3B2A98ABD400AD3586 /* ThirdViewController.swift in Sources */,
 				B3C45E4C2A9C3AF500AD3586 /* ExpandCellViewController.swift in Sources */,
+				B3C45EF62AA81CDA00AD3586 /* CellEditMoveCell.swift in Sources */,
 				B3C45E4E2A9C3B1800AD3586 /* CellViewController.swift in Sources */,
 				B3C45E8A2A9DCD6200AD3586 /* CollectionViewStudyController.swift in Sources */,
 				B3C45E6A2A9C7F8E00AD3586 /* CALayer+CC.swift in Sources */,

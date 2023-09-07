@@ -11,6 +11,7 @@
 		B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */; };
 		B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */; };
 		B3B1EFCB2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFCA2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift */; };
+		B3B1EFCD2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFCC2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift */; };
 		B3C45E002A98754C00AD3586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45DFF2A98754C00AD3586 /* AppDelegate.swift */; };
 		B3C45E042A98754C00AD3586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45E032A98754C00AD3586 /* ViewController.swift */; };
 		B3C45E072A98754C00AD3586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C45E052A98754C00AD3586 /* Main.storyboard */; };
@@ -85,6 +86,7 @@
 		B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchScrollController.swift; sourceTree = "<group>"; };
 		B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoPageView.swift; sourceTree = "<group>"; };
 		B3B1EFCA2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoDataScreenController.swift; sourceTree = "<group>"; };
+		B3B1EFCC2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoPageIndicator.swift; sourceTree = "<group>"; };
 		B3C45DFC2A98754C00AD3586 /* Maxmoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maxmoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C45DFF2A98754C00AD3586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3C45E032A98754C00AD3586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */,
+				B3B1EFCC2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift */,
 			);
 			path = CRSWatch;
 			sourceTree = "<group>";
@@ -756,6 +759,7 @@
 				B3C45EA52AA0260B00AD3586 /* AppleMapStyleChangeController.swift in Sources */,
 				B3C45E872A9C93CF00AD3586 /* PageGuide3ViewController.swift in Sources */,
 				B3C45E902A9F26DA00AD3586 /* TableCollectionController.swift in Sources */,
+				B3B1EFCD2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift in Sources */,
 				B3C45E502A9C3C6B00AD3586 /* ItemListViewController.swift in Sources */,
 				B3C45E3B2A98ABD400AD3586 /* ThirdViewController.swift in Sources */,
 				B3C45E4C2A9C3AF500AD3586 /* ExpandCellViewController.swift in Sources */,

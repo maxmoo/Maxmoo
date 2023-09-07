@@ -30,7 +30,6 @@ class CRSCusSpoPageView<T: UIView>: UIView, UIScrollViewDelegate {
         scroll.clipsToBounds = false
         scroll.delegate = self
         return scroll
-
     }()
     
     private var itemAutoSize: CGSize = .zero

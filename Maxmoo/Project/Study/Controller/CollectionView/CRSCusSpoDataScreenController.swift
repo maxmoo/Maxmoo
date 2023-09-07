@@ -31,7 +31,9 @@ class CRSCusSpoDataScreenController: UIViewController {
         view.backgroundColor = .red
         view.isShowShadow = true
         view.currentItemChanged = {
-            index in
+            [weak self] index in
+            guard let self = self else { return }
+            self.indicator.refresh(total: self.itemView.items.count, selectIndex: index)
             print("vertical: \(index)")
         }
         view.items = [createView(info: "0"),
@@ -40,6 +42,11 @@ class CRSCusSpoDataScreenController: UIViewController {
                       createView(info: "3"),
                       createView(info: "4")]
         return view
+    }()
+    
+    lazy var indicator: CRSCusSpoPageIndicator = {
+        let ind = CRSCusSpoPageIndicator(frame: CGRect(x: 10, y: 150, width: 20, height: 350), count: 5)
+        return ind
     }()
     
     lazy var hItemView: CRSCusSpoPageView<UIView> = {
@@ -83,6 +90,8 @@ class CRSCusSpoDataScreenController: UIViewController {
         
         view.addSubview(itemView)
         itemView.centerX = view.width/2
+        
+        view.addSubview(indicator)
         
         view.addSubview(hItemView)
         hItemView.centerX = view.width/2

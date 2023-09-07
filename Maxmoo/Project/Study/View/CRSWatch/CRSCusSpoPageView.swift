@@ -17,6 +17,12 @@ class CRSCusSpoPageView<T: UIView>: UIView, UIScrollViewDelegate {
     
     var currentItemChanged: ((Int) -> Void)?
     
+    var isShowShadow: Bool = false {
+        didSet {
+            showInsetsShadow(isShowShadow)
+        }
+    }
+    
     private lazy var scrollView: UIScrollView = {
         let scroll = UIScrollView(frame: .zero)
         scroll.backgroundColor = .white
@@ -30,7 +36,8 @@ class CRSCusSpoPageView<T: UIView>: UIView, UIScrollViewDelegate {
     private var itemAutoSize: CGSize = .zero
     private var direction: UIPageViewController.NavigationOrientation = .vertical
     private var shadowInsets: UIEdgeInsets = .zero
-    
+    private let shadowTag: CGFloat = 100
+
     // direction：依据方向生成倒影，只会存在一个方向
     convenience init(frame: CGRect,
                      shadowInsets: UIEdgeInsets = .zero,
@@ -40,6 +47,7 @@ class CRSCusSpoPageView<T: UIView>: UIView, UIScrollViewDelegate {
         self.direction = direction
         self.shadowInsets = shadowInsets
         createSubviews()
+        showInsetsShadow(isShowShadow)
     }
     
 
@@ -57,6 +65,52 @@ class CRSCusSpoPageView<T: UIView>: UIView, UIScrollViewDelegate {
         }
         addSubview(scrollView)
     }
+    
+    private func showInsetsShadow(_ isShow: Bool) {
+        if let layers = self.layer.sublayers {
+            for layer in layers where layer.zPosition == shadowTag {
+                layer.removeFromSuperlayer()
+            }
+        }
+        if isShow {
+            if direction == .horizontal {
+                let leftGradient = CAGradientLayer()
+                leftGradient.frame = CGRect(x: 0, y: 0, width: shadowInsets.left, height: height)
+                leftGradient.startPoint = CGPoint(x: 0, y: 0.5)
+                leftGradient.endPoint = CGPoint(x: 1, y: 0.5)
+                leftGradient.locations = [0, 1]
+                leftGradient.colors = [UIColor.black.cgColor, UIColor.clear.cgColor]
+                layer.addSublayer(leftGradient)
+                
+                let rightGradient = CAGradientLayer()
+                rightGradient.frame = CGRect(x: width - shadowInsets.right, y: 0,
+                                             width: shadowInsets.right, height: height)
+                rightGradient.startPoint = CGPoint(x: 0, y: 0.5)
+                rightGradient.endPoint = CGPoint(x: 1, y: 0.5)
+                rightGradient.locations = [0, 1]
+                rightGradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+                layer.addSublayer(rightGradient)
+            } else {
+                let topGradient = CAGradientLayer()
+                topGradient.frame = CGRect(x: 0, y: 0, width: width, height: shadowInsets.top)
+                topGradient.startPoint = CGPoint(x: 0.5, y: 0)
+                topGradient.endPoint = CGPoint(x: 0.5, y: 1)
+                topGradient.locations = [0, 1]
+                topGradient.colors = [UIColor.black.cgColor, UIColor.clear.cgColor]
+                layer.addSublayer(topGradient)
+                
+                let bottomGradient = CAGradientLayer()
+                bottomGradient.frame = CGRect(x: 0, y: height - shadowInsets.bottom,
+                                              width: width, height: shadowInsets.bottom)
+                bottomGradient.startPoint = CGPoint(x: 0.5, y: 0)
+                bottomGradient.endPoint = CGPoint(x: 0.5, y: 1)
+                bottomGradient.locations = [0, 1]
+                bottomGradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+                layer.addSublayer(bottomGradient)
+            }
+        }
+    }
+    
     
     private func sendCurrentChanged() {
         if let currentIndex = currentIndex(), let change = currentItemChanged {

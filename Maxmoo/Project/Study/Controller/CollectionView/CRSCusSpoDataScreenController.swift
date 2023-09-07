@@ -25,10 +25,11 @@ class CRSCusSpoDataScreenController: UIViewController {
     
     lazy var itemView: CRSCusSpoPageView<UIView> = {
 
-        let view = CRSCusSpoPageView(frame: CGRect(x: 0, y: 150, width: 250, height: 300),
-                                     shadowInsets: UIEdgeInsets(top: 25, left: 0, bottom: 25, right: 0),
+        let view = CRSCusSpoPageView(frame: CGRect(x: 0, y: 150, width: 250, height: 350),
+                                     shadowInsets: UIEdgeInsets(top: 50, left: 0, bottom: 50, right: 0),
                                      direction: .vertical)
         view.backgroundColor = .red
+        view.isShowShadow = true
         view.currentItemChanged = {
             index in
             print("vertical: \(index)")

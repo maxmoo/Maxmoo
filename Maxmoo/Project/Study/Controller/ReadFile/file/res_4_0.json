@@ -1,0 +1,1905 @@
+{
+    "mapConfigure": {
+        "autoNaviMapHash": [
+            "0000001010000001000000010000010100100001101101011000010110111110",
+            "0000001001111110011111100111011001110110011101100111111000111110"
+        ]
+    },
+    "openApp": {
+        "sharePageHosts": [
+            "page.coros.com",
+            "globalpage.coros.com",
+            "pagetest.coros.com",
+            "globalpagetest.coros.com"
+        ],
+        "shareUrl": [
+            "/share/training/program"
+        ],
+        "wxUniLinkUrl": "https://page.coros.com/share/training/"
+    },
+    "strengthConfigure": {
+        "intensitys": [
+            {
+                "cellEditTitleNoName": true,
+                "format": "S4320",
+                "name": "S4313",
+                "summaryHide": true
+            },
+            {
+                "cellEditTitleUnit": 1,
+                "cellUnit": 1,
+                "customMap": [
+                    {
+                        "id": 1,
+                        "text": "S2305"
+                    },
+                    {
+                        "selector": true,
+                        "text": "S4299"
+                    }
+                ],
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 999,
+                        "multiplier": 1000,
+                        "split": "."
+                    },
+                    {
+                        "interval": 5,
+                        "max": 5,
+                        "multiplier": 100,
+                        "prefix": "."
+                    }
+                ],
+                "intensityType": "WEIGHT",
+                "name": "S4186",
+                "ratio": 2.204585537918871,
+                "supportCustomAndRange": true,
+                "unit": "lbs",
+                "unitConfig": [
+                    {
+                        "cellEditTitleUnit": 1,
+                        "cellUnit": 1,
+                        "customMap": [
+                            {
+                                "id": 1,
+                                "text": "S2305"
+                            },
+                            {
+                                "selector": true,
+                                "text": "S4299"
+                            }
+                        ],
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 999,
+                                "multiplier": 1000,
+                                "split": "."
+                            },
+                            {
+                                "interval": 5,
+                                "max": 5,
+                                "multiplier": 100,
+                                "prefix": "."
+                            }
+                        ],
+                        "intensityType": "WEIGHT",
+                        "name": "S4186",
+                        "supportCustomAndRange": true,
+                        "unit": "unit_lbs_m",
+                        "unitType": 6
+                    },
+                    {
+                        "cellEditTitleUnit": 1,
+                        "cellUnit": 1,
+                        "customMap": [
+                            {
+                                "id": 1,
+                                "text": "S2305"
+                            },
+                            {
+                                "selector": true,
+                                "text": "S4299"
+                            }
+                        ],
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 999,
+                                "multiplier": 1000,
+                                "split": "."
+                            },
+                            {
+                                "interval": 5,
+                                "max": 5,
+                                "multiplier": 100,
+                                "prefix": "."
+                            }
+                        ],
+                        "intensityType": "WEIGHT",
+                        "name": "S4186",
+                        "ratio": 2.204585537918871,
+                        "supportCustomAndRange": true,
+                        "unit": "unit_lbs_b",
+                        "unitType": 7
+                    }
+                ]
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "customMap": [
+                    {
+                        "id": 1,
+                        "text": "S3687"
+                    },
+                    {
+                        "id": 2,
+                        "text": "S3688"
+                    },
+                    {
+                        "id": 3,
+                        "text": "S3686"
+                    },
+                    {
+                        "id": 4,
+                        "text": "S4490"
+                    },
+                    {
+                        "id": 5,
+                        "text": "S3689"
+                    },
+                    {
+                        "id": 6,
+                        "text": "S3690"
+                    },
+                    {
+                        "selector": true,
+                        "text": "S4238"
+                    }
+                ],
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 24,
+                        "min": 2,
+                        "multiplier": 60,
+                        "split": "'",
+                        "suffix": "'"
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 59,
+                        "multiplier": 1,
+                        "split": "\"",
+                        "suffix": "\""
+                    }
+                ],
+                "firstValue": 300,
+                "intensityType": "PACE",
+                "multiplier": 1000,
+                "name": "S2063",
+                "ratio": 1.609344,
+                "relation": "<",
+                "secondRange": [
+                    {
+                        "interval": 1,
+                        "max": 24,
+                        "min": 2,
+                        "multiplier": 60,
+                        "split": "'",
+                        "suffix": "'"
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 59,
+                        "multiplier": 1,
+                        "split": "\"",
+                        "suffix": "\""
+                    }
+                ],
+                "secondValue": 360,
+                "split": "-",
+                "unit": "pace_mi",
+                "unitConfig": [
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "customMap": [
+                            {
+                                "id": 1,
+                                "text": "S3687"
+                            },
+                            {
+                                "id": 2,
+                                "text": "S3688"
+                            },
+                            {
+                                "id": 3,
+                                "text": "S3686"
+                            },
+                            {
+                                "id": 4,
+                                "text": "S4490"
+                            },
+                            {
+                                "id": 5,
+                                "text": "S3689"
+                            },
+                            {
+                                "id": 6,
+                                "text": "S3690"
+                            },
+                            {
+                                "selector": true,
+                                "text": "S4238"
+                            }
+                        ],
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 24,
+                                "min": 2,
+                                "multiplier": 60,
+                                "split": "'",
+                                "suffix": "'"
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 59,
+                                "multiplier": 1,
+                                "split": "\"",
+                                "suffix": "\""
+                            }
+                        ],
+                        "firstValue": 300,
+                        "intensityType": "PACE",
+                        "multiplier": 1000,
+                        "name": "S2063",
+                        "relation": "<",
+                        "secondRange": [
+                            {
+                                "interval": 1,
+                                "max": 24,
+                                "min": 2,
+                                "multiplier": 60,
+                                "split": "'",
+                                "suffix": "'"
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 59,
+                                "multiplier": 1,
+                                "split": "\"",
+                                "suffix": "\""
+                            }
+                        ],
+                        "secondValue": 360,
+                        "split": "-",
+                        "unit": "unit_pace_mi_m",
+                        "unitType": 1
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "customMap": [
+                            {
+                                "id": 1,
+                                "text": "S3687"
+                            },
+                            {
+                                "id": 2,
+                                "text": "S3688"
+                            },
+                            {
+                                "id": 3,
+                                "text": "S3686"
+                            },
+                            {
+                                "id": 4,
+                                "text": "S4490"
+                            },
+                            {
+                                "id": 5,
+                                "text": "S3689"
+                            },
+                            {
+                                "id": 6,
+                                "text": "S3690"
+                            },
+                            {
+                                "selector": true,
+                                "text": "S4238"
+                            }
+                        ],
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 24,
+                                "min": 2,
+                                "multiplier": 60,
+                                "split": "'",
+                                "suffix": "'"
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 59,
+                                "multiplier": 1,
+                                "split": "\"",
+                                "suffix": "\""
+                            }
+                        ],
+                        "firstValue": 300,
+                        "intensityType": "PACE",
+                        "multiplier": 1000,
+                        "name": "S2063",
+                        "ratio": 1.609344,
+                        "relation": "<",
+                        "secondRange": [
+                            {
+                                "interval": 1,
+                                "max": 24,
+                                "min": 2,
+                                "multiplier": 60,
+                                "split": "'",
+                                "suffix": "'"
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 59,
+                                "multiplier": 1,
+                                "split": "\"",
+                                "suffix": "\""
+                            }
+                        ],
+                        "secondValue": 360,
+                        "split": "-",
+                        "unit": "unit_pace_mi_b",
+                        "unitType": 2
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "customMap": [
+                            {
+                                "id": 1,
+                                "text": "S3687"
+                            },
+                            {
+                                "id": 2,
+                                "text": "S3688"
+                            },
+                            {
+                                "id": 3,
+                                "text": "S3686"
+                            },
+                            {
+                                "id": 4,
+                                "text": "S4490"
+                            },
+                            {
+                                "id": 5,
+                                "text": "S3689"
+                            },
+                            {
+                                "id": 6,
+                                "text": "S3690"
+                            },
+                            {
+                                "selector": true,
+                                "text": "S4238"
+                            }
+                        ],
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 150,
+                                "min": 10,
+                                "multiplier": 1
+                            }
+                        ],
+                        "firstValue": 40,
+                        "intensityType": "PACE",
+                        "multiplier": 1000,
+                        "name": "S2063",
+                        "ratio": 0.1,
+                        "relation": "<",
+                        "secondRange": [
+                            {
+                                "interval": 1,
+                                "max": 150,
+                                "min": 10,
+                                "multiplier": 1
+                            }
+                        ],
+                        "secondValue": 41,
+                        "split": "-",
+                        "unit": "unit_s_100yard_m",
+                        "unitType": 3
+                    }
+                ]
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "customMap": [
+                    {
+                        "id": 1,
+                        "text": "S3687"
+                    },
+                    {
+                        "id": 2,
+                        "text": "S3688"
+                    },
+                    {
+                        "id": 3,
+                        "text": "S3686"
+                    },
+                    {
+                        "id": 4,
+                        "text": "S4490"
+                    },
+                    {
+                        "id": 5,
+                        "text": "S3689"
+                    },
+                    {
+                        "id": 6,
+                        "text": "S3690"
+                    },
+                    {
+                        "selector": true,
+                        "text": "S4238"
+                    }
+                ],
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 24,
+                        "min": 2,
+                        "multiplier": 60,
+                        "split": "'",
+                        "suffix": "'"
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 59,
+                        "multiplier": 1,
+                        "split": "\"",
+                        "suffix": "\""
+                    }
+                ],
+                "firstValue": 300,
+                "intensityType": "EFFORT_PACE",
+                "multiplier": 1000,
+                "name": "S4639",
+                "percentConfig": [
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "customMap": [
+                            {
+                                "id": 1,
+                                "text": "S3687"
+                            },
+                            {
+                                "id": 2,
+                                "text": "S3688"
+                            },
+                            {
+                                "id": 3,
+                                "text": "S3686"
+                            },
+                            {
+                                "id": 4,
+                                "text": "S4490"
+                            },
+                            {
+                                "id": 5,
+                                "text": "S3689"
+                            },
+                            {
+                                "id": 6,
+                                "text": "S3690"
+                            },
+                            {
+                                "selector": true,
+                                "text": "S4238"
+                            }
+                        ],
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 140,
+                                "min": 20,
+                                "multiplier": 1000
+                            }
+                        ],
+                        "firstValue": 60000,
+                        "intensityType": "EFFORT_PACE",
+                        "name": "S4825",
+                        "pickviewUnit": 1,
+                        "relation": "<",
+                        "secondRange": [
+                            {
+                                "interval": 1,
+                                "max": 140,
+                                "min": 20,
+                                "multiplier": 1000
+                            }
+                        ],
+                        "secondValue": 65000,
+                        "split": "-",
+                        "unit": "S1209"
+                    }
+                ],
+                "ratio": 1.609344,
+                "relation": "<",
+                "secondRange": [
+                    {
+                        "interval": 1,
+                        "max": 24,
+                        "min": 2,
+                        "multiplier": 60,
+                        "split": "'",
+                        "suffix": "'"
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 59,
+                        "multiplier": 1,
+                        "split": "\"",
+                        "suffix": "\""
+                    }
+                ],
+                "secondValue": 360,
+                "split": "-",
+                "unit": "pace_mi",
+                "unitConfig": [
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "customMap": [
+                            {
+                                "id": 1,
+                                "text": "S3687"
+                            },
+                            {
+                                "id": 2,
+                                "text": "S3688"
+                            },
+                            {
+                                "id": 3,
+                                "text": "S3686"
+                            },
+                            {
+                                "id": 4,
+                                "text": "S4490"
+                            },
+                            {
+                                "id": 5,
+                                "text": "S3689"
+                            },
+                            {
+                                "id": 6,
+                                "text": "S3690"
+                            },
+                            {
+                                "selector": true,
+                                "text": "S4238"
+                            }
+                        ],
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 24,
+                                "min": 2,
+                                "multiplier": 60,
+                                "split": "'",
+                                "suffix": "'"
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 59,
+                                "multiplier": 1,
+                                "split": "\"",
+                                "suffix": "\""
+                            }
+                        ],
+                        "firstValue": 300,
+                        "intensityType": "EFFORT_PACE",
+                        "multiplier": 1000,
+                        "name": "S2063",
+                        "relation": "<",
+                        "secondRange": [
+                            {
+                                "interval": 1,
+                                "max": 24,
+                                "min": 2,
+                                "multiplier": 60,
+                                "split": "'",
+                                "suffix": "'"
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 59,
+                                "multiplier": 1,
+                                "split": "\"",
+                                "suffix": "\""
+                            }
+                        ],
+                        "secondValue": 360,
+                        "split": "-",
+                        "unit": "unit_pace_mi_m",
+                        "unitType": 1
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "customMap": [
+                            {
+                                "id": 1,
+                                "text": "S3687"
+                            },
+                            {
+                                "id": 2,
+                                "text": "S3688"
+                            },
+                            {
+                                "id": 3,
+                                "text": "S3686"
+                            },
+                            {
+                                "id": 4,
+                                "text": "S4490"
+                            },
+                            {
+                                "id": 5,
+                                "text": "S3689"
+                            },
+                            {
+                                "id": 6,
+                                "text": "S3690"
+                            },
+                            {
+                                "selector": true,
+                                "text": "S4238"
+                            }
+                        ],
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 24,
+                                "min": 2,
+                                "multiplier": 60,
+                                "split": "'",
+                                "suffix": "'"
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 59,
+                                "multiplier": 1,
+                                "split": "\"",
+                                "suffix": "\""
+                            }
+                        ],
+                        "firstValue": 300,
+                        "intensityType": "EFFORT_PACE",
+                        "multiplier": 1000,
+                        "name": "S2063",
+                        "ratio": 1.609344,
+                        "relation": "<",
+                        "secondRange": [
+                            {
+                                "interval": 1,
+                                "max": 24,
+                                "min": 2,
+                                "multiplier": 60,
+                                "split": "'",
+                                "suffix": "'"
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 59,
+                                "multiplier": 1,
+                                "split": "\"",
+                                "suffix": "\""
+                            }
+                        ],
+                        "secondValue": 360,
+                        "split": "-",
+                        "unit": "unit_pace_mi_b",
+                        "unitType": 2
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "customMap": [
+                            {
+                                "id": 1,
+                                "text": "S3687"
+                            },
+                            {
+                                "id": 2,
+                                "text": "S3688"
+                            },
+                            {
+                                "id": 3,
+                                "text": "S3686"
+                            },
+                            {
+                                "id": 4,
+                                "text": "S4490"
+                            },
+                            {
+                                "id": 5,
+                                "text": "S3689"
+                            },
+                            {
+                                "id": 6,
+                                "text": "S3690"
+                            },
+                            {
+                                "selector": true,
+                                "text": "S4238"
+                            }
+                        ],
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 150,
+                                "min": 10,
+                                "multiplier": 1
+                            }
+                        ],
+                        "firstValue": 40,
+                        "intensityType": "EFFORT_PACE",
+                        "multiplier": 1000,
+                        "name": "S2063",
+                        "ratio": 0.1,
+                        "relation": "<",
+                        "secondRange": [
+                            {
+                                "interval": 1,
+                                "max": 150,
+                                "min": 10,
+                                "multiplier": 1
+                            }
+                        ],
+                        "secondValue": 41,
+                        "split": "-",
+                        "unit": "unit_s_100yard_m",
+                        "unitType": 3
+                    }
+                ]
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 300,
+                        "min": 1,
+                        "multiplier": 100,
+                        "split": "."
+                    },
+                    {
+                        "interval": 1,
+                        "max": 9,
+                        "multiplier": 10,
+                        "prefix": "."
+                    }
+                ],
+                "firstValue": 1500,
+                "intensityType": "SPEED",
+                "name": "S2064",
+                "ratio": 0.621371192237334,
+                "relation": "<",
+                "secondRange": [
+                    {
+                        "interval": 1,
+                        "max": 300,
+                        "min": 1,
+                        "multiplier": 100,
+                        "split": "."
+                    },
+                    {
+                        "interval": 1,
+                        "max": 9,
+                        "multiplier": 10,
+                        "prefix": "."
+                    }
+                ],
+                "secondValue": 2000,
+                "split": "-",
+                "unit": "mi_h",
+                "unitConfig": [
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 300,
+                                "min": 1,
+                                "multiplier": 100,
+                                "split": "."
+                            },
+                            {
+                                "interval": 1,
+                                "max": 9,
+                                "multiplier": 10,
+                                "prefix": "."
+                            }
+                        ],
+                        "firstValue": 1500,
+                        "intensityType": "SPEED",
+                        "name": "S2064",
+                        "relation": "<",
+                        "secondRange": [
+                            {
+                                "interval": 1,
+                                "max": 300,
+                                "min": 1,
+                                "multiplier": 100,
+                                "split": "."
+                            },
+                            {
+                                "interval": 1,
+                                "max": 9,
+                                "multiplier": 10,
+                                "prefix": "."
+                            }
+                        ],
+                        "secondValue": 2000,
+                        "split": "-",
+                        "unit": "unit_mi_h_m",
+                        "unitType": 4
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 300,
+                                "min": 1,
+                                "multiplier": 100,
+                                "split": "."
+                            },
+                            {
+                                "interval": 1,
+                                "max": 9,
+                                "multiplier": 10,
+                                "prefix": "."
+                            }
+                        ],
+                        "firstValue": 1500,
+                        "intensityType": "SPEED",
+                        "name": "S2064",
+                        "ratio": 0.621371192237334,
+                        "relation": "<",
+                        "secondRange": [
+                            {
+                                "interval": 1,
+                                "max": 300,
+                                "min": 1,
+                                "multiplier": 100,
+                                "split": "."
+                            },
+                            {
+                                "interval": 1,
+                                "max": 9,
+                                "multiplier": 10,
+                                "prefix": "."
+                            }
+                        ],
+                        "secondValue": 2000,
+                        "split": "-",
+                        "unit": "unit_mi_h_b",
+                        "unitType": 5
+                    }
+                ]
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "customMap": [
+                    {
+                        "id": 1,
+                        "text": "S3687"
+                    },
+                    {
+                        "id": 2,
+                        "text": "S3688"
+                    },
+                    {
+                        "id": 3,
+                        "text": "S3686"
+                    },
+                    {
+                        "id": 4,
+                        "text": "S3689"
+                    },
+                    {
+                        "id": 5,
+                        "text": "S3690"
+                    },
+                    {
+                        "selector": true,
+                        "text": "S4238"
+                    }
+                ],
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 240,
+                        "min": 30
+                    }
+                ],
+                "firstValue": 100,
+                "intensityType": "HEART_RATE_IN",
+                "name": "S2081",
+                "pickviewUnit": 1,
+                "relation": "<",
+                "secondRange": [
+                    {
+                        "interval": 1,
+                        "max": 240,
+                        "min": 30
+                    }
+                ],
+                "secondValue": 120,
+                "split": "-",
+                "unit": "bpm"
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "customMap": [
+                    {
+                        "id": 1,
+                        "text": "S4343"
+                    },
+                    {
+                        "id": 2,
+                        "text": "S4344"
+                    },
+                    {
+                        "id": 3,
+                        "text": "S4345"
+                    },
+                    {
+                        "id": 4,
+                        "text": "S4346"
+                    },
+                    {
+                        "id": 5,
+                        "text": "S4347"
+                    },
+                    {
+                        "selector": true,
+                        "text": "S4238"
+                    }
+                ],
+                "firstRange": [
+                    {
+                        "interval": 5,
+                        "max": 2000,
+                        "min": 10
+                    }
+                ],
+                "firstValue": 200,
+                "intensityType": "POWER",
+                "name": "S3529",
+                "pickviewUnit": 1,
+                "relation": "<",
+                "secondRange": [
+                    {
+                        "interval": 5,
+                        "max": 2000,
+                        "min": 10
+                    }
+                ],
+                "secondValue": 320,
+                "split": "-",
+                "unit": "w"
+            },
+            {
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "map": [
+                            {
+                                "id": 1,
+                                "text": "S2615"
+                            },
+                            {
+                                "id": 2,
+                                "text": "S2616"
+                            },
+                            {
+                                "id": 3,
+                                "text": "S2617"
+                            },
+                            {
+                                "id": 4,
+                                "text": "S2618"
+                            },
+                            {
+                                "id": 255,
+                                "text": "S2619"
+                            }
+                        ],
+                        "max": 255
+                    }
+                ],
+                "firstValue": 1,
+                "intensityType": "STROKE",
+                "name": "S4113",
+                "summaryHideValues": [
+                    0
+                ]
+            },
+            {
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 300,
+                        "min": 30
+                    }
+                ],
+                "firstValue": 170,
+                "intensityType": "STRIDE_FREQUENCY",
+                "name": "S2651",
+                "pickviewUnit": 1,
+                "relation": "<",
+                "secondRange": [
+                    {
+                        "interval": 1,
+                        "max": 300,
+                        "min": 30
+                    }
+                ],
+                "secondValue": 180,
+                "split": "-",
+                "unit": "unit_spm"
+            },
+            {
+                "firstRange": [
+                    {
+                        "interval": 10,
+                        "max": 300,
+                        "min": 30
+                    }
+                ],
+                "firstValue": 70,
+                "intensityType": "STRIDE_FREQUENCY",
+                "name": "S3528",
+                "relation": "<",
+                "secondRange": [
+                    {
+                        "interval": 10,
+                        "max": 300,
+                        "min": 30
+                    }
+                ],
+                "secondValue": 80,
+                "split": "-",
+                "sportType": "BICYCLE"
+            },
+            {
+                "cellUnit": 1,
+                "customMap": [
+                    {
+                        "id": 1,
+                        "text": "S4343"
+                    },
+                    {
+                        "id": 2,
+                        "text": "S4344"
+                    },
+                    {
+                        "id": 3,
+                        "text": "S4345"
+                    },
+                    {
+                        "id": 4,
+                        "text": "S4346"
+                    },
+                    {
+                        "id": 5,
+                        "text": "S4347"
+                    },
+                    {
+                        "selector": true,
+                        "text": "S4238"
+                    }
+                ],
+                "firstRange": [
+                    {
+                        "interval": 10,
+                        "max": 1000,
+                        "min": 10
+                    }
+                ],
+                "firstValue": 200,
+                "intensityType": "POWER",
+                "name": "S3529",
+                "pickviewUnit": 1,
+                "relation": "<",
+                "secondRange": [
+                    {
+                        "interval": 10,
+                        "max": 1000,
+                        "min": 10
+                    }
+                ],
+                "secondValue": 320,
+                "split": "-",
+                "sportType": "RUN",
+                "unit": "w"
+            }
+        ],
+        "maxSets": 99,
+        "minSets": 1,
+        "muscleHeatMap": {
+            "frontMuscleIds": [
+                1,
+                2,
+                5,
+                7,
+                15,
+                3,
+                6,
+                10,
+                9
+            ],
+            "levelColors": [
+                "#333845",
+                "#432E3D",
+                "#44283C",
+                "#572C3D",
+                "#7B3848",
+                "#9F4354",
+                "#C24F5F",
+                "#DB5765",
+                "#FF6371"
+            ],
+            "levelCount": 8,
+            "onceBigSets": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "onceSmallSets": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "rearMuscleIds": [
+                11,
+                12,
+                14,
+                15,
+                4,
+                13,
+                8
+            ]
+        },
+        "rests": [
+            {
+                "firstRange": [
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 23,
+                        "multiplier": 3600,
+                        "split": ":",
+                        "suffixFixed": "S1219"
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 59,
+                        "multiplier": 60,
+                        "split": ":",
+                        "suffixFixed": "S1218"
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 59,
+                        "multiplier": 1,
+                        "suffixFixed": "S4316"
+                    }
+                ],
+                "firstValue": 30,
+                "format": "S4318",
+                "minFirstValue": 10,
+                "name": "S1735",
+                "restType": "TIME_REST",
+                "unit": "min"
+            },
+            {
+                "firstRange": [
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 23,
+                        "multiplier": 3600,
+                        "split": ":",
+                        "suffixFixed": "S1219"
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 59,
+                        "multiplier": 60,
+                        "split": ":",
+                        "suffixFixed": "S1218"
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 59,
+                        "multiplier": 1,
+                        "suffixFixed": "S4316"
+                    }
+                ],
+                "firstValue": 300,
+                "format": "S4318",
+                "minFirstValue": 10,
+                "name": "S1735",
+                "restType": "TIME_REST",
+                "sportType": "RUN",
+                "unit": "min"
+            },
+            {
+                "name": "S4274",
+                "restType": "NOT_REST"
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 240,
+                        "min": 30,
+                        "prefixFixed": "S4317"
+                    }
+                ],
+                "firstValue": 120,
+                "format": "S4121",
+                "name": "S4111",
+                "pickviewUnit": 1,
+                "restType": "HEART_RATE_REST",
+                "unit": "bpm"
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 99,
+                        "multiplier": 100000,
+                        "split": "."
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 99,
+                        "multiplier": 1000,
+                        "prefix": "."
+                    }
+                ],
+                "firstValue": 100000,
+                "format": "S4318",
+                "minFirstValue": 10000,
+                "name": "S2657",
+                "pickviewUnit": 1,
+                "ratio": 0.621371192237334,
+                "restType": "DISTANCE_REST",
+                "unit": "mi"
+            }
+        ],
+        "sportConfigures": [
+            {
+                "intensity": [
+                    "HEART_RATE_IN",
+                    "PACE",
+                    "EFFORT_PACE",
+                    "POWER",
+                    "STRIDE_FREQUENCY",
+                    "INTENSITY_UNDEFINED"
+                ],
+                "intensityRelax": [
+                    "HEART_RATE_IN",
+                    "PACE",
+                    "EFFORT_PACE",
+                    "POWER",
+                    "STRIDE_FREQUENCY",
+                    "INTENSITY_UNDEFINED"
+                ],
+                "intensityRestore": [
+                    "HEART_RATE_IN",
+                    "PACE",
+                    "EFFORT_PACE",
+                    "POWER",
+                    "STRIDE_FREQUENCY",
+                    "INTENSITY_UNDEFINED"
+                ],
+                "target": [
+                    "DISTANCE",
+                    "TIME",
+                    "TRAINING_LOAD",
+                    "END_MANUALLY"
+                ],
+                "targetRelax": [
+                    "DISTANCE",
+                    "TIME",
+                    "TRAINING_LOAD",
+                    "END_MANUALLY"
+                ],
+                "targetRestore": [
+                    "DISTANCE",
+                    "TIME",
+                    "TRAINING_LOAD",
+                    "HEART_RESTORE",
+                    "END_MANUALLY"
+                ],
+                "type": "RUN"
+            },
+            {
+                "intensity": [
+                    "HEART_RATE_IN",
+                    "SPEED",
+                    "POWER",
+                    "STRIDE_FREQUENCY",
+                    "INTENSITY_UNDEFINED"
+                ],
+                "intensityRelax": [
+                    "HEART_RATE_IN",
+                    "SPEED",
+                    "POWER",
+                    "STRIDE_FREQUENCY",
+                    "INTENSITY_UNDEFINED"
+                ],
+                "intensityRestore": [
+                    "HEART_RATE_IN",
+                    "SPEED",
+                    "POWER",
+                    "STRIDE_FREQUENCY",
+                    "INTENSITY_UNDEFINED"
+                ],
+                "target": [
+                    "DISTANCE",
+                    "TIME",
+                    "TRAINING_LOAD",
+                    "END_MANUALLY"
+                ],
+                "targetRelax": [
+                    "DISTANCE",
+                    "TIME",
+                    "TRAINING_LOAD",
+                    "END_MANUALLY"
+                ],
+                "targetRestore": [
+                    "DISTANCE",
+                    "TIME",
+                    "TRAINING_LOAD",
+                    "HEART_RESTORE",
+                    "END_MANUALLY"
+                ],
+                "type": "BICYCLE"
+            },
+            {
+                "intensity": [
+                    "STROKE",
+                    "INTENSITY_UNDEFINED"
+                ],
+                "intensityRelax": [
+                    "STROKE",
+                    "INTENSITY_UNDEFINED"
+                ],
+                "intensityRestore": [
+                    "STROKE",
+                    "INTENSITY_UNDEFINED"
+                ],
+                "target": [
+                    "DISTANCE",
+                    "TIME",
+                    "TRAINING_LOAD",
+                    "END_MANUALLY"
+                ],
+                "targetRelax": [
+                    "DISTANCE",
+                    "TIME",
+                    "TRAINING_LOAD",
+                    "END_MANUALLY"
+                ],
+                "targetRestore": [
+                    "DISTANCE",
+                    "TIME",
+                    "TRAINING_LOAD",
+                    "HEART_RESTORE",
+                    "END_MANUALLY"
+                ],
+                "type": "SWIM"
+            },
+            {
+                "intensity": [
+                    "WEIGHT"
+                ],
+                "muscleDiagram": true,
+                "rest": [
+                    "NOT_REST",
+                    "TIME_REST"
+                ],
+                "target": [
+                    "REPS",
+                    "TIME",
+                    "END_MANUALLY"
+                ],
+                "targetRelax": [
+                    "TIME",
+                    "END_MANUALLY"
+                ],
+                "targetRestore": [
+                    "TIME",
+                    "HEART_RESTORE",
+                    "END_MANUALLY"
+                ],
+                "type": "STRENGTH"
+            }
+        ],
+        "targets": [
+            {
+                "firstRange": [
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 23,
+                        "multiplier": 3600,
+                        "split": ":",
+                        "suffixFixed": "S1219"
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 59,
+                        "multiplier": 60,
+                        "split": ":",
+                        "suffixFixed": "S1218"
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 59,
+                        "multiplier": 1,
+                        "suffixFixed": "S4316"
+                    }
+                ],
+                "firstValue": 30,
+                "minFirstValue": 10,
+                "name": "S1735",
+                "targetType": "TIME",
+                "unit": "min"
+            },
+            {
+                "cellUnit": 1,
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 500,
+                        "min": 1
+                    }
+                ],
+                "firstValue": 15,
+                "name": "S4107",
+                "pickviewUnit": 1,
+                "targetType": "REPS",
+                "unit": "unit_reps"
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 99,
+                        "multiplier": 100000,
+                        "split": "."
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 99,
+                        "multiplier": 1000,
+                        "prefix": "."
+                    }
+                ],
+                "firstValue": 100000,
+                "minFirstValue": 10000,
+                "name": "S2657",
+                "ratio": 0.621371192237334,
+                "targetType": "DISTANCE",
+                "unit": "mi"
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 99,
+                        "multiplier": 100000,
+                        "split": "."
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 99,
+                        "multiplier": 1000,
+                        "prefix": "."
+                    }
+                ],
+                "firstValue": 100000,
+                "minFirstValue": 10000,
+                "name": "S2657",
+                "ratio": 0.621371192237334,
+                "sportType": "RUN",
+                "targetType": "DISTANCE",
+                "unit": "mi",
+                "unitConfig": [
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 499,
+                                "multiplier": 100000,
+                                "split": "."
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 99,
+                                "multiplier": 1000,
+                                "prefix": "."
+                            }
+                        ],
+                        "firstValue": 100000,
+                        "minFirstValue": 10000,
+                        "name": "S2657",
+                        "targetType": "DISTANCE",
+                        "unit": "unit_mi_m",
+                        "unitType": 1
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 10,
+                                "max": 1000,
+                                "multiplier": 100
+                            }
+                        ],
+                        "firstValue": 1000,
+                        "minFirstValue": 1000,
+                        "name": "S2657",
+                        "targetType": "DISTANCE",
+                        "unit": "unit_yard_m",
+                        "unitType": 2
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 499,
+                                "multiplier": 100000,
+                                "split": "."
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 99,
+                                "multiplier": 1000,
+                                "prefix": "."
+                            }
+                        ],
+                        "firstValue": 100000,
+                        "minFirstValue": 10000,
+                        "name": "S2657",
+                        "ratio": 0.621371192237334,
+                        "targetType": "DISTANCE",
+                        "unit": "unit_mi_b",
+                        "unitType": 3
+                    }
+                ]
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 99,
+                        "multiplier": 100000,
+                        "split": "."
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 99,
+                        "multiplier": 1000,
+                        "prefix": "."
+                    }
+                ],
+                "firstValue": 100000,
+                "minFirstValue": 10000,
+                "name": "S2657",
+                "ratio": 0.621371192237334,
+                "sportType": "BICYCLE",
+                "targetType": "DISTANCE",
+                "unit": "mi",
+                "unitConfig": [
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 499,
+                                "multiplier": 100000,
+                                "split": "."
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 99,
+                                "multiplier": 1000,
+                                "prefix": "."
+                            }
+                        ],
+                        "firstValue": 100000,
+                        "minFirstValue": 10000,
+                        "name": "S2657",
+                        "targetType": "DISTANCE",
+                        "unit": "unit_mi_m",
+                        "unitType": 1
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 10,
+                                "max": 1000,
+                                "multiplier": 100
+                            }
+                        ],
+                        "firstValue": 1000,
+                        "minFirstValue": 1000,
+                        "name": "S2657",
+                        "targetType": "DISTANCE",
+                        "unit": "unit_yard_m",
+                        "unitType": 2
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 499,
+                                "multiplier": 100000,
+                                "split": "."
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 99,
+                                "multiplier": 1000,
+                                "prefix": "."
+                            }
+                        ],
+                        "firstValue": 100000,
+                        "minFirstValue": 10000,
+                        "name": "S2657",
+                        "ratio": 0.621371192237334,
+                        "targetType": "DISTANCE",
+                        "unit": "unit_mi_b",
+                        "unitType": 3
+                    }
+                ]
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 99,
+                        "multiplier": 100000,
+                        "split": "."
+                    },
+                    {
+                        "format": "%02d",
+                        "interval": 1,
+                        "max": 99,
+                        "multiplier": 1000,
+                        "prefix": "."
+                    }
+                ],
+                "firstValue": 100000,
+                "minFirstValue": 10000,
+                "name": "S2657",
+                "ratio": 0.621371192237334,
+                "sportType": "SWIM",
+                "targetType": "DISTANCE",
+                "unit": "mi",
+                "unitConfig": [
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 99,
+                                "multiplier": 100000,
+                                "split": "."
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 99,
+                                "multiplier": 1000,
+                                "prefix": "."
+                            }
+                        ],
+                        "firstValue": 100000,
+                        "minFirstValue": 10000,
+                        "name": "S2657",
+                        "targetType": "DISTANCE",
+                        "unit": "unit_mi_m",
+                        "unitType": 1
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 1,
+                                "max": 99,
+                                "multiplier": 100000,
+                                "split": "."
+                            },
+                            {
+                                "format": "%02d",
+                                "interval": 1,
+                                "max": 99,
+                                "multiplier": 1000,
+                                "prefix": "."
+                            }
+                        ],
+                        "firstValue": 100000,
+                        "minFirstValue": 10000,
+                        "name": "S2657",
+                        "ratio": 0.621371192237334,
+                        "targetType": "DISTANCE",
+                        "unit": "unit_mi_b",
+                        "unitType": 3
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 10,
+                                "max": 1000,
+                                "min": 10,
+                                "multiplier": 100
+                            }
+                        ],
+                        "firstValue": 10000,
+                        "minFirstValue": 1000,
+                        "name": "S2657",
+                        "targetType": "DISTANCE",
+                        "unit": "unit_yard_m",
+                        "unitType": 2
+                    },
+                    {
+                        "cellEditContentUnit": 1,
+                        "cellUnit": 1,
+                        "firstRange": [
+                            {
+                                "interval": 10,
+                                "max": 1000,
+                                "min": 10,
+                                "multiplier": 100
+                            }
+                        ],
+                        "firstValue": 10000,
+                        "minFirstValue": 1000,
+                        "name": "S2657",
+                        "ratio": 1.0936133102976082,
+                        "targetType": "DISTANCE",
+                        "unit": "unit_yard_b",
+                        "unitType": 4
+                    }
+                ]
+            },
+            {
+                "name": "S4108",
+                "targetType": "END_MANUALLY"
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 999,
+                        "min": 1
+                    }
+                ],
+                "firstValue": 100,
+                "fitnessEdit": true,
+                "name": "S4491",
+                "pickviewUnit": 1,
+                "targetType": "TRAINING_LOAD",
+                "unit": "tl"
+            },
+            {
+                "cellEditContentUnit": 1,
+                "cellUnit": 1,
+                "firstRange": [
+                    {
+                        "interval": 1,
+                        "max": 180,
+                        "min": 30,
+                        "prefixFixed": "S4317"
+                    }
+                ],
+                "firstValue": 120,
+                "format": "S4121",
+                "name": "S4112",
+                "pickviewUnit": 1,
+                "targetType": "HEART_RESTORE",
+                "unit": "bpm"
+            }
+        ]
+    }
+}

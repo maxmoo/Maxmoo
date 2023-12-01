@@ -13,7 +13,11 @@ class StudyViewController: ItemListViewController {
         return ["Cell-CellViewController",
                 "Page-PageStudyViewController",
                 "CollectionView-CollectionViewStudyController",
-                "苹果地图-AppleMapViewController"]
+                "苹果地图-AppleMapViewController",
+                "image-ImageStudyController",
+                "读取文件-ReadFileViewController",
+                "JSON-JSONViewController",
+                "CRS投屏数据页-CRSCastScreenDataController"]
     }
     
     override func viewDidLoad() {

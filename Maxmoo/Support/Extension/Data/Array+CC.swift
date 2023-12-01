@@ -30,14 +30,14 @@ extension Array {
     
     @discardableResult
     mutating func removeStart(_ k: Int) -> [Element] {
-        guard k >= self.count else {
+        guard k < self.count else {
             let array = self
             self.removeAll()
             return array
         }
         
         var array: [Element] = []
-        for _ in 0...k {
+        for _ in 0..<k {
             array.append(self.removeFirst())
         }
         return array
@@ -51,14 +51,14 @@ extension Array {
     
     @discardableResult
     mutating func removeEnd(_ k: Int) -> [Element] {
-        guard k >= self.count else {
+        guard k < self.count else {
             let array = self
             self.removeAll()
             return array
         }
         
         var array: [Element] = []
-        for _ in 0...k {
+        for _ in 0..<k {
             array.append(self.removeLast())
         }
         return array

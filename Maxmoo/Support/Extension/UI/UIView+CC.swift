@@ -21,9 +21,10 @@ extension UIView {
     func image(rect: CGRect? = nil) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, UIScreen.main.scale)
         let context = UIGraphicsGetCurrentContext()
-        guard let _ = context else {return nil}
+        guard let context = context else {return nil}
 
-        self.drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+//        self.drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+        self.layer.render(in: context)
         var image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         

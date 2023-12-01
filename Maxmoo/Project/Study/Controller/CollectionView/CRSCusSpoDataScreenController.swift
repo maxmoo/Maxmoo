@@ -25,7 +25,7 @@ class CRSCusSpoDataScreenController: UIViewController {
     
     lazy var itemView: CRSCusSpoPageView<UIView> = {
 
-        let view = CRSCusSpoPageView(frame: CGRect(x: 0, y: 150, width: 250, height: 350),
+        let view = CRSCusSpoPageView(frame: CGRect(x: 0, y: kNavigationAndStatuBarHeight, width: 250, height: 350),
                                      shadowInsets: UIEdgeInsets(top: 50, left: 0, bottom: 50, right: 0),
                                      direction: .vertical)
         view.backgroundColor = .red
@@ -74,6 +74,7 @@ class CRSCusSpoDataScreenController: UIViewController {
     }
     
     func setupUI() {
+        view.backgroundColor = .randomColor
         view.addSubview(addButton)
         addButton.snp.makeConstraints { make in
             make.left.equalTo(16)

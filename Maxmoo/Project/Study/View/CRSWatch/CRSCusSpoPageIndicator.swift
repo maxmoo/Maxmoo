@@ -22,10 +22,30 @@ class CRSCusSpoPageIndicator: UIView {
         view.backgroundColor = .clear
         return view
     }()
-    private lazy var itemSize: CGSize = CGSize(width: 10, height: 10)
-    private lazy var gap: CGFloat = 10
-    private lazy var selectColor: UIColor = .blue
-    private lazy var normalColor: UIColor = .darkGray
+    
+    lazy var itemSize: CGSize = CGSize(width: 8, height: 8) {
+        didSet {
+            refreshSubviews()
+        }
+    }
+    
+    lazy var gap: CGFloat = 8 {
+        didSet {
+            refreshSubviews()
+        }
+    }
+    
+    lazy var selectColor: UIColor = .blue {
+        didSet {
+            selectIndex = selectIndex
+        }
+    }
+    
+    lazy var normalColor: UIColor = .darkGray {
+        didSet {
+            selectIndex = selectIndex
+        }
+    }
     
     private lazy var items: [UIView] = []
     

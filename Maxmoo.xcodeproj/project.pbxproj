@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		6FC19D61FED503596430B238 /* Pods_Maxmoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4FEF59AF8E0D802738BE7B /* Pods_Maxmoo.framework */; };
 		B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */; };
+		B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */; };
+		B3793A412B21766A00A038D8 /* CastScreenDataTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */; };
+		B3793A442B2199C200A038D8 /* CRSCastScreenDataSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A432B2199C200A038D8 /* CRSCastScreenDataSettingController.swift */; };
+		B3793A4D2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A4B2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift */; };
+		B3793A4E2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */; };
 		B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */; };
 		B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */; };
 		B3B1EFCB2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFCA2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift */; };
 		B3B1EFCD2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFCC2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift */; };
-		B3B9E0A22B19BC3E0004B9F8 /* DataCollectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B9E0A12B19BC3E0004B9F8 /* DataCollectController.swift */; };
+		B3B9E0A22B19BC3E0004B9F8 /* CRSCastScreenDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B9E0A12B19BC3E0004B9F8 /* CRSCastScreenDataController.swift */; };
+		B3B9E0A52B19C8E20004B9F8 /* CRSCastScreenDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B9E0A32B19C8E20004B9F8 /* CRSCastScreenDataCell.swift */; };
+		B3B9E0A62B19C8E20004B9F8 /* CRSCastScreenDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3B9E0A42B19C8E20004B9F8 /* CRSCastScreenDataCell.xib */; };
 		B3C046B72AD1597100A275BD /* ReadFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C046B62AD1597100A275BD /* ReadFileViewController.swift */; };
 		B3C046BA2AD1599F00A275BD /* res_4_0.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C046B92AD1599F00A275BD /* res_4_0.json */; };
 		B3C046BC2AD15AC500A275BD /* keyCodeAble.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C046BB2AD15AC500A275BD /* keyCodeAble.json */; };
@@ -90,11 +97,18 @@
 		1F76971B15181D9E3E6D4CB0 /* Pods-Maxmoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maxmoo.release.xcconfig"; path = "Target Support Files/Pods-Maxmoo/Pods-Maxmoo.release.xcconfig"; sourceTree = "<group>"; };
 		8215677A8014EFD0213139E6 /* Pods-Maxmoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maxmoo.debug.xcconfig"; path = "Target Support Files/Pods-Maxmoo/Pods-Maxmoo.debug.xcconfig"; sourceTree = "<group>"; };
 		B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStudyController.swift; sourceTree = "<group>"; };
+		B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataStyle.swift; sourceTree = "<group>"; };
+		B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastScreenDataTestController.swift; sourceTree = "<group>"; };
+		B3793A432B2199C200A038D8 /* CRSCastScreenDataSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataSettingController.swift; sourceTree = "<group>"; };
+		B3793A4B2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenOrderCell.swift; sourceTree = "<group>"; };
+		B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSCastScreenOrderCell.xib; sourceTree = "<group>"; };
 		B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchScrollController.swift; sourceTree = "<group>"; };
 		B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoPageView.swift; sourceTree = "<group>"; };
 		B3B1EFCA2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoDataScreenController.swift; sourceTree = "<group>"; };
 		B3B1EFCC2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoPageIndicator.swift; sourceTree = "<group>"; };
-		B3B9E0A12B19BC3E0004B9F8 /* DataCollectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectController.swift; sourceTree = "<group>"; };
+		B3B9E0A12B19BC3E0004B9F8 /* CRSCastScreenDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataController.swift; sourceTree = "<group>"; };
+		B3B9E0A32B19C8E20004B9F8 /* CRSCastScreenDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataCell.swift; sourceTree = "<group>"; };
+		B3B9E0A42B19C8E20004B9F8 /* CRSCastScreenDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSCastScreenDataCell.xib; sourceTree = "<group>"; };
 		B3C046B62AD1597100A275BD /* ReadFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadFileViewController.swift; sourceTree = "<group>"; };
 		B3C046B92AD1599F00A275BD /* res_4_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = res_4_0.json; sourceTree = "<group>"; };
 		B3C046BB2AD15AC500A275BD /* keyCodeAble.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keyCodeAble.json; sourceTree = "<group>"; };
@@ -204,6 +218,28 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		B3793A422B21999700A038D8 /* Coros */ = {
+			isa = PBXGroup;
+			children = (
+				B3793A462B21A04300A038D8 /* Cell */,
+				B3B9E0A12B19BC3E0004B9F8 /* CRSCastScreenDataController.swift */,
+				B3793A432B2199C200A038D8 /* CRSCastScreenDataSettingController.swift */,
+				B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */,
+			);
+			path = Coros;
+			sourceTree = "<group>";
+		};
+		B3793A462B21A04300A038D8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B3B9E0A32B19C8E20004B9F8 /* CRSCastScreenDataCell.swift */,
+				B3B9E0A42B19C8E20004B9F8 /* CRSCastScreenDataCell.xib */,
+				B3793A4B2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift */,
+				B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B3B1EFC72AA99F6E005E6E06 /* CRSWatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,7 +252,8 @@
 		B3B9E0A02B19BBD30004B9F8 /* DataCollect */ = {
 			isa = PBXGroup;
 			children = (
-				B3B9E0A12B19BC3E0004B9F8 /* DataCollectController.swift */,
+				B3793A422B21999700A038D8 /* Coros */,
+				B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */,
 			);
 			path = DataCollect;
 			sourceTree = "<group>";
@@ -723,6 +760,8 @@
 				B3C45EF72AA81CDA00AD3586 /* CellEditMoveCell.xib in Resources */,
 				B3C45E072A98754C00AD3586 /* Main.storyboard in Resources */,
 				B3C45E5E2A9C6A9E00AD3586 /* ExpandTableViewCell.xib in Resources */,
+				B3793A4E2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib in Resources */,
+				B3B9E0A62B19C8E20004B9F8 /* CRSCastScreenDataCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,6 +829,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C45EF32AA81AE100AD3586 /* CellEditViewController.swift in Sources */,
+				B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */,
 				B3C45E412A98AC9100AD3586 /* CCBaseViewController.swift in Sources */,
 				B3C45E472A98AF0700AD3586 /* UIColor+CC.swift in Sources */,
 				B3C45E612A9C6B3B00AD3586 /* ExpandCellItem.swift in Sources */,
@@ -810,6 +850,8 @@
 				B3C45E7E2A9C930600AD3586 /* PageStudyViewController.swift in Sources */,
 				B3C45E732A9C83AF00AD3586 /* Int+CC.swift in Sources */,
 				B3C45EE72AA71BE700AD3586 /* SegmentViewController.swift in Sources */,
+				B3793A442B2199C200A038D8 /* CRSCastScreenDataSettingController.swift in Sources */,
+				B3B9E0A52B19C8E20004B9F8 /* CRSCastScreenDataCell.swift in Sources */,
 				B3C45E042A98754C00AD3586 /* ViewController.swift in Sources */,
 				B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */,
 				B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */,
@@ -818,6 +860,7 @@
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
 				B3C45E852A9C93C300AD3586 /* PageGuide2ViewController.swift in Sources */,
 				B3C45E802A9C934700AD3586 /* PageGuideViewController.swift in Sources */,
+				B3793A412B21766A00A038D8 /* CastScreenDataTestController.swift in Sources */,
 				B3C45EA52AA0260B00AD3586 /* AppleMapStyleChangeController.swift in Sources */,
 				B3C45E872A9C93CF00AD3586 /* PageGuide3ViewController.swift in Sources */,
 				B3C45E902A9F26DA00AD3586 /* TableCollectionController.swift in Sources */,
@@ -831,7 +874,8 @@
 				B3C45E6A2A9C7F8E00AD3586 /* CALayer+CC.swift in Sources */,
 				B3C45E8E2A9F1E8800AD3586 /* AddAnimateCollectionController.swift in Sources */,
 				B3C45E632A9C76F400AD3586 /* CRSSingleRowPickerView.swift in Sources */,
-				B3B9E0A22B19BC3E0004B9F8 /* DataCollectController.swift in Sources */,
+				B3B9E0A22B19BC3E0004B9F8 /* CRSCastScreenDataController.swift in Sources */,
+				B3793A4D2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift in Sources */,
 				B3C45E002A98754C00AD3586 /* AppDelegate.swift in Sources */,
 				B3C45E302A98A6B800AD3586 /* SceneDelegate.swift in Sources */,
 				B3C45EA32AA025B200AD3586 /* AppleMapViewController.swift in Sources */,

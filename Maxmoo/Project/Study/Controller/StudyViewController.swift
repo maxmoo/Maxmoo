@@ -17,7 +17,7 @@ class StudyViewController: ItemListViewController {
                 "image-ImageStudyController",
                 "读取文件-ReadFileViewController",
                 "JSON-JSONViewController",
-                "CRS投屏数据页-CRSCastScreenDataController"]
+                "CRS投屏数据页-CastScreenDataTestController"]
     }
     
     override func viewDidLoad() {

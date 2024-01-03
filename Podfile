@@ -8,6 +8,9 @@ target 'Maxmoo' do
   pod 'Alamofire', '~> 5.4.4'
   pod 'SnapKit'
   pod 'SwiftProtobuf'
+  pod 'AliPlayerSDK_iOS', '5.4.7.1'
+  pod 'AliPlayerSDK_iOS_ARTC', '5.4.7.1'
+  pod 'RtsSDK', '2.2.0'
 end
 
 post_install do |installer|

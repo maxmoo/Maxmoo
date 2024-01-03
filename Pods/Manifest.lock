@@ -1,24 +1,40 @@
 PODS:
   - Alamofire (5.4.4)
+  - AliPlayerSDK_iOS (5.4.7.1):
+    - AliPlayerSDK_iOS/AliPlayerSDK (= 5.4.7.1)
+  - AliPlayerSDK_iOS/AliPlayerSDK (5.4.7.1)
+  - AliPlayerSDK_iOS_ARTC (5.4.7.1):
+    - AliPlayerSDK_iOS_ARTC/AliPlayerSDK (= 5.4.7.1)
+  - AliPlayerSDK_iOS_ARTC/AliPlayerSDK (5.4.7.1)
+  - RtsSDK (2.2.0)
   - SnapKit (5.6.0)
   - SwiftProtobuf (1.22.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.4.4)
+  - AliPlayerSDK_iOS (= 5.4.7.1)
+  - AliPlayerSDK_iOS_ARTC (= 5.4.7.1)
+  - RtsSDK (= 2.2.0)
   - SnapKit
   - SwiftProtobuf
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - AliPlayerSDK_iOS
+    - AliPlayerSDK_iOS_ARTC
+    - RtsSDK
     - SnapKit
     - SwiftProtobuf
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  AliPlayerSDK_iOS: f5214cba6536e635b21c0d625a438b05deecbadf
+  AliPlayerSDK_iOS_ARTC: 4912553663d47f5956e71f340693dd2269a23916
+  RtsSDK: 6301f94561f3273f04caa974a8744f48dbc055d2
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftProtobuf: 7773c4e96a99d7b8ab7cda0fc30a883732ff93b1
 
-PODFILE CHECKSUM: c47c64807fae991c8fbb4aae23859e8796be9d59
+PODFILE CHECKSUM: 409327bced70ebf9a941c938bf9290ccc93a6a34
 
 COCOAPODS: 1.11.2

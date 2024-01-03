@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AlivcLicenseFile</key>
+	<string>license.crt</string>
+	<key>AlivcLicenseKey</key>
+	<string>IPzeGBI0l1ToDooTSe36e572fbce34e83844f185f04d8a815</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

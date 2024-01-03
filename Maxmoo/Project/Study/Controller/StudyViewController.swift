@@ -10,7 +10,8 @@ import UIKit
 class StudyViewController: ItemListViewController {
 
     override var items: [String] {
-        return ["Cell-CellViewController",
+        return ["SwiftUI-SwiftUIController",
+                "Cell-CellViewController",
                 "Page-PageStudyViewController",
                 "CollectionView-CollectionViewStudyController",
                 "苹果地图-AppleMapViewController",

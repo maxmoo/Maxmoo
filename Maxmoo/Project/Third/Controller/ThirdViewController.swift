@@ -22,7 +22,7 @@ import UIKit
 class ThirdViewController: ItemListViewController {
 
     override var items: [String] {
-        return ["Cell-CellViewController"]
+        return ["阿里播放器-AliPlayerViewController"]
     }
     
     override func viewDidLoad() {

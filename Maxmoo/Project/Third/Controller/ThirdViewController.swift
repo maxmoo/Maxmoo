@@ -28,6 +28,10 @@ class ThirdViewController: ItemListViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Third"
+        
+        let number: UInt = 17561877850638462191
+        let hexString = String(number, radix: 16, uppercase: false)
+        print("xxxxxx: \(hexString)")
     }
 
 }

@@ -11,6 +11,7 @@ target 'Maxmoo' do
   pod 'AliPlayerSDK_iOS', '5.4.7.1'
   pod 'AliPlayerSDK_iOS_ARTC', '5.4.7.1'
   pod 'RtsSDK', '2.2.0'
+  pod 'DatabaseVisual'
 end
 
 post_install do |installer|

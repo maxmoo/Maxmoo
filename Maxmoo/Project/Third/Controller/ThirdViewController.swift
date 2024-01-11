@@ -5,24 +5,13 @@
 //  Created by 程超 on 2023/8/25.
 //
 
-/*
- # 可视化db
- pod 'DatabaseVisual'
-
- #if DEBUG
-         let path = ExploreFileManager.documents + "/db" + "/\(exploreUserId())"
-         let vc = DatabaseListViewController(dbPaths: DatabaseFactory.queryIfHadDB(fromDirectory: path))
-         let root = UINavigationController(rootViewController: vc)
-         self.present(root, animated: true)
-#endif
- */
-
 import UIKit
 
 class ThirdViewController: ItemListViewController {
 
     override var items: [String] {
-        return ["阿里播放器-AliPlayerViewController"]
+        return ["阿里播放器-AliPlayerViewController",
+                "SQLite.swift-SQLiteSwiftViewController"]
     }
     
     override func viewDidLoad() {

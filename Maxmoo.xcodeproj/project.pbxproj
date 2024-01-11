@@ -21,6 +21,7 @@
 		B3793A442B2199C200A038D8 /* CRSCastScreenDataSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A432B2199C200A038D8 /* CRSCastScreenDataSettingController.swift */; };
 		B3793A4D2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A4B2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift */; };
 		B3793A4E2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */; };
+		B3AF184D2B502182004FD144 /* SQLiteSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF184C2B502182004FD144 /* SQLiteSwiftViewController.swift */; };
 		B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */; };
 		B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */; };
 		B3B1EFCB2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFCA2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift */; };
@@ -116,6 +117,7 @@
 		B3793A432B2199C200A038D8 /* CRSCastScreenDataSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataSettingController.swift; sourceTree = "<group>"; };
 		B3793A4B2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenOrderCell.swift; sourceTree = "<group>"; };
 		B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSCastScreenOrderCell.xib; sourceTree = "<group>"; };
+		B3AF184C2B502182004FD144 /* SQLiteSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteSwiftViewController.swift; sourceTree = "<group>"; };
 		B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchScrollController.swift; sourceTree = "<group>"; };
 		B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoPageView.swift; sourceTree = "<group>"; };
 		B3B1EFCA2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoDataScreenController.swift; sourceTree = "<group>"; };
@@ -279,6 +281,14 @@
 				B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		B3AF184B2B502155004FD144 /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				B3AF184C2B502182004FD144 /* SQLiteSwiftViewController.swift */,
+			);
+			path = SQL;
 			sourceTree = "<group>";
 		};
 		B3B1EFC72AA99F6E005E6E06 /* CRSWatch */ = {
@@ -551,6 +561,7 @@
 		B3C45E562A9C6A3800AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3AF184B2B502155004FD144 /* SQL */,
 				B303175D2B45704800D8B8F9 /* AliPalyer */,
 				B3C45E3A2A98ABD400AD3586 /* ThirdViewController.swift */,
 			);
@@ -906,6 +917,7 @@
 				B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */,
 				B3C45E772A9C851F00AD3586 /* UIImage+CC.swift in Sources */,
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
+				B3AF184D2B502182004FD144 /* SQLiteSwiftViewController.swift in Sources */,
 				B31849152B35354F00D9B9B8 /* SwiftUIHelloController.swift in Sources */,
 				B3C45E852A9C93C300AD3586 /* PageGuide2ViewController.swift in Sources */,
 				B3C45E802A9C934700AD3586 /* PageGuideViewController.swift in Sources */,

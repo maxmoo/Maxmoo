@@ -21,6 +21,7 @@
 		B3793A442B2199C200A038D8 /* CRSCastScreenDataSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A432B2199C200A038D8 /* CRSCastScreenDataSettingController.swift */; };
 		B3793A4D2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A4B2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift */; };
 		B3793A4E2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */; };
+		B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39842382B5524A70028D32B /* OCStudyViewController.m */; };
 		B3AF184D2B502182004FD144 /* SQLiteSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF184C2B502182004FD144 /* SQLiteSwiftViewController.swift */; };
 		B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */; };
 		B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */; };
@@ -117,6 +118,9 @@
 		B3793A432B2199C200A038D8 /* CRSCastScreenDataSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataSettingController.swift; sourceTree = "<group>"; };
 		B3793A4B2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenOrderCell.swift; sourceTree = "<group>"; };
 		B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSCastScreenOrderCell.xib; sourceTree = "<group>"; };
+		B39842362B5524A70028D32B /* Maxmoo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maxmoo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B39842372B5524A70028D32B /* OCStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCStudyViewController.h; sourceTree = "<group>"; };
+		B39842382B5524A70028D32B /* OCStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCStudyViewController.m; sourceTree = "<group>"; };
 		B3AF184C2B502182004FD144 /* SQLiteSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteSwiftViewController.swift; sourceTree = "<group>"; };
 		B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchScrollController.swift; sourceTree = "<group>"; };
 		B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoPageView.swift; sourceTree = "<group>"; };
@@ -283,6 +287,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		B39842352B5524770028D32B /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				B39842372B5524A70028D32B /* OCStudyViewController.h */,
+				B39842382B5524A70028D32B /* OCStudyViewController.m */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
 		B3AF184B2B502155004FD144 /* SQL */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +396,7 @@
 				B3C45DFF2A98754C00AD3586 /* AppDelegate.swift */,
 				B3C45E2F2A98A6B800AD3586 /* SceneDelegate.swift */,
 				B3C45E032A98754C00AD3586 /* ViewController.swift */,
+				B39842362B5524A70028D32B /* Maxmoo-Bridging-Header.h */,
 				B3C45E0D2A98754D00AD3586 /* Info.plist */,
 			);
 			path = Head;
@@ -529,6 +543,7 @@
 		B3C45E532A9C6A1500AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B39842352B5524770028D32B /* OC */,
 				B31849102B3534B200D9B9B8 /* SwiftUI */,
 				B31849032B3409CA00D9B9B8 /* Animate */,
 				B3B9E0A02B19BBD30004B9F8 /* DataCollect */,
@@ -773,6 +788,7 @@
 				TargetAttributes = {
 					B3C45DFB2A98754C00AD3586 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					B3C45E112A98754D00AD3586 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -916,6 +932,7 @@
 				B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */,
 				B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */,
 				B3C45E772A9C851F00AD3586 /* UIImage+CC.swift in Sources */,
+				B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */,
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
 				B3AF184D2B502182004FD144 /* SQLiteSwiftViewController.swift in Sources */,
 				B31849152B35354F00D9B9B8 /* SwiftUIHelloController.swift in Sources */,
@@ -1120,6 +1137,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QUT35UC9Q8;
@@ -1139,6 +1157,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coros.Maxmoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Maxmoo/Head/Maxmoo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1150,6 +1170,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QUT35UC9Q8;
@@ -1169,6 +1190,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coros.Maxmoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Maxmoo/Head/Maxmoo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

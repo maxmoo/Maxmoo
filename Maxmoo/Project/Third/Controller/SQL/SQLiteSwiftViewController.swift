@@ -30,11 +30,16 @@ class SQLiteSwiftViewController: UIViewController {
         return button
     }()
     
-    @objc
-    func action() {
+    lazy var dbListVC = {
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         let vc = DatabaseListViewController(dbPaths: DatabaseFactory.queryIfHadDB(fromDirectory: path))
-        let root = UINavigationController(rootViewController: vc)
+        vc.delegate = self
+        return vc
+    }()
+    
+    @objc
+    func action() {
+        let root = UINavigationController(rootViewController: dbListVC)
         self.present(root, animated: true)
     }
     
@@ -88,4 +93,12 @@ class SQLiteSwiftViewController: UIViewController {
 //        try? db.run(users.update(balance-=10))
     }
 
+}
+
+
+extension SQLiteSwiftViewController: DatabaseListViewControllerDelegate {
+    
+    func databaseListViewControllerDidFinish() {
+        dbListVC.dismiss(animated: true)
+    }
 }

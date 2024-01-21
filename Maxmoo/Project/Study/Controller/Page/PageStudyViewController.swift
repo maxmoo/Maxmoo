@@ -9,8 +9,8 @@ import UIKit
 
 class PageStudyViewController: ItemListViewController {
 
-    override var items: [String] {
-        return ["Page上一步下一步-PageGuideViewController"]
+    override var items: [[String]] {
+        return [["Page上一步下一步-PageGuideViewController"]]
     }
     
     override func viewDidLoad() {

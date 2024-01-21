@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		B31849122B3534E700D9B9B8 /* SwiftUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31849112B3534E700D9B9B8 /* SwiftUIController.swift */; };
 		B31849152B35354F00D9B9B8 /* SwiftUIHelloController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31849142B35354F00D9B9B8 /* SwiftUIHelloController.swift */; };
 		B31849172B353AD400D9B9B8 /* SUHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31849162B353AD400D9B9B8 /* SUHello.swift */; };
+		B343501C2B5CF36A00D974AA /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343501B2B5CF36A00D974AA /* ChartViewController.swift */; };
+		B343501F2B5CF40700D974AA /* CRSTrackClimbChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */; };
+		B34350212B5D03DF00D974AA /* UIBezierPath+curved.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34350202B5D03DF00D974AA /* UIBezierPath+curved.swift */; };
+		B34350242B5D04A000D974AA /* UIBezierPath+curved.m in Sources */ = {isa = PBXBuildFile; fileRef = B34350222B5D04A000D974AA /* UIBezierPath+curved.m */; };
 		B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */; };
 		B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */; };
 		B3793A412B21766A00A038D8 /* CastScreenDataTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */; };
@@ -22,6 +26,7 @@
 		B3793A4D2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A4B2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift */; };
 		B3793A4E2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */; };
 		B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39842382B5524A70028D32B /* OCStudyViewController.m */; };
+		B398423C2B561FC10028D32B /* CStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B398423B2B561FC10028D32B /* CStudyViewController.m */; };
 		B3AF184D2B502182004FD144 /* SQLiteSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF184C2B502182004FD144 /* SQLiteSwiftViewController.swift */; };
 		B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */; };
 		B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */; };
@@ -112,6 +117,11 @@
 		B31849112B3534E700D9B9B8 /* SwiftUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIController.swift; sourceTree = "<group>"; };
 		B31849142B35354F00D9B9B8 /* SwiftUIHelloController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIHelloController.swift; sourceTree = "<group>"; };
 		B31849162B353AD400D9B9B8 /* SUHello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUHello.swift; sourceTree = "<group>"; };
+		B343501B2B5CF36A00D974AA /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSTrackClimbChartView.swift; sourceTree = "<group>"; };
+		B34350202B5D03DF00D974AA /* UIBezierPath+curved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+curved.swift"; sourceTree = "<group>"; };
+		B34350222B5D04A000D974AA /* UIBezierPath+curved.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+curved.m"; sourceTree = "<group>"; };
+		B34350232B5D04A000D974AA /* UIBezierPath+curved.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+curved.h"; sourceTree = "<group>"; };
 		B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStudyController.swift; sourceTree = "<group>"; };
 		B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataStyle.swift; sourceTree = "<group>"; };
 		B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastScreenDataTestController.swift; sourceTree = "<group>"; };
@@ -121,6 +131,8 @@
 		B39842362B5524A70028D32B /* Maxmoo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maxmoo-Bridging-Header.h"; sourceTree = "<group>"; };
 		B39842372B5524A70028D32B /* OCStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCStudyViewController.h; sourceTree = "<group>"; };
 		B39842382B5524A70028D32B /* OCStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCStudyViewController.m; sourceTree = "<group>"; };
+		B398423A2B561FC10028D32B /* CStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CStudyViewController.h; sourceTree = "<group>"; };
+		B398423B2B561FC10028D32B /* CStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CStudyViewController.m; sourceTree = "<group>"; };
 		B3AF184C2B502182004FD144 /* SQLiteSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteSwiftViewController.swift; sourceTree = "<group>"; };
 		B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchScrollController.swift; sourceTree = "<group>"; };
 		B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoPageView.swift; sourceTree = "<group>"; };
@@ -257,6 +269,26 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
+		B343501A2B5CF35300D974AA /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				B343501D2B5CF39F00D974AA /* CRSChart */,
+				B343501B2B5CF36A00D974AA /* ChartViewController.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		B343501D2B5CF39F00D974AA /* CRSChart */ = {
+			isa = PBXGroup;
+			children = (
+				B34350232B5D04A000D974AA /* UIBezierPath+curved.h */,
+				B34350222B5D04A000D974AA /* UIBezierPath+curved.m */,
+				B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */,
+				B34350202B5D03DF00D974AA /* UIBezierPath+curved.swift */,
+			);
+			path = CRSChart;
+			sourceTree = "<group>";
+		};
 		B368B0652AB3F85500ED6E43 /* Image */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +326,15 @@
 				B39842382B5524A70028D32B /* OCStudyViewController.m */,
 			);
 			path = OC;
+			sourceTree = "<group>";
+		};
+		B398423D2B561FC60028D32B /* C */ = {
+			isa = PBXGroup;
+			children = (
+				B398423A2B561FC10028D32B /* CStudyViewController.h */,
+				B398423B2B561FC10028D32B /* CStudyViewController.m */,
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 		B3AF184B2B502155004FD144 /* SQL */ = {
@@ -543,6 +584,8 @@
 		B3C45E532A9C6A1500AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B343501A2B5CF35300D974AA /* Chart */,
+				B398423D2B561FC60028D32B /* C */,
 				B39842352B5524770028D32B /* OC */,
 				B31849102B3534B200D9B9B8 /* SwiftUI */,
 				B31849032B3409CA00D9B9B8 /* Animate */,
@@ -909,6 +952,7 @@
 				B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */,
 				B3C45E682A9C7F7F00AD3586 /* UIView+CC.swift in Sources */,
 				B3DF7CEA2AD7D4520042E755 /* JSONViewController.swift in Sources */,
+				B343501F2B5CF40700D974AA /* CRSTrackClimbChartView.swift in Sources */,
 				B3B1EFCB2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift in Sources */,
 				B3C45E832A9C93B500AD3586 /* PageGuide1ViewController.swift in Sources */,
 				B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */,
@@ -920,6 +964,7 @@
 				B3C45E6F2A9C829600AD3586 /* CCPublic.swift in Sources */,
 				B3C45E712A9C839E00AD3586 /* Double+CC.swift in Sources */,
 				B3C45E7B2A9C85C900AD3586 /* UIViewController+CC.swift in Sources */,
+				B34350212B5D03DF00D974AA /* UIBezierPath+curved.swift in Sources */,
 				B3C45E6D2A9C819D00AD3586 /* CCMacro.swift in Sources */,
 				B3C45EE92AA71C1D00AD3586 /* CRSPageSegmentView.swift in Sources */,
 				B3C45E7E2A9C930600AD3586 /* PageStudyViewController.swift in Sources */,
@@ -931,6 +976,7 @@
 				B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */,
 				B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */,
 				B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */,
+				B34350242B5D04A000D974AA /* UIBezierPath+curved.m in Sources */,
 				B3C45E772A9C851F00AD3586 /* UIImage+CC.swift in Sources */,
 				B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */,
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
@@ -951,10 +997,12 @@
 				B3C45EF62AA81CDA00AD3586 /* CellEditMoveCell.swift in Sources */,
 				B3C45E4E2A9C3B1800AD3586 /* CellViewController.swift in Sources */,
 				B3C45E8A2A9DCD6200AD3586 /* CollectionViewStudyController.swift in Sources */,
+				B343501C2B5CF36A00D974AA /* ChartViewController.swift in Sources */,
 				B3C45E6A2A9C7F8E00AD3586 /* CALayer+CC.swift in Sources */,
 				B3C45E8E2A9F1E8800AD3586 /* AddAnimateCollectionController.swift in Sources */,
 				B3C45E632A9C76F400AD3586 /* CRSSingleRowPickerView.swift in Sources */,
 				B3B9E0A22B19BC3E0004B9F8 /* CRSCastScreenDataController.swift in Sources */,
+				B398423C2B561FC10028D32B /* CStudyViewController.m in Sources */,
 				B3793A4D2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift in Sources */,
 				B3C45E002A98754C00AD3586 /* AppDelegate.swift in Sources */,
 				B31849072B340A0100D9B9B8 /* CCAnimateListController.swift in Sources */,

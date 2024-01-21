@@ -9,9 +9,9 @@ import UIKit
 
 class ThirdViewController: ItemListViewController {
 
-    override var items: [String] {
-        return ["阿里播放器-AliPlayerViewController",
-                "SQLite.swift-SQLiteSwiftViewController"]
+    override var items: [[String]] {
+        return [["阿里播放器-AliPlayerViewController",
+                "SQLite.swift-SQLiteSwiftViewController"]]
     }
     
     override func viewDidLoad() {

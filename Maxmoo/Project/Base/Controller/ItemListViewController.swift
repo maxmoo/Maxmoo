@@ -9,12 +9,12 @@ import UIKit
 
 class ItemListViewController: UIViewController {
 
-    var items: [String] {
+    var items: [[String]] {
         return []
     }
     
     lazy var tableView: UITableView = {
-        let table = UITableView(frame: view.bounds, style: .plain)
+        let table = UITableView(frame: view.bounds, style: .grouped)
         table.delegate = self
         table.dataSource = self
         table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -30,14 +30,18 @@ class ItemListViewController: UIViewController {
 
 extension ItemListViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         
-        let items = items[indexPath.row]
+        let items = items[indexPath.section][indexPath.row]
         let subItems = items.components(separatedBy: "-")
     
         cell.textLabel?.text = subItems.first
@@ -55,7 +59,7 @@ extension ItemListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         
-        let item = items[indexPath.row]
+        let item = items[indexPath.section][indexPath.row]
         let subItems = item.components(separatedBy: "-")
         if let last = subItems.last, let v = last.toClass() as? UIViewController.Type {
             let pushV = v.init()

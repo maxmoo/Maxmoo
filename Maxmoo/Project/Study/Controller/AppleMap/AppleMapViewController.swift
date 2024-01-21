@@ -9,8 +9,8 @@ import UIKit
 
 class AppleMapViewController: ItemListViewController {
     
-    override var items: [String] {
-        return ["地图样式改变-AppleMapStyleChangeController"]
+    override var items: [[String]] {
+        return [["地图样式改变-AppleMapStyleChangeController"]]
     }
     
     override func viewDidLoad() {

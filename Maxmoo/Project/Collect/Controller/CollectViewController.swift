@@ -9,9 +9,9 @@ import UIKit
 
 class CollectViewController: ItemListViewController {
 
-    override var items: [String] {
-        return ["Picker-CRSSinglePickerController",
-                "Segment-SegmentViewController"]
+    override var items: [[String]] {
+        return [["Picker-CRSSinglePickerController",
+                "Segment-SegmentViewController"]]
     }
     
     override func viewDidLoad() {

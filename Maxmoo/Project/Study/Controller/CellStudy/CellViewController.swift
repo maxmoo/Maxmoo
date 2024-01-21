@@ -9,9 +9,9 @@ import UIKit
 
 class CellViewController: ItemListViewController {
 
-    override var items: [String] {
-        return ["Cell展开-ExpandCellViewController",
-                "cell编辑-CellEditViewController"]
+    override var items: [[String]] {
+        return [["Cell展开-ExpandCellViewController",
+                "cell编辑-CellEditViewController"]]
     }
     
     override func viewDidLoad() {

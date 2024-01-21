@@ -9,8 +9,8 @@ import UIKit
 
 class CCAnimateListController: ItemListViewController {
 
-    override var items: [String] {
-        return ["旋转-CCCircleAnimateController"]
+    override var items: [[String]] {
+        return [["旋转-CCCircleAnimateController"]]
     }
     
     override func viewDidLoad() {

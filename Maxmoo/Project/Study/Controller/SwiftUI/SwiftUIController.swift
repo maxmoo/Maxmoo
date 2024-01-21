@@ -10,8 +10,8 @@ import SwiftUI
 
 class SwiftUIController: ItemListViewController {
 
-    override var items: [String] {
-        return ["Hello-SwiftUIHelloController"]
+    override var items: [[String]] {
+        return [["Hello-SwiftUIHelloController"]]
     }
     
     override func viewDidLoad() {

@@ -9,8 +9,11 @@ import UIKit
 
 class StudyViewController: ItemListViewController {
 
-    override var items: [String] {
-        return ["SwiftUI-SwiftUIController",
+    override var items: [[String]] {
+        return [["OC-OCStudyViewController",
+                 "C-CStudyViewController"],
+                ["CRS图表-ChartViewController",
+                 "SwiftUI-SwiftUIController",
                 "Cell-CellViewController",
                 "Page-PageStudyViewController",
                 "CollectionView-CollectionViewStudyController",
@@ -19,8 +22,7 @@ class StudyViewController: ItemListViewController {
                 "读取文件-ReadFileViewController",
                 "JSON-JSONViewController",
                 "CRS投屏数据页-CastScreenDataTestController",
-                "动画-CCAnimateListController",
-                "OC-OCStudyViewController"]
+                "动画-CCAnimateListController"]]
     }
     
     override func viewDidLoad() {

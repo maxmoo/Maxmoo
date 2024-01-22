@@ -33,7 +33,7 @@ class CRSTrackClimbChartView: UIView {
     }
     
     // 图表距离边界的距离
-    public var chartInset: UIEdgeInsets = UIEdgeInsets(top: 10, left: 40, bottom: 30, right: 16) {
+    public var chartInset: UIEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 30, right: 16) {
         didSet {
             refreshChart()
         }
@@ -42,7 +42,15 @@ class CRSTrackClimbChartView: UIView {
     // 高亮的index范围
     public var highlightRange: Range = Int(Int.max - 1)..<Int(Int.max) {
         didSet {
-            drawLineChart()
+            drawChart()
+        }
+    }
+    
+    // 是否显示坐标轴
+    public var isShowLabels: Bool = true {
+        didSet {
+            resetXLabels()
+            resetYLabels()
         }
     }
     
@@ -71,6 +79,12 @@ class CRSTrackClimbChartView: UIView {
         return yLayer
     }()
     
+    // X标签集合
+    private var xLineLabels: [UILabel] = []
+    
+    // Y标签集合
+    private var yLineLabels: [UILabel] = []
+    
     // 图表
     private var lineChartLayer: CAShapeLayer = {
         let chartLayer = CAShapeLayer()
@@ -89,6 +103,10 @@ class CRSTrackClimbChartView: UIView {
     }()
 
     private func refreshChart() {
+        // 找到当前最大值和最小值
+        maxInfos()
+        
+        // UI
         xBaseLineLayer.frame = CGRect(x: chartInset.left,
                                       y: self.height - chartInset.bottom,
                                       width: self.width - chartInset.left - chartInset.right,
@@ -100,9 +118,6 @@ class CRSTrackClimbChartView: UIView {
                                       height: self.height - chartInset.top - chartInset.bottom)
         layer.addSublayer(yBaseLineLayer)
         
-        // 找到当前最大值和最小值
-        maxInfos()
-        
         // 方块
         colorRectLayer.frame = CGRect(x: chartInset.left, y: chartInset.top, width: xBaseLineLayer.width, height: yBaseLineLayer.height)
         layer.addSublayer(colorRectLayer)
@@ -110,11 +125,15 @@ class CRSTrackClimbChartView: UIView {
         // 线
         lineChartLayer.frame = CGRect(x: chartInset.left, y: chartInset.top, width: xBaseLineLayer.width, height: yBaseLineLayer.height)
         layer.addSublayer(lineChartLayer)
-        drawLineChart()
+        drawChart()
+        
+        // 标签
+        resetXLabels()
+        resetYLabels()
     }
     
     // 画平滑曲线
-    private func drawLineChart() {
+    private func drawChart() {
         if let colorSublayers = colorRectLayer.sublayers {
             for subLayer in colorSublayers {
                 subLayer.removeFromSuperlayer()
@@ -204,6 +223,41 @@ class CRSTrackClimbChartView: UIView {
         colorRectLayer.mask = maskLayer
     }
     
+    // 重设X轴标签
+    private func resetXLabels() {
+        for label in xLineLabels {
+            label.removeFromSuperview()
+        }
+        guard isShowLabels else { return }
+        
+        let xLabelStrings: [String] = ["0", "15", "30", "1099"]
+        for (index, ti) in xLabelStrings.enumerated() {
+            let label = createLabel(info: ti)
+            label.top = xBaseLineLayer.bottom
+            label.centerX = ((xBaseLineLayer.width / CGFloat(xLabelStrings.count - 1)) * CGFloat(index)) + chartInset.left
+            // 最后一个
+            addSubview(label)
+            xLineLabels.append(label)
+        }
+    }
+    
+    // 重设Y轴标签
+    private func resetYLabels() {
+        for label in yLineLabels {
+            label.removeFromSuperview()
+        }
+        guard isShowLabels else { return }
+     
+        let yLabelStrings: [String] = ["0", "15", "30", "1099"]
+        guard yLabelStrings.count > 1 else { return }
+        for (index, ti) in yLabelStrings.enumerated() {
+            let label = createLabel(info: ti)
+            label.bottom = (yBaseLineLayer.height / CGFloat(yLabelStrings.count - 1)) * CGFloat(yLabelStrings.count - 1 - index) + chartInset.top + 5
+            label.right = yBaseLineLayer.left - 2
+            addSubview(label)
+            yLineLabels.append(label)
+        }
+    }
 }
 
 
@@ -244,7 +298,7 @@ extension CRSTrackClimbChartView {
 extension CRSTrackClimbChartView {
     // 竖直线
     @discardableResult
-    func vDottedLine(at x: CGFloat,
+    private func vDottedLine(at x: CGFloat,
                         color: UIColor,
                         height: CGFloat) -> CAShapeLayer {
         let layer = CAShapeLayer()
@@ -262,5 +316,17 @@ extension CRSTrackClimbChartView {
         self.layer.addSublayer(layer)
         
         return layer
+    }
+    
+    private func createLabel(info: String) -> UILabel {
+        let label = UILabel(frame: .zero)
+        label.textColor = .lightGray
+        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.text = info
+        
+        let width = info.width(font: label.font)
+        label.frame = CGRect(x: 0, y: 0, width: width, height: 20)
+        
+        return label
     }
 }

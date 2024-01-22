@@ -17,7 +17,6 @@
 		B31849172B353AD400D9B9B8 /* SUHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31849162B353AD400D9B9B8 /* SUHello.swift */; };
 		B343501C2B5CF36A00D974AA /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343501B2B5CF36A00D974AA /* ChartViewController.swift */; };
 		B343501F2B5CF40700D974AA /* CRSTrackClimbChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */; };
-		B34350212B5D03DF00D974AA /* UIBezierPath+curved.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34350202B5D03DF00D974AA /* UIBezierPath+curved.swift */; };
 		B34350242B5D04A000D974AA /* UIBezierPath+curved.m in Sources */ = {isa = PBXBuildFile; fileRef = B34350222B5D04A000D974AA /* UIBezierPath+curved.m */; };
 		B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */; };
 		B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */; };
@@ -119,7 +118,6 @@
 		B31849162B353AD400D9B9B8 /* SUHello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUHello.swift; sourceTree = "<group>"; };
 		B343501B2B5CF36A00D974AA /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSTrackClimbChartView.swift; sourceTree = "<group>"; };
-		B34350202B5D03DF00D974AA /* UIBezierPath+curved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+curved.swift"; sourceTree = "<group>"; };
 		B34350222B5D04A000D974AA /* UIBezierPath+curved.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+curved.m"; sourceTree = "<group>"; };
 		B34350232B5D04A000D974AA /* UIBezierPath+curved.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+curved.h"; sourceTree = "<group>"; };
 		B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStudyController.swift; sourceTree = "<group>"; };
@@ -284,7 +282,6 @@
 				B34350232B5D04A000D974AA /* UIBezierPath+curved.h */,
 				B34350222B5D04A000D974AA /* UIBezierPath+curved.m */,
 				B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */,
-				B34350202B5D03DF00D974AA /* UIBezierPath+curved.swift */,
 			);
 			path = CRSChart;
 			sourceTree = "<group>";
@@ -964,7 +961,6 @@
 				B3C45E6F2A9C829600AD3586 /* CCPublic.swift in Sources */,
 				B3C45E712A9C839E00AD3586 /* Double+CC.swift in Sources */,
 				B3C45E7B2A9C85C900AD3586 /* UIViewController+CC.swift in Sources */,
-				B34350212B5D03DF00D974AA /* UIBezierPath+curved.swift in Sources */,
 				B3C45E6D2A9C819D00AD3586 /* CCMacro.swift in Sources */,
 				B3C45EE92AA71C1D00AD3586 /* CRSPageSegmentView.swift in Sources */,
 				B3C45E7E2A9C930600AD3586 /* PageStudyViewController.swift in Sources */,

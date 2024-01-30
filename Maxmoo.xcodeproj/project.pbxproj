@@ -18,6 +18,10 @@
 		B343501C2B5CF36A00D974AA /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343501B2B5CF36A00D974AA /* ChartViewController.swift */; };
 		B343501F2B5CF40700D974AA /* CRSTrackClimbChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */; };
 		B34350242B5D04A000D974AA /* UIBezierPath+curved.m in Sources */ = {isa = PBXBuildFile; fileRef = B34350222B5D04A000D974AA /* UIBezierPath+curved.m */; };
+		B34D5AFC2B6787B500C6E097 /* COROSDemoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D5AFB2B6787B500C6E097 /* COROSDemoListController.swift */; };
+		B34D5AFF2B6788D800C6E097 /* CRSAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D5AFE2B6788D800C6E097 /* CRSAlertViewController.swift */; };
+		B34D5B022B67893F00C6E097 /* CRSCastScreenAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D5B012B67893F00C6E097 /* CRSCastScreenAlertView.swift */; };
+		B34D5B042B678ABE00C6E097 /* UIDevice+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D5B032B678ABE00C6E097 /* UIDevice+CC.swift */; };
 		B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */; };
 		B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */; };
 		B3793A412B21766A00A038D8 /* CastScreenDataTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */; };
@@ -120,6 +124,10 @@
 		B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSTrackClimbChartView.swift; sourceTree = "<group>"; };
 		B34350222B5D04A000D974AA /* UIBezierPath+curved.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+curved.m"; sourceTree = "<group>"; };
 		B34350232B5D04A000D974AA /* UIBezierPath+curved.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+curved.h"; sourceTree = "<group>"; };
+		B34D5AFB2B6787B500C6E097 /* COROSDemoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COROSDemoListController.swift; sourceTree = "<group>"; };
+		B34D5AFE2B6788D800C6E097 /* CRSAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSAlertViewController.swift; sourceTree = "<group>"; };
+		B34D5B012B67893F00C6E097 /* CRSCastScreenAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRSCastScreenAlertView.swift; sourceTree = "<group>"; };
+		B34D5B032B678ABE00C6E097 /* UIDevice+CC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+CC.swift"; sourceTree = "<group>"; };
 		B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStudyController.swift; sourceTree = "<group>"; };
 		B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataStyle.swift; sourceTree = "<group>"; };
 		B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastScreenDataTestController.swift; sourceTree = "<group>"; };
@@ -284,6 +292,33 @@
 				B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */,
 			);
 			path = CRSChart;
+			sourceTree = "<group>";
+		};
+		B34D5AFA2B67878900C6E097 /* COROS */ = {
+			isa = PBXGroup;
+			children = (
+				B34D5AFD2B6788B900C6E097 /* CastAlert */,
+				B343501A2B5CF35300D974AA /* Chart */,
+				B34D5AFB2B6787B500C6E097 /* COROSDemoListController.swift */,
+			);
+			path = COROS;
+			sourceTree = "<group>";
+		};
+		B34D5AFD2B6788B900C6E097 /* CastAlert */ = {
+			isa = PBXGroup;
+			children = (
+				B34D5B002B67890D00C6E097 /* CRSAlert */,
+				B34D5AFE2B6788D800C6E097 /* CRSAlertViewController.swift */,
+			);
+			path = CastAlert;
+			sourceTree = "<group>";
+		};
+		B34D5B002B67890D00C6E097 /* CRSAlert */ = {
+			isa = PBXGroup;
+			children = (
+				B34D5B012B67893F00C6E097 /* CRSCastScreenAlertView.swift */,
+			);
+			path = CRSAlert;
 			sourceTree = "<group>";
 		};
 		B368B0652AB3F85500ED6E43 /* Image */ = {
@@ -581,7 +616,7 @@
 		B3C45E532A9C6A1500AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B343501A2B5CF35300D974AA /* Chart */,
+				B34D5AFA2B67878900C6E097 /* COROS */,
 				B398423D2B561FC60028D32B /* C */,
 				B39842352B5524770028D32B /* OC */,
 				B31849102B3534B200D9B9B8 /* SwiftUI */,
@@ -680,6 +715,7 @@
 		B3C45E782A9C859100AD3586 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B34D5B032B678ABE00C6E097 /* UIDevice+CC.swift */,
 				B3C45E672A9C7F7F00AD3586 /* UIView+CC.swift */,
 				B3C45E462A98AF0700AD3586 /* UIColor+CC.swift */,
 				B3C45E692A9C7F8E00AD3586 /* CALayer+CC.swift */,
@@ -950,6 +986,7 @@
 				B3C45E682A9C7F7F00AD3586 /* UIView+CC.swift in Sources */,
 				B3DF7CEA2AD7D4520042E755 /* JSONViewController.swift in Sources */,
 				B343501F2B5CF40700D974AA /* CRSTrackClimbChartView.swift in Sources */,
+				B34D5AFC2B6787B500C6E097 /* COROSDemoListController.swift in Sources */,
 				B3B1EFCB2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift in Sources */,
 				B3C45E832A9C93B500AD3586 /* PageGuide1ViewController.swift in Sources */,
 				B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */,
@@ -975,6 +1012,7 @@
 				B34350242B5D04A000D974AA /* UIBezierPath+curved.m in Sources */,
 				B3C45E772A9C851F00AD3586 /* UIImage+CC.swift in Sources */,
 				B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */,
+				B34D5B042B678ABE00C6E097 /* UIDevice+CC.swift in Sources */,
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
 				B3AF184D2B502182004FD144 /* SQLiteSwiftViewController.swift in Sources */,
 				B31849152B35354F00D9B9B8 /* SwiftUIHelloController.swift in Sources */,
@@ -996,6 +1034,7 @@
 				B343501C2B5CF36A00D974AA /* ChartViewController.swift in Sources */,
 				B3C45E6A2A9C7F8E00AD3586 /* CALayer+CC.swift in Sources */,
 				B3C45E8E2A9F1E8800AD3586 /* AddAnimateCollectionController.swift in Sources */,
+				B34D5AFF2B6788D800C6E097 /* CRSAlertViewController.swift in Sources */,
 				B3C45E632A9C76F400AD3586 /* CRSSingleRowPickerView.swift in Sources */,
 				B3B9E0A22B19BC3E0004B9F8 /* CRSCastScreenDataController.swift in Sources */,
 				B398423C2B561FC10028D32B /* CStudyViewController.m in Sources */,
@@ -1004,6 +1043,7 @@
 				B31849072B340A0100D9B9B8 /* CCAnimateListController.swift in Sources */,
 				B3C45E302A98A6B800AD3586 /* SceneDelegate.swift in Sources */,
 				B3C45EA32AA025B200AD3586 /* AppleMapViewController.swift in Sources */,
+				B34D5B022B67893F00C6E097 /* CRSCastScreenAlertView.swift in Sources */,
 				B3C046B72AD1597100A275BD /* ReadFileViewController.swift in Sources */,
 				B3C45E3D2A98ABE000AD3586 /* CollectViewController.swift in Sources */,
 			);

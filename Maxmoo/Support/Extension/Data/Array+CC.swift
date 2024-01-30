@@ -79,3 +79,49 @@ extension Array {
         }
     }
 }
+
+public extension Array {
+    // 移除
+    mutating func crs_remove(_ object: AnyObject) {
+        if let index = index(where: { $0 as AnyObject === object }) {
+            remove(at: index)
+        }
+    }
+}
+
+public extension Array {
+    mutating func move(at index: Index, to newIndex: Index) {
+        insert(remove(at: index), at: newIndex)
+    }
+}
+
+public extension Array where Element: Equatable {
+    mutating func remove(element: Element) {
+        if let value = firstIndex(of: element) {
+            remove(at: value)
+        }
+    }
+
+    mutating func insertOrReplace(_ element: Element, position: Int) {
+        remove(element: element)
+        insert(element, at: position)
+    }
+
+    func contains<T>(_ object: T) -> Bool where T: Equatable {
+        !filter { $0 as? T == object }.isEmpty
+    }
+
+    mutating func move(_ item: Element, to newIndex: Index) {
+        if let index = index(of: item) {
+            move(at: index, to: newIndex)
+        }
+    }
+
+    mutating func bringToFront(item: Element) {
+        move(item, to: 0)
+    }
+
+    mutating func sendToBack(item: Element) {
+        move(item, to: endIndex - 1)
+    }
+}

@@ -10,10 +10,10 @@ import UIKit
 class StudyViewController: ItemListViewController {
 
     override var items: [[String]] {
-        return [["OC-OCStudyViewController",
+        return [["COROS-COROSDemoListController",
+                 "OC-OCStudyViewController",
                  "C-CStudyViewController"],
-                ["CRS图表-ChartViewController",
-                 "SwiftUI-SwiftUIController",
+                ["SwiftUI-SwiftUIController",
                 "Cell-CellViewController",
                 "Page-PageStudyViewController",
                 "CollectionView-CollectionViewStudyController",

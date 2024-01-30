@@ -16,6 +16,11 @@ extension UIView {
         }
     }
     
+    func allCorner(radius: CGFloat) {
+        layer.cornerRadius = radius
+        clipsToBounds = true
+    }
+    
     // 转图片
     // 将某个view 转换成图像
     func image(rect: CGRect? = nil) -> UIImage? {

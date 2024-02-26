@@ -7,6 +7,24 @@
 
 import UIKit
 
+final class BindableGestureRecognizer: UITapGestureRecognizer {
+    // MARK: Lifecycle
+
+    init(action: @escaping () -> Void) {
+        self.action = action
+        super.init(target: nil, action: nil)
+        addTarget(self, action: #selector(execute))
+    }
+
+    // MARK: Private
+
+    private var action: () -> Void
+
+    @objc private func execute() {
+        action()
+    }
+}
+
 extension UIView {
     
     // 移除所有的子视图
@@ -38,6 +56,19 @@ extension UIView {
         }
         
         return image
+    }
+    
+    @discardableResult
+    func addTapGesture(tapNumber: Int = 1, _ closure: (() -> Void)?) -> UITapGestureRecognizer?  {
+        guard let closure = closure else { return nil }
+
+        let tap = BindableGestureRecognizer(action: closure)
+        tap.numberOfTapsRequired = tapNumber
+        addGestureRecognizer(tap)
+
+        isUserInteractionEnabled = true
+        
+        return tap
     }
     
     func gesturesEnable(_ enable: Bool) {

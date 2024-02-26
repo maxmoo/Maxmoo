@@ -38,5 +38,8 @@ class ChartViewController: UIViewController {
         let start = Int.random(in: 0..<10)
         let gap = Int.random(in: 1..<9)
         chart.highlightRange = start..<(start+gap)
+        
+        let preVC = CRSClimbProDetailController()
+        self.present(preVC, animated: true)
     }
 }

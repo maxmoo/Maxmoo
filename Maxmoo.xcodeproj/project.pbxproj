@@ -89,7 +89,15 @@
 		B3C45EF32AA81AE100AD3586 /* CellEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EF22AA81AE100AD3586 /* CellEditViewController.swift */; };
 		B3C45EF62AA81CDA00AD3586 /* CellEditMoveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EF42AA81CDA00AD3586 /* CellEditMoveCell.swift */; };
 		B3C45EF72AA81CDA00AD3586 /* CellEditMoveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C45EF52AA81CDA00AD3586 /* CellEditMoveCell.xib */; };
+		B3CA35FD2B87153400D0B319 /* CRSClimbProDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA35FC2B87153400D0B319 /* CRSClimbProDetailController.swift */; };
+		B3CA36002B87162700D0B319 /* CRSClimbProChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA35FF2B87162700D0B319 /* CRSClimbProChartHeaderView.swift */; };
+		B3CA36022B87164800D0B319 /* CRSClimbProListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA36012B87164800D0B319 /* CRSClimbProListHeaderView.swift */; };
+		B3CA36052B87167E00D0B319 /* CRSClimbProListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA36032B87167E00D0B319 /* CRSClimbProListCell.swift */; };
+		B3CA36062B87167E00D0B319 /* CRSClimbProListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3CA36042B87167E00D0B319 /* CRSClimbProListCell.xib */; };
+		B3CA36082B872B4F00D0B319 /* UITableView+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */; };
+		B3CA360B2B872DA500D0B319 /* CRSClimbListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */; };
 		B3DF7CEA2AD7D4520042E755 /* JSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */; };
+		B3F9AC392B889BC700492144 /* AMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9AC382B889BC700492144 /* AMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,7 +210,15 @@
 		B3C45EF22AA81AE100AD3586 /* CellEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEditViewController.swift; sourceTree = "<group>"; };
 		B3C45EF42AA81CDA00AD3586 /* CellEditMoveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEditMoveCell.swift; sourceTree = "<group>"; };
 		B3C45EF52AA81CDA00AD3586 /* CellEditMoveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellEditMoveCell.xib; sourceTree = "<group>"; };
+		B3CA35FC2B87153400D0B319 /* CRSClimbProDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbProDetailController.swift; sourceTree = "<group>"; };
+		B3CA35FF2B87162700D0B319 /* CRSClimbProChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbProChartHeaderView.swift; sourceTree = "<group>"; };
+		B3CA36012B87164800D0B319 /* CRSClimbProListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbProListHeaderView.swift; sourceTree = "<group>"; };
+		B3CA36032B87167E00D0B319 /* CRSClimbProListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbProListCell.swift; sourceTree = "<group>"; };
+		B3CA36042B87167E00D0B319 /* CRSClimbProListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSClimbProListCell.xib; sourceTree = "<group>"; };
+		B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+CC.swift"; sourceTree = "<group>"; };
+		B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbListItem.swift; sourceTree = "<group>"; };
 		B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewController.swift; sourceTree = "<group>"; };
+		B3F9AC382B889BC700492144 /* AMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,8 +294,11 @@
 		B343501A2B5CF35300D974AA /* Chart */ = {
 			isa = PBXGroup;
 			children = (
+				B3CA36092B872D7B00D0B319 /* Model */,
+				B3CA35FE2B8715FE00D0B319 /* View */,
 				B343501D2B5CF39F00D974AA /* CRSChart */,
 				B343501B2B5CF36A00D974AA /* ChartViewController.swift */,
+				B3CA35FC2B87153400D0B319 /* CRSClimbProDetailController.swift */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -651,6 +670,7 @@
 		B3C45E562A9C6A3800AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3F9AC372B889BAC00492144 /* Amap */,
 				B3AF184B2B502155004FD144 /* SQL */,
 				B303175D2B45704800D8B8F9 /* AliPalyer */,
 				B3C45E3A2A98ABD400AD3586 /* ThirdViewController.swift */,
@@ -721,6 +741,7 @@
 				B3C45E692A9C7F8E00AD3586 /* CALayer+CC.swift */,
 				B3C45E762A9C851F00AD3586 /* UIImage+CC.swift */,
 				B3C45E7A2A9C85C900AD3586 /* UIViewController+CC.swift */,
+				B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -786,12 +807,39 @@
 			path = Segment;
 			sourceTree = "<group>";
 		};
+		B3CA35FE2B8715FE00D0B319 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3CA35FF2B87162700D0B319 /* CRSClimbProChartHeaderView.swift */,
+				B3CA36012B87164800D0B319 /* CRSClimbProListHeaderView.swift */,
+				B3CA36032B87167E00D0B319 /* CRSClimbProListCell.swift */,
+				B3CA36042B87167E00D0B319 /* CRSClimbProListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3CA36092B872D7B00D0B319 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B3DF7CE82AD7D4320042E755 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
 				B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		B3F9AC372B889BAC00492144 /* Amap */ = {
+			isa = PBXGroup;
+			children = (
+				B3F9AC382B889BC700492144 /* AMapViewController.swift */,
+			);
+			path = Amap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -806,6 +854,7 @@
 				B3C45DF92A98754C00AD3586 /* Frameworks */,
 				B3C45DFA2A98754C00AD3586 /* Resources */,
 				FD2843004257D3FEB3461502 /* [CP] Embed Pods Frameworks */,
+				E39B8E13D1F1952FDC09E02F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -908,6 +957,7 @@
 				B3C046BA2AD1599F00A275BD /* res_4_0.json in Resources */,
 				B3C45EF72AA81CDA00AD3586 /* CellEditMoveCell.xib in Resources */,
 				B3C45E072A98754C00AD3586 /* Main.storyboard in Resources */,
+				B3CA36062B87167E00D0B319 /* CRSClimbProListCell.xib in Resources */,
 				B3C45E5E2A9C6A9E00AD3586 /* ExpandTableViewCell.xib in Resources */,
 				B3793A4E2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib in Resources */,
 				B3B9E0A62B19C8E20004B9F8 /* CRSCastScreenDataCell.xib in Resources */,
@@ -953,6 +1003,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E39B8E13D1F1952FDC09E02F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Maxmoo/Pods-Maxmoo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Maxmoo/Pods-Maxmoo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Maxmoo/Pods-Maxmoo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD2843004257D3FEB3461502 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -984,10 +1051,12 @@
 				B3C45E612A9C6B3B00AD3586 /* ExpandCellItem.swift in Sources */,
 				B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */,
 				B3C45E682A9C7F7F00AD3586 /* UIView+CC.swift in Sources */,
+				B3CA360B2B872DA500D0B319 /* CRSClimbListItem.swift in Sources */,
 				B3DF7CEA2AD7D4520042E755 /* JSONViewController.swift in Sources */,
 				B343501F2B5CF40700D974AA /* CRSTrackClimbChartView.swift in Sources */,
 				B34D5AFC2B6787B500C6E097 /* COROSDemoListController.swift in Sources */,
 				B3B1EFCB2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift in Sources */,
+				B3CA35FD2B87153400D0B319 /* CRSClimbProDetailController.swift in Sources */,
 				B3C45E832A9C93B500AD3586 /* PageGuide1ViewController.swift in Sources */,
 				B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */,
 				B3C45E392A98ABC600AD3586 /* StudyViewController.swift in Sources */,
@@ -997,6 +1066,7 @@
 				B31849092B340A4F00D9B9B8 /* CCCircleAnimateController.swift in Sources */,
 				B3C45E6F2A9C829600AD3586 /* CCPublic.swift in Sources */,
 				B3C45E712A9C839E00AD3586 /* Double+CC.swift in Sources */,
+				B3CA36082B872B4F00D0B319 /* UITableView+CC.swift in Sources */,
 				B3C45E7B2A9C85C900AD3586 /* UIViewController+CC.swift in Sources */,
 				B3C45E6D2A9C819D00AD3586 /* CCMacro.swift in Sources */,
 				B3C45EE92AA71C1D00AD3586 /* CRSPageSegmentView.swift in Sources */,
@@ -1004,6 +1074,7 @@
 				B3C45E732A9C83AF00AD3586 /* Int+CC.swift in Sources */,
 				B3C45EE72AA71BE700AD3586 /* SegmentViewController.swift in Sources */,
 				B3793A442B2199C200A038D8 /* CRSCastScreenDataSettingController.swift in Sources */,
+				B3CA36002B87162700D0B319 /* CRSClimbProChartHeaderView.swift in Sources */,
 				B3B9E0A52B19C8E20004B9F8 /* CRSCastScreenDataCell.swift in Sources */,
 				B3C45E042A98754C00AD3586 /* ViewController.swift in Sources */,
 				B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */,
@@ -1014,6 +1085,7 @@
 				B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */,
 				B34D5B042B678ABE00C6E097 /* UIDevice+CC.swift in Sources */,
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
+				B3F9AC392B889BC700492144 /* AMapViewController.swift in Sources */,
 				B3AF184D2B502182004FD144 /* SQLiteSwiftViewController.swift in Sources */,
 				B31849152B35354F00D9B9B8 /* SwiftUIHelloController.swift in Sources */,
 				B3C45E852A9C93C300AD3586 /* PageGuide2ViewController.swift in Sources */,
@@ -1025,12 +1097,14 @@
 				B3C45E902A9F26DA00AD3586 /* TableCollectionController.swift in Sources */,
 				B3B1EFCD2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift in Sources */,
 				B3C45E502A9C3C6B00AD3586 /* ItemListViewController.swift in Sources */,
+				B3CA36022B87164800D0B319 /* CRSClimbProListHeaderView.swift in Sources */,
 				B303175F2B45706400D8B8F9 /* AliPlayerViewController.swift in Sources */,
 				B3C45E3B2A98ABD400AD3586 /* ThirdViewController.swift in Sources */,
 				B3C45E4C2A9C3AF500AD3586 /* ExpandCellViewController.swift in Sources */,
 				B3C45EF62AA81CDA00AD3586 /* CellEditMoveCell.swift in Sources */,
 				B3C45E4E2A9C3B1800AD3586 /* CellViewController.swift in Sources */,
 				B3C45E8A2A9DCD6200AD3586 /* CollectionViewStudyController.swift in Sources */,
+				B3CA36052B87167E00D0B319 /* CRSClimbProListCell.swift in Sources */,
 				B343501C2B5CF36A00D974AA /* ChartViewController.swift in Sources */,
 				B3C45E6A2A9C7F8E00AD3586 /* CALayer+CC.swift in Sources */,
 				B3C45E8E2A9F1E8800AD3586 /* AddAnimateCollectionController.swift in Sources */,

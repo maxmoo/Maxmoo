@@ -22,6 +22,18 @@ struct CRSTrackClimbInfo {
         }
         return testInfos
     }
+    
+    static func testItemInfos(count: Int, startDistance: Double) -> [CRSTrackClimbInfo] {
+        guard count > 0 else { return [] }
+        var testInfos: [CRSTrackClimbInfo] = []
+        for x in 0..<count {
+            let info = CRSTrackClimbInfo(distance: Double.random(in: 3...9) + Double(x * 10) + startDistance,
+                                         climbHeigh: Double.random(in: 10...200) + Double(x * 50),
+                                         level: Int.random(in: 1...5))
+            testInfos.append(info)
+        }
+        return testInfos
+    }
 }
 
 class CRSTrackClimbChartView: UIView {
@@ -149,6 +161,7 @@ class CRSTrackClimbChartView: UIView {
         let drawWidth = lineChartLayer.width
         let drawHeigh = lineChartLayer.height
         var drawPoint = CGPoint.zero
+        var isHaveHighlight: Bool = false
         
         // highlight 边界竖线
         var highStartIndex: Int = -2
@@ -159,6 +172,7 @@ class CRSTrackClimbChartView: UIView {
                 countRange.contains(highlightRange.endIndex - 1) {
                 highStartIndex = highlightRange.startIndex
                 highEndIndex = highlightRange.endIndex - 1
+                isHaveHighlight = true
             }
         }
         
@@ -183,7 +197,7 @@ class CRSTrackClimbChartView: UIView {
             colorRectLayer.addSublayer(rectLayer)
             
             // not highlight
-            if !highlightRange.contains(index) {
+            if !highlightRange.contains(index), isHaveHighlight {
                 let darkRectLayer = CAShapeLayer()
                 darkRectLayer.frame = rect
                 darkRectLayer.backgroundColor = UIColor(white: 0.3, alpha: 0.8).cgColor
@@ -230,15 +244,32 @@ class CRSTrackClimbChartView: UIView {
         }
         guard isShowLabels else { return }
         
-        let xLabelStrings: [String] = ["0", "15", "30", "1099"]
-        for (index, ti) in xLabelStrings.enumerated() {
-            let label = createLabel(info: ti)
+        let xLableValues: [Double] = xLabelValues()
+        guard xLableValues.count > 1 else { return }
+        for (_, ti) in xLableValues.enumerated() {
+            let valueString = String(format: "%.2f", ti)
+            let label = createLabel(info: valueString)
             label.top = xBaseLineLayer.bottom
-            label.centerX = ((xBaseLineLayer.width / CGFloat(xLabelStrings.count - 1)) * CGFloat(index)) + chartInset.left
-            // 最后一个
+            label.centerX = xBaseLineLayer.width * (ti - minX)/(maxX - minX) + chartInset.left
             addSubview(label)
             xLineLabels.append(label)
         }
+    }
+    
+    private func xLabelValues() -> [Double] {
+        let maxValue = maxX
+        let minValue = minX
+        
+        var info: [Double] = []
+        let infoCount: Int = 4
+        let gap: Double = infoCount > 0 ? (maxValue - minValue)/Double(infoCount - 1) : 0
+        for index in 0..<infoCount - 1 {
+            let infoString = minValue + (Double(index) * gap)
+            info.append(infoString)
+        }
+        info.append(maxValue)
+        
+        return info
     }
     
     // 重设Y轴标签
@@ -248,15 +279,33 @@ class CRSTrackClimbChartView: UIView {
         }
         guard isShowLabels else { return }
      
-        let yLabelStrings: [String] = ["0", "15", "30", "1099"]
-        guard yLabelStrings.count > 1 else { return }
-        for (index, ti) in yLabelStrings.enumerated() {
-            let label = createLabel(info: ti)
-            label.bottom = (yBaseLineLayer.height / CGFloat(yLabelStrings.count - 1)) * CGFloat(yLabelStrings.count - 1 - index) + chartInset.top + 5
+        let yLableValues: [Double] = yLabelInfos()
+        guard yLableValues.count > 1 else { return }
+        for (_, ti) in yLableValues.enumerated() {
+            let valueString = String(format: "%.0f", ti)
+            let label = createLabel(info: valueString)
+            let radio = (1 - (ti - minY) / (maxY - minY))
+            label.bottom = yBaseLineLayer.height * radio  + chartInset.top + 5
             label.right = yBaseLineLayer.left - 2
             addSubview(label)
             yLineLabels.append(label)
         }
+    }
+    
+    private func yLabelInfos() -> [Double] {
+        let maxValue = maxY
+        let minValue = minY
+        
+        var info: [Double] = []
+        let infoCount: Int = 4
+        let gap: Double = infoCount > 0 ? (maxValue - minValue)/Double(infoCount - 1) : 0
+        for index in 0..<infoCount - 1 {
+            let infoString = minValue + (Double(index) * gap)
+            info.append(infoString)
+        }
+        info.append(maxValue)
+        
+        return info
     }
 }
 
@@ -265,6 +314,12 @@ class CRSTrackClimbChartView: UIView {
 extension CRSTrackClimbChartView {
     
     private func maxInfos() {
+        // 每次获取最大最小值前需重置初始值
+        maxX = -Double.greatestFiniteMagnitude
+        minX = Double.greatestFiniteMagnitude
+        maxY = -Double.greatestFiniteMagnitude
+        minY = Double.greatestFiniteMagnitude
+        
         for trackInfo in self.trackInfos {
             guard let dis = trackInfo.distance,
                   let hei = trackInfo.climbHeigh else { continue }

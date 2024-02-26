@@ -13,6 +13,12 @@ target 'Maxmoo' do
   pod 'RtsSDK', '2.2.0'
   pod 'DatabaseVisual'
   pod 'SQLite.swift', '~> 0.14.0'
+  
+  #高德
+  pod 'AMap3DMap-NO-IDFA'
+  pod 'AMapSearch-NO-IDFA'
+  pod 'AMapLocation-NO-IDFA'
+  
 end
 
 post_install do |installer|

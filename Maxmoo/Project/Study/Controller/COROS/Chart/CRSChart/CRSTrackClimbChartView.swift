@@ -158,6 +158,8 @@ class CRSTrackClimbChartView: UIView {
             }
         }
         
+        guard trackInfos.count > 0 else { return }
+        
         let drawWidth = lineChartLayer.width
         let drawHeigh = lineChartLayer.height
         var drawPoint = CGPoint.zero
@@ -242,6 +244,7 @@ class CRSTrackClimbChartView: UIView {
         for label in xLineLabels {
             label.removeFromSuperview()
         }
+        guard trackInfos.count > 0 else { return }
         guard isShowLabels else { return }
         
         let xLableValues: [Double] = xLabelValues()
@@ -277,6 +280,8 @@ class CRSTrackClimbChartView: UIView {
         for label in yLineLabels {
             label.removeFromSuperview()
         }
+        
+        guard trackInfos.count > 0 else { return }
         guard isShowLabels else { return }
      
         let yLableValues: [Double] = yLabelInfos()

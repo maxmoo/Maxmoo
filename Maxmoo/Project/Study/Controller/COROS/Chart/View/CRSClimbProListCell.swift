@@ -32,14 +32,8 @@ class CRSClimbProListCell: UITableViewCell {
     public var item: CRSClimbListItem? {
         didSet {
             if let item {
-                chart.isHidden = !item.isExtra
-                infoBottomLine.isHidden = !item.isExtra
-                flagIconImageView.transform = CGAffineTransformIdentity
-                if !chart.isHidden {
-                    chart.trackInfos = item.infos
-                    let rotation = CGAffineTransformMakeRotation(Double.pi)
-                    flagIconImageView.transform = rotation
-                }
+                item.isExtra ? showChart() : hideChart()
+                chart.trackInfos = item.infos
                 lapLabel.text = item.lapString
                 distanceLabel.text = item.distanceString
                 distanceScopeLabel.text = item.distanceScopeString
@@ -72,6 +66,26 @@ class CRSClimbProListCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    public func showChart() {
+        chart.alpha = 0
+        chart.isHidden = false
+        chartBottomLine.alpha = 0
+        chartBottomLine.isHidden = false
+        UIView.animate(withDuration: 0.2) {
+            self.chart.alpha = 1
+            self.chartBottomLine.alpha = 1
+        }
+        
+        let rotation = CGAffineTransformMakeRotation(Double.pi)
+        flagIconImageView.transform = rotation
+    }
+    
+    public func hideChart() {
+        chart.isHidden = true
+        chartBottomLine.isHidden = true
+        flagIconImageView.transform = CGAffineTransformIdentity
     }
     
 }

@@ -54,6 +54,12 @@ class CRSClimbProListHeaderView: UIView {
         return label
     }()
     
+    lazy var bottomLine: UIView = {
+        let line = UIView(frame: .zero)
+        line.backgroundColor = .randomColor
+        return line
+    }()
+    
     // 每个标题之间的间隔
     let itemGap: CGFloat = kScreenWidth * 0.02
     let leftGap: CGFloat = kScreenWidth * (16/412.0)
@@ -95,6 +101,13 @@ class CRSClimbProListHeaderView: UIView {
             make.left.equalTo(averageSlopeLabel.snp.right).offset(itemGap)
             make.height.centerY.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(0.19)
+        }
+        
+        addSubview(bottomLine)
+        bottomLine.snp.makeConstraints { make in
+            make.left.equalTo(leftGap)
+            make.bottom.right.equalToSuperview()
+            make.height.equalTo(0.5)
         }
     }
 

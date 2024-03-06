@@ -97,6 +97,7 @@
 		B3CA36082B872B4F00D0B319 /* UITableView+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */; };
 		B3CA360B2B872DA500D0B319 /* CRSClimbListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */; };
 		B3DF7CEA2AD7D4520042E755 /* JSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */; };
+		B3F2E77C2B8C6A7200E830FD /* ExplorePullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */; };
 		B3F9AC392B889BC700492144 /* AMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9AC382B889BC700492144 /* AMapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -218,6 +219,7 @@
 		B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+CC.swift"; sourceTree = "<group>"; };
 		B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbListItem.swift; sourceTree = "<group>"; };
 		B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewController.swift; sourceTree = "<group>"; };
+		B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePullUpController.swift; sourceTree = "<group>"; };
 		B3F9AC382B889BC700492144 /* AMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -697,6 +699,7 @@
 		B3C45E592A9C6A5100AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3F2E77A2B8C6A5900E830FD /* PullUp */,
 				B3C45EE52AA71BBD00AD3586 /* Segment */,
 				B3C45E642A9C77C500AD3586 /* Picker */,
 				B3C45E3C2A98ABE000AD3586 /* CollectViewController.swift */,
@@ -832,6 +835,14 @@
 				B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		B3F2E77A2B8C6A5900E830FD /* PullUp */ = {
+			isa = PBXGroup;
+			children = (
+				B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */,
+			);
+			path = PullUp;
 			sourceTree = "<group>";
 		};
 		B3F9AC372B889BAC00492144 /* Amap */ = {
@@ -1120,6 +1131,7 @@
 				B34D5B022B67893F00C6E097 /* CRSCastScreenAlertView.swift in Sources */,
 				B3C046B72AD1597100A275BD /* ReadFileViewController.swift in Sources */,
 				B3C45E3D2A98ABE000AD3586 /* CollectViewController.swift in Sources */,
+				B3F2E77C2B8C6A7200E830FD /* ExplorePullUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

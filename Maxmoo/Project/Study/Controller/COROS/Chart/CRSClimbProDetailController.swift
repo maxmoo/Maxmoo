@@ -8,20 +8,21 @@
 import UIKit
 import SnapKit
 
-class CRSClimbProDetailController: UIViewController {
+class CRSClimbProDetailController: ExplorePullUpController {
     
     lazy var chartHeaderView: CRSClimbProChartHeaderView = {
-        let header = CRSClimbProChartHeaderView(frame: .zero)
+        let header = CRSClimbProChartHeaderView(frame: CGRect(x: 16, y: 52, width: kScreenWidth - 32, height: 40))
         return header
     }()
     
     lazy var chart: CRSTrackClimbChartView = {
-        let chart = CRSTrackClimbChartView(frame: CGRect(x: 16, y: 200, width: kScreenWidth - 32, height: 180))
+        let chart = CRSTrackClimbChartView(frame: CGRect(x: 16, y: chartHeaderView.bottom, width: kScreenWidth - 32, height: 180))
         return chart
     }()
     
     lazy var listHeaderView: CRSClimbProListHeaderView = {
-        let listHeader = CRSClimbProListHeaderView(frame: .zero)
+        let listHeader = CRSClimbProListHeaderView(frame: CGRect(x: 0, y: chart.bottom, width: kScreenWidth, height: 48))
+        listHeader.layoutIfNeeded()
         return listHeader
     }()
     
@@ -34,8 +35,29 @@ class CRSClimbProDetailController: UIViewController {
         return table
     }()
     
+    lazy var tableFooterView: UIView = {
+        let footer = UIView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 188))
+        footer.backgroundColor = .randomColor
+        
+        let label = UILabel(frame: footer.bounds)
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        label.textColor = UIColor.red
+        label.text = "该路线无爬坡信息"
+        footer.addSubview(label)
+        
+        return footer
+    }()
+    
     var totalClimbInfos: [CRSTrackClimbInfo] = []
     var listItems: [CRSClimbListItem] = []
+    
+    // 除去列表之外的基础高度
+    private let baseInfoHeight: CGFloat = 320
+    private let bottomBaseHeight: CGFloat = 188
+    private let cellHeight: CGFloat = 56
+    
+    var testDataCount: Int = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +70,8 @@ class CRSClimbProDetailController: UIViewController {
         totalClimbInfos.removeAll()
         listItems.removeAll()
         
-        let testDataCount: Int = 20
+        guard testDataCount > 0 else { return }
+        
         var startDistance = 0.0
         for _ in 0..<testDataCount {
             let startIndex = totalClimbInfos.count
@@ -57,7 +80,7 @@ class CRSClimbProDetailController: UIViewController {
                 startDistance = last.distance ?? startDistance
             }
             totalClimbInfos.append(contentsOf: testInfos)
-            let endIndex = totalClimbInfos.count
+            let endIndex = totalClimbInfos.count - 1
             let item = CRSClimbListItem(isExtra: false, infos: testInfos, startIndex: startIndex, endIndex: endIndex)
             listItems.append(item)
         }
@@ -97,6 +120,26 @@ class CRSClimbProDetailController: UIViewController {
         }
     }
     
+    // 用于获取当前显示高度
+    public func showHeight(with itemCount: Int) -> CGFloat {
+        testDataCount = itemCount
+        if itemCount > 0 {
+            let result = baseInfoHeight + CGFloat(itemCount) * cellHeight + bottomBaseHeight
+            return result >= (kScreenHeight - 56) ? (kScreenHeight - 56) : result
+        } else {
+            return baseInfoHeight + bottomBaseHeight + cellHeight
+        }
+    }
+    
+    private func isHaveBottomGap() -> Bool {
+        let result = baseInfoHeight + CGFloat(listItems.count) * cellHeight
+        if result < (kScreenHeight - 56) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
     func selectedItemIndex() -> Int? {
         for (index, item) in listItems.enumerated() where item.isExtra {
             return index
@@ -131,7 +174,19 @@ class CRSClimbProDetailController: UIViewController {
         
         reloadIndexPaths.append(indexPath)
         
+        if !item.isExtra,
+           isHaveBottomGap(),
+           let cell = tableView.cellForRow(at: indexPath) as? CRSClimbProListCell {
+            cell.hideChart()
+        }
+        
         tableView.reloadRows(at: reloadIndexPaths, with: .fade)
+        // 最后一个时需要向上展开
+        if indexPath.row == listItems.count - 1,
+            let offset = initialStickyPointOffset,
+            offset >= kScreenHeight - 56 {
+            tableView.scrollToBottom()
+        }
     }
     
 }
@@ -148,7 +203,7 @@ extension CRSClimbProDetailController: UITableViewDelegate, UITableViewDataSourc
         if item.isExtra {
             return 210
         } else {
-            return 56
+            return cellHeight
         }
     }
     
@@ -168,5 +223,21 @@ extension CRSClimbProDetailController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if listItems.count <= 0 {
+            return 188
+        } else {
+            return CGFloat.leastNormalMagnitude
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        if listItems.count <= 0 {
+            return tableFooterView
+        } else {
+            return nil
+        }
     }
 }

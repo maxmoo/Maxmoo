@@ -40,6 +40,7 @@ class ChartViewController: UIViewController {
         chart.highlightRange = start..<(start+gap)
         
         let preVC = CRSClimbProDetailController()
-        self.present(preVC, animated: true)
+        let hei = preVC.showHeight(with: 2)
+        addPullUpController(preVC, initialStickyPointOffset: hei, animated: true)
     }
 }

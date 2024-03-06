@@ -18,6 +18,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="486" height="162"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uf2-cm-V7B">
+                        <rect key="frame" x="0.0" y="0.0" width="19" height="162"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0l-2P-OlW">
                         <rect key="frame" x="0.0" y="0.0" width="486" height="56"/>
                         <subviews>
@@ -134,14 +138,14 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ron-v7-jz3">
-                        <rect key="frame" x="16" y="161.66666666666666" width="470" height="0.33333333333334281"/>
+                        <rect key="frame" x="19" y="161.66666666666666" width="467" height="0.33333333333334281"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.5" id="upW-mt-t4b"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-n8-jIC">
-                        <rect key="frame" x="16" y="55.666666666666664" width="470" height="0.3333333333333357"/>
+                        <rect key="frame" x="19" y="55.666666666666664" width="467" height="0.3333333333333357"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.5" id="uHd-EH-il4"/>
@@ -150,13 +154,17 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="x0l-2P-OlW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0dH-Ee-HtR"/>
+                    <constraint firstItem="WpF-n8-jIC" firstAttribute="leading" secondItem="uf2-cm-V7B" secondAttribute="trailing" id="2tL-x8-D8i"/>
                     <constraint firstAttribute="bottom" secondItem="ron-v7-jz3" secondAttribute="bottom" id="9M4-Nr-2OP"/>
                     <constraint firstAttribute="trailing" secondItem="x0l-2P-OlW" secondAttribute="trailing" id="9lK-3b-HuJ"/>
+                    <constraint firstItem="ron-v7-jz3" firstAttribute="leading" secondItem="uf2-cm-V7B" secondAttribute="trailing" id="Ded-ne-dCc"/>
                     <constraint firstItem="WpF-n8-jIC" firstAttribute="top" secondItem="x0l-2P-OlW" secondAttribute="bottom" constant="-0.5" id="EMB-gS-ag2"/>
                     <constraint firstItem="x0l-2P-OlW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PAC-V9-auB"/>
                     <constraint firstAttribute="trailing" secondItem="WpF-n8-jIC" secondAttribute="trailing" id="TCz-f1-abu"/>
-                    <constraint firstItem="WpF-n8-jIC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Wna-u2-4H9"/>
-                    <constraint firstItem="ron-v7-jz3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="db4-SJ-gJ4"/>
+                    <constraint firstAttribute="bottom" secondItem="uf2-cm-V7B" secondAttribute="bottom" id="l56-wW-F7Q"/>
+                    <constraint firstItem="uf2-cm-V7B" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.0388" id="loD-la-hdI"/>
+                    <constraint firstItem="uf2-cm-V7B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nYF-6n-dQ8"/>
+                    <constraint firstItem="uf2-cm-V7B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="oPE-cd-RA5"/>
                     <constraint firstAttribute="trailing" secondItem="ron-v7-jz3" secondAttribute="trailing" id="wXi-A4-xUW"/>
                 </constraints>
             </tableViewCellContentView>

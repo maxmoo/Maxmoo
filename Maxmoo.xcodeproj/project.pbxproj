@@ -100,6 +100,9 @@
 		B3F2E77C2B8C6A7200E830FD /* ExplorePullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */; };
 		B3F9814E2BD1007C0005AA44 /* CCFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */; };
 		B3F981512BD101EF0005AA44 /* CCFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F981502BD101EF0005AA44 /* CCFileViewController.swift */; };
+		B3F981572BD11F5C0005AA44 /* poi.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F981552BD11F5C0005AA44 /* poi.pb.swift */; };
+		B3F981582BD11F5C0005AA44 /* CRSLExplore.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F981562BD11F5C0005AA44 /* CRSLExplore.pb.swift */; };
+		B3F9815B2BD121260005AA44 /* CRSCastTrackCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9815A2BD121260005AA44 /* CRSCastTrackCacheManager.swift */; };
 		B3F9AC392B889BC700492144 /* AMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9AC382B889BC700492144 /* AMapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -224,6 +227,9 @@
 		B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePullUpController.swift; sourceTree = "<group>"; };
 		B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFileManager.swift; sourceTree = "<group>"; };
 		B3F981502BD101EF0005AA44 /* CCFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFileViewController.swift; sourceTree = "<group>"; };
+		B3F981552BD11F5C0005AA44 /* poi.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = poi.pb.swift; sourceTree = "<group>"; };
+		B3F981562BD11F5C0005AA44 /* CRSLExplore.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRSLExplore.pb.swift; sourceTree = "<group>"; };
+		B3F9815A2BD121260005AA44 /* CRSCastTrackCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastTrackCacheManager.swift; sourceTree = "<group>"; };
 		B3F9AC382B889BC700492144 /* AMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -322,6 +328,8 @@
 		B34D5AFA2B67878900C6E097 /* COROS */ = {
 			isa = PBXGroup;
 			children = (
+				B3F981592BD120AF0005AA44 /* CastTrackCacheManager */,
+				B3F981542BD11F5C0005AA44 /* PB */,
 				B34D5AFD2B6788B900C6E097 /* CastAlert */,
 				B343501A2B5CF35300D974AA /* Chart */,
 				B34D5AFB2B6787B500C6E097 /* COROSDemoListController.swift */,
@@ -859,6 +867,23 @@
 			path = File;
 			sourceTree = "<group>";
 		};
+		B3F981542BD11F5C0005AA44 /* PB */ = {
+			isa = PBXGroup;
+			children = (
+				B3F981552BD11F5C0005AA44 /* poi.pb.swift */,
+				B3F981562BD11F5C0005AA44 /* CRSLExplore.pb.swift */,
+			);
+			path = PB;
+			sourceTree = "<group>";
+		};
+		B3F981592BD120AF0005AA44 /* CastTrackCacheManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3F9815A2BD121260005AA44 /* CRSCastTrackCacheManager.swift */,
+			);
+			path = CastTrackCacheManager;
+			sourceTree = "<group>";
+		};
 		B3F9AC372B889BAC00492144 /* Amap */ = {
 			isa = PBXGroup;
 			children = (
@@ -1069,6 +1094,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F9815B2BD121260005AA44 /* CRSCastTrackCacheManager.swift in Sources */,
 				B3C45EF32AA81AE100AD3586 /* CellEditViewController.swift in Sources */,
 				B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */,
 				B3C45E412A98AC9100AD3586 /* CCBaseViewController.swift in Sources */,
@@ -1084,6 +1110,7 @@
 				B3CA35FD2B87153400D0B319 /* CRSClimbProDetailController.swift in Sources */,
 				B3C45E832A9C93B500AD3586 /* PageGuide1ViewController.swift in Sources */,
 				B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */,
+				B3F981572BD11F5C0005AA44 /* poi.pb.swift in Sources */,
 				B3F9814E2BD1007C0005AA44 /* CCFileManager.swift in Sources */,
 				B3C45E392A98ABC600AD3586 /* StudyViewController.swift in Sources */,
 				B31849172B353AD400D9B9B8 /* SUHello.swift in Sources */,
@@ -1108,6 +1135,7 @@
 				B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */,
 				B34350242B5D04A000D974AA /* UIBezierPath+curved.m in Sources */,
 				B3C45E772A9C851F00AD3586 /* UIImage+CC.swift in Sources */,
+				B3F981582BD11F5C0005AA44 /* CRSLExplore.pb.swift in Sources */,
 				B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */,
 				B34D5B042B678ABE00C6E097 /* UIDevice+CC.swift in Sources */,
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,

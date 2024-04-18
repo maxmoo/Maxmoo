@@ -98,6 +98,8 @@
 		B3CA360B2B872DA500D0B319 /* CRSClimbListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */; };
 		B3DF7CEA2AD7D4520042E755 /* JSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */; };
 		B3F2E77C2B8C6A7200E830FD /* ExplorePullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */; };
+		B3F9814E2BD1007C0005AA44 /* CCFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */; };
+		B3F981512BD101EF0005AA44 /* CCFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F981502BD101EF0005AA44 /* CCFileViewController.swift */; };
 		B3F9AC392B889BC700492144 /* AMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9AC382B889BC700492144 /* AMapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -220,6 +222,8 @@
 		B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbListItem.swift; sourceTree = "<group>"; };
 		B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewController.swift; sourceTree = "<group>"; };
 		B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePullUpController.swift; sourceTree = "<group>"; };
+		B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFileManager.swift; sourceTree = "<group>"; };
+		B3F981502BD101EF0005AA44 /* CCFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFileViewController.swift; sourceTree = "<group>"; };
 		B3F9AC382B889BC700492144 /* AMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -603,6 +607,7 @@
 		B3C45E452A98AE8500AD3586 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -637,6 +642,7 @@
 		B3C45E532A9C6A1500AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3F9814F2BD101DC0005AA44 /* File */,
 				B34D5AFA2B67878900C6E097 /* COROS */,
 				B398423D2B561FC60028D32B /* C */,
 				B39842352B5524770028D32B /* OC */,
@@ -843,6 +849,14 @@
 				B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */,
 			);
 			path = PullUp;
+			sourceTree = "<group>";
+		};
+		B3F9814F2BD101DC0005AA44 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				B3F981502BD101EF0005AA44 /* CCFileViewController.swift */,
+			);
+			path = File;
 			sourceTree = "<group>";
 		};
 		B3F9AC372B889BAC00492144 /* Amap */ = {
@@ -1070,6 +1084,7 @@
 				B3CA35FD2B87153400D0B319 /* CRSClimbProDetailController.swift in Sources */,
 				B3C45E832A9C93B500AD3586 /* PageGuide1ViewController.swift in Sources */,
 				B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */,
+				B3F9814E2BD1007C0005AA44 /* CCFileManager.swift in Sources */,
 				B3C45E392A98ABC600AD3586 /* StudyViewController.swift in Sources */,
 				B31849172B353AD400D9B9B8 /* SUHello.swift in Sources */,
 				B3C45E8C2A9DCDE400AD3586 /* VWatchCollectionViewController.swift in Sources */,
@@ -1121,6 +1136,7 @@
 				B3C45E8E2A9F1E8800AD3586 /* AddAnimateCollectionController.swift in Sources */,
 				B34D5AFF2B6788D800C6E097 /* CRSAlertViewController.swift in Sources */,
 				B3C45E632A9C76F400AD3586 /* CRSSingleRowPickerView.swift in Sources */,
+				B3F981512BD101EF0005AA44 /* CCFileViewController.swift in Sources */,
 				B3B9E0A22B19BC3E0004B9F8 /* CRSCastScreenDataController.swift in Sources */,
 				B398423C2B561FC10028D32B /* CStudyViewController.m in Sources */,
 				B3793A4D2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift in Sources */,

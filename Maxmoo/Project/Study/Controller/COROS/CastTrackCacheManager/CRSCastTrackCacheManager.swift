@@ -13,8 +13,9 @@ class CRSCastTrackCacheManager: NSObject {
     
     private let concurrentQueue = DispatchQueue(label: "CRSCastTrackCahceQueue",
                                                 attributes: .concurrent)
-    private let fileBaseUrlString: String = CCFileManager.shared.document + "/explore"
-    private let maxCacheSize: CGFloat = 1024
+    private let fileBaseUrlString: String = ExploreFileManager.documents + "/explore"
+    // 1000 -> 16k  100000 -> 1.6M
+    private let maxCacheSize: CGFloat = 1024 * 1024 * 1
     
     public func saveCoordinates(coors: [CRSCoordinate]) {
         var finalRoutePath = CRSRoutePath()
@@ -26,7 +27,7 @@ class CRSCastTrackCacheManager: NSObject {
             return point
         }
         
-        CCFileManager.shared.createFolder(urlString: cachePathString())
+        ExploreFileManager.createDirectory(at: cachePathString())
         
         concurrentQueue.async(flags: .barrier) { [weak self] in
             guard let self else { return }
@@ -41,7 +42,7 @@ class CRSCastTrackCacheManager: NSObject {
             guard let self else { return }
             var finalRoutePath = CRSRoutePath()
             let cacheBaseUrlString = self.cachePathString()
-            let allFiles = CCFileManager.shared.fileList(cacheBaseUrlString)
+            let allFiles = ExploreFileManager.fileList(cacheBaseUrlString)
             for file in allFiles {
                 let fullPath = cacheBaseUrlString + "/\(file)"
                 if let readPath = self.read(url: URL(fileURLWithPath: fullPath)) {
@@ -54,16 +55,20 @@ class CRSCastTrackCacheManager: NSObject {
         }
     }
     
+    public func deleteAll() {
+        ExploreFileManager.removeFile(at: cachePathString())
+    }
+    
     private func currentRoutePath() -> (route: CRSRoutePath, path: String) {
         let cachePath = cachePathString()
-        let allFiles = CCFileManager.shared.contentsOfDirectory(at: cachePath)
+        let allFiles = ExploreFileManager.contentsOfDirectory(at: cachePath)
         if allFiles.isEmpty {
             let path = prepareCachePath(index: 1)
             return (CRSRoutePath(), path)
         } else {
             if let maxFileName = allFiles.sorted(by: { (Int($0) ?? 0) < (Int($1) ?? 0) }).last {
                 let urlString = cachePath + "/\(maxFileName)"
-                let size = CCFileManager.shared.fileSize(atPath: urlString)
+                let size = ExploreFileManager.getFileSize(atPath: urlString)
                 if size >= maxCacheSize {
                     let path = prepareCachePath(index: allFiles.count + 1)
                     return (CRSRoutePath(), path)
@@ -84,8 +89,8 @@ class CRSCastTrackCacheManager: NSObject {
     
     private func prepareCachePath(index: Int) -> String {
         let cachePath = cachePathString() + "/\(index).bat"
-        if !CCFileManager.shared.isFileExists(cachePath) {
-            CCFileManager.shared.createFile(urlString: cachePath)
+        if !ExploreFileManager.isFileExists(at: cachePath) {
+            ExploreFileManager.createFile(at: cachePath)
             return cachePath
         } else {
             return cachePath

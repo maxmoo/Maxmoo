@@ -22,6 +22,7 @@
 		B34D5AFF2B6788D800C6E097 /* CRSAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D5AFE2B6788D800C6E097 /* CRSAlertViewController.swift */; };
 		B34D5B022B67893F00C6E097 /* CRSCastScreenAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D5B012B67893F00C6E097 /* CRSCastScreenAlertView.swift */; };
 		B34D5B042B678ABE00C6E097 /* UIDevice+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D5B032B678ABE00C6E097 /* UIDevice+CC.swift */; };
+		B35C2F562BD2021B00684958 /* ExploreFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35C2F552BD2021B00684958 /* ExploreFileManager.swift */; };
 		B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */; };
 		B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */; };
 		B3793A412B21766A00A038D8 /* CastScreenDataTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */; };
@@ -142,6 +143,7 @@
 		B34D5AFE2B6788D800C6E097 /* CRSAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSAlertViewController.swift; sourceTree = "<group>"; };
 		B34D5B012B67893F00C6E097 /* CRSCastScreenAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRSCastScreenAlertView.swift; sourceTree = "<group>"; };
 		B34D5B032B678ABE00C6E097 /* UIDevice+CC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+CC.swift"; sourceTree = "<group>"; };
+		B35C2F552BD2021B00684958 /* ExploreFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreFileManager.swift; sourceTree = "<group>"; };
 		B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStudyController.swift; sourceTree = "<group>"; };
 		B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataStyle.swift; sourceTree = "<group>"; };
 		B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastScreenDataTestController.swift; sourceTree = "<group>"; };
@@ -880,6 +882,7 @@
 			isa = PBXGroup;
 			children = (
 				B3F9815A2BD121260005AA44 /* CRSCastTrackCacheManager.swift */,
+				B35C2F552BD2021B00684958 /* ExploreFileManager.swift */,
 			);
 			path = CastTrackCacheManager;
 			sourceTree = "<group>";
@@ -1141,6 +1144,7 @@
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
 				B3F9AC392B889BC700492144 /* AMapViewController.swift in Sources */,
 				B3AF184D2B502182004FD144 /* SQLiteSwiftViewController.swift in Sources */,
+				B35C2F562BD2021B00684958 /* ExploreFileManager.swift in Sources */,
 				B31849152B35354F00D9B9B8 /* SwiftUIHelloController.swift in Sources */,
 				B3C45E852A9C93C300AD3586 /* PageGuide2ViewController.swift in Sources */,
 				B3C45E802A9C934700AD3586 /* PageGuideViewController.swift in Sources */,

@@ -19,11 +19,11 @@ class COROSDemoListController: ItemListViewController {
         title = "COROS"
         
         var coor = CRSCoordinate()
-        coor.lat = 100
-        coor.long = 101
+        coor.lat = 23452987
+        coor.long = 10198673
         
         var coors: [CRSCoordinate] = []
-        for _ in 0...1000 {
+        for _ in 0...10000 {
             coors.append(coor)
         }
         
@@ -33,6 +33,11 @@ class COROSDemoListController: ItemListViewController {
         CRSCastTrackCacheManager.shared.allCoordinatesRoutePath { path in
             print("[path all] count:\(path.pathDatas.count)")
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+//        CRSCastTrackCacheManager.shared.deleteAll()
     }
 
 }

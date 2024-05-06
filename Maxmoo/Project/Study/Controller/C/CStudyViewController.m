@@ -6,6 +6,7 @@
 //
 
 #import "CStudyViewController.h"
+#include <string.h>
 
 @interface CStudyViewController ()
 
@@ -16,11 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
-    [self printLog];
-    [self bit];
-    [self calculate];
-    [self type];
-    [self point];
+//    [self printLog];
+//    [self bit];
+//    [self calculate];
+//    [self type];
+//    [self point];
+//    [self sString];
+//    [self malloc];
+    [self structDemo];
     
     // 程序运行成功
     // 等同于 exit(0);
@@ -29,6 +33,141 @@
     // 程序异常中止
     // 等同于 exit(1);
 //    exit(EXIT_FAILURE);
+}
+
+struct fra {
+    int num;
+    int den;
+};
+
+struct turtle {
+  char* name;
+  char* species;
+  int age;
+};
+
+struct containTur {
+    int index;
+    struct turtle tur;
+};
+
+- (void)structDemo {
+    // 结构体的三种初始化方式
+    struct fra f1;
+    f1.num = 1;
+    f1.den = 2;
+    
+    struct fra f2 = {3, 4};
+    printf("\n f2 num: %i, den: %i", f2.num, f2.den);
+    
+    struct fra f3 = {.den = 4, .num = 3};
+    printf("\n f3 num: %i, den: %i", f3.num, f3.den);
+    struct fra f4 = {};
+    
+    // 结构体的复制
+    struct turtle t1 = {"jack", "sea t", 3};
+    happy(t1);
+    printf("\n t1.age: %i", t1.age);
+    p_happy(&t1);
+    printf("\n t1.age: %i", t1.age);
+    
+    // 嵌套的struct初始化的四种方式
+    struct containTur ct1 = {2, {"j", "a", 30}};
+    struct turtle tu1 = {"j", "a", 30};
+    struct containTur ct2 = {3, tu1};
+    struct containTur ct3 = {.index = 0, .tur = {"j", "a", 30}};
+    struct containTur ct4 = {.index = 2, .tur.name = "", .tur.species = "", .tur.age = 5};
+}
+
+void happy(struct turtle t) {
+    t.age = t.age + 1;
+}
+
+void p_happy(struct turtle *t) {
+    (*t).age = (*t).age + 1;
+    // 另一种写法,结果同上
+//    t->age = t->age + 1;
+}
+
+- (void)malloc {
+    int *p = malloc(sizeof(int));
+    *p = 12;
+    printf("p: %i", *p);
+    free(p);
+    
+    
+    int* p1 = calloc(10, sizeof(int));
+    // 等同于
+    int* p2 = malloc(sizeof(int) * 10);
+    memset(p2, 0, sizeof(int) * 10);
+    free(p1);
+    free(p2);
+    
+    int* b;
+    b = malloc(sizeof(int) * 10);
+    b = realloc(b, sizeof(int) * 2000);
+    free(b);
+    
+    char *cp1 = "copy1";
+    char cp2[100];
+    memcpy(cp2, cp1, strlen(cp1));
+    printf("cp2: %s", cp2);
+    
+    char *cmp1 = "cmp1";
+    char *cmp2 = "cmp2 2222";
+    int rescmp1 = memcmp(cmp1, cmp2, strlen(cmp1) - 1);
+    int rescmp2 = memcmp(cmp1, cmp2, strlen(cmp2));
+    printf("\n res1: %i res2: %i", rescmp1, rescmp2);
+}
+
+- (void)sString {
+    char *ss = "hello world!";
+    printf("the s len: %zd", strlen(ss));
+    
+    char s[] = "hello world!";
+    char t[100];
+    
+    strcpy(t, s);
+    t[0] = 'z';
+    
+    printf("\n t: %s", t);
+    printf("\n s: %s", s);
+    
+    char aa[20];
+    char bb[20];
+    strcpy(aa, strcpy(bb, "abcd!"));
+    printf("\n aa: %s", aa);
+    printf("\n bb: %s", bb);
+    
+    char *str1 = "test123456789";
+    char str2[6];
+    // 此处需要-1，不-1 str2就不是以/0结尾，结尾的实际位置不可预测
+    strncpy(str2, str1, sizeof(str2) - 1);
+    printf("\n str1: %s", str1);
+    printf("\n str2: %s", str2);
+    
+    char str3[100] = "add ";
+    strcat(str3, str2);
+    printf("\n str3: %s", str3);
+    
+    char str4[7] = "add ";
+    strncat(str4, str2, sizeof(str4) - strlen(str4) - 1);
+    printf("\n str4: %s", str4);
+    
+    char cs1[20] = "copy equal";
+    char cs2[20] = "copy xxx";
+    int rs1 = strcmp(cs1, cs2);
+    int rs2 = strncmp(cs1, cs2, 4);
+    printf("\n rs1: %i  rs2: %i", rs1, rs2);
+    
+    char str5[100];
+    sprintf(str5, "rs1: %i  rs2: %i", rs1, rs2);
+    printf("\n str5: %s \n", str5);
+    
+    char weekdays[7][10] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    for (int i = 0; i < 7; i++) {
+      printf("%s\n", weekdays[i]);
+    }
 }
 
 - (void)printLog {

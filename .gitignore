@@ -1,2 +1,5 @@
 # 忽略文件夹 Pods
 /Pods
+*.a
+*.a
+Maxmoo/Lib/ffmpeg/lib/libavcodec.a

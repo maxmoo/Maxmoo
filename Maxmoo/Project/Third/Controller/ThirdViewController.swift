@@ -12,7 +12,8 @@ class ThirdViewController: ItemListViewController {
     override var items: [[String]] {
         return [["阿里播放器-AliPlayerViewController",
                 "SQLite.swift-SQLiteSwiftViewController"],
-                ["高德地图-AMapViewController"]]
+                ["高德地图-AMapViewController",
+                 "苹果地图-AppleMapViewController"]]
     }
     
     override func viewDidLoad() {

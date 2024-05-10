@@ -6,7 +6,10 @@
 //
 
 #import "CStudyViewController.h"
+#import "Maxmoo-Swift.h"
 #include <string.h>
+#include <stdio.h>
+#include "bar.h"
 
 @interface CStudyViewController ()
 
@@ -24,7 +27,10 @@
 //    [self point];
 //    [self sString];
 //    [self malloc];
-    [self structDemo];
+//    [self structDemo];
+//    [self fileDemo];
+//    int x = add(1, 2);
+//    printf("x: %d", x);
     
     // 程序运行成功
     // 等同于 exit(0);
@@ -33,6 +39,31 @@
     // 程序异常中止
     // 等同于 exit(1);
 //    exit(EXIT_FAILURE);
+}
+
+- (void)fileDemo {
+    FILE *fp;
+    char c;
+    //jsonURL = Bundle.main.url(forResource: "res_4_0", withExtension: "json")
+//    NSString *fileUrl = [[NSBundle mainBundle] URLForResource:@"hello" withExtension:@"txt"].absoluteString;
+    /*
+     r：读模式，只用来读取数据。如果文件不存在，返回 NULL 指针。
+     w：写模式，只用来写入数据。如果文件存在，文件长度会被截为0，然后再写入；如果文件不存在，则创建该文件。
+     a：写模式，只用来在文件尾部追加数据。如果文件不存在，则创建该文件。
+     r+：读写模式。如果文件存在，指针指向文件开始处，可以在文件头部添加数据。如果文件不存在，返回 NULL 指针。
+     w+：读写模式。如果文件存在，文件长度会被截为0，然后再写入数据。这种模式实际上读不到数据，反而会擦掉数据。如果文件不存在，则创建该文件。
+     a+：读写模式。如果文件存在，指针指向文件结尾，可以在现有文件末尾添加内容。如果文件不存在，则创建该文件。
+     */
+    NSString *videoPath = [NSString stringWithFormat:@"%@%@",[CCFileManager shared].document, @"/hello.txt"];
+    fp = fopen([videoPath UTF8String], "r");
+    if (fp == NULL) {
+        return;
+    }
+    
+    c = fgetc(fp);
+    printf("%c\n", c);
+    
+    fclose(fp);
 }
 
 struct fra {

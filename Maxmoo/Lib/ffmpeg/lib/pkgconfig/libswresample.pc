@@ -1,0 +1,14 @@
+prefix=/Users/chengchaocoros.com/Desktop/ffmpeg/build/local
+exec_prefix=${prefix}
+libdir=/Users/chengchaocoros.com/Desktop/ffmpeg/build/local/lib
+includedir=/Users/chengchaocoros.com/Desktop/ffmpeg/build/local/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 4.10.100
+Requires: libavutil >= 58.2.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}

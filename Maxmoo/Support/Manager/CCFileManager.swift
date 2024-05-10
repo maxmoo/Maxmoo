@@ -9,12 +9,14 @@ import UIKit
 
 class CCFileManager: NSObject {
     
+    @objc
     static let shared = CCFileManager()
     
     var home: String {
         return NSHomeDirectory()
     }
     
+    @objc
     var document: String {
         return NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true).first ?? home
     }
@@ -42,6 +44,7 @@ extension CCFileManager {
     }
     
     // create file
+    @objc
     @discardableResult
     func createFile(urlString: String, fileName: String? = nil) -> Bool {
         var filePath = URL(fileURLWithPath: urlString)

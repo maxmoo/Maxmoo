@@ -36,7 +36,7 @@
 //    NSString *videoPath = [NSString stringWithFormat:@"%@%@",[CCFileManager shared].document, @"/fuzhou.mp4"];
     NSString *outPath = [NSString stringWithFormat:@"%@%@",[CCFileManager shared].document, @"/empty.mp4"];
     
-    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"i-see-fire" ofType:@"mp4"];
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"testh265" ofType:@"MOV"];
     //empty.mp4
 //    NSString *outPath = [[NSBundle mainBundle] pathForResource:@"empty" ofType:@"mp4"];
     
@@ -54,5 +54,9 @@
     chapter_3(file_name, out_file_name);
 
 }
+
+
+// chapter
+
 
 @end

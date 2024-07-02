@@ -11,7 +11,6 @@
 #import <OpenGLES/ES2/glext.h>
 #import "log4cplus.h"
 #import "CVideoHelper.h"
-
 #define kModuleName "XDXPreviewView"
 
 #define IS_IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
@@ -133,11 +132,6 @@ GLfloat quadVertexData[] = {
          preferredConversion:_preferredConversion
   displayInputTextureUniform:_displayInputTextureUniform
            colorBufferHandle:_colorBufferHandle];
-}
-
-- (void)displayAVFrame: (AVFrame *)avframe {
-    CVPixelBufferRef ref = [CVideoHelper transAVFrame:avframe];
-    [self displayPixelBuffer:ref];
 }
 
 #pragma mark - private methods

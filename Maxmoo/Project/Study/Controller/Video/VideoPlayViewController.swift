@@ -56,7 +56,7 @@ extension VideoPlayViewController: FFPlayerProtocol {
     
     func playerAVFrame(frame: AVFrame) {
         var useFrame = frame
-        playView.displayAV(&useFrame)
+//        playView.displayAV(&useFrame)
     }
     
 //    func seekTo(_ time: Float) {

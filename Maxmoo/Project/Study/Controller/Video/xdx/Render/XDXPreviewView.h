@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#include <libavcodec/avcodec.h>
-#include <libavformat/avformat.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+
 @interface XDXPreviewView : UIView
+
 
 /**
  Whether full the screen
@@ -23,7 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
  display
  */
 - (void)displayPixelBuffer:(CVPixelBufferRef)pixelBuffer;
-- (void)displayAV:(AVFrame *)avframe;
 
 @end
 

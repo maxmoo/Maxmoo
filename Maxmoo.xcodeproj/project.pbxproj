@@ -24,11 +24,16 @@
 		B34D5B042B678ABE00C6E097 /* UIDevice+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D5B032B678ABE00C6E097 /* UIDevice+CC.swift */; };
 		B35C2F562BD2021B00684958 /* ExploreFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35C2F552BD2021B00684958 /* ExploreFileManager.swift */; };
 		B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */; };
+		B36AADDE2BFD9C01003A9BAC /* CRSCastScreenUserTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36AADDD2BFD9C01003A9BAC /* CRSCastScreenUserTipView.swift */; };
+		B36AADE02BFDC3A6003A9BAC /* CorosUserTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36AADDF2BFDC3A6003A9BAC /* CorosUserTipViewController.swift */; };
 		B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */; };
 		B3793A412B21766A00A038D8 /* CastScreenDataTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */; };
 		B3793A442B2199C200A038D8 /* CRSCastScreenDataSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A432B2199C200A038D8 /* CRSCastScreenDataSettingController.swift */; };
 		B3793A4D2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3793A4B2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift */; };
 		B3793A4E2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */; };
+		B37D39ED2BEF0FC90019D748 /* XDXDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37D39EC2BEF0FC90019D748 /* XDXDemoViewController.m */; };
+		B37D39EF2BEF107E0019D748 /* XDXListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D39EE2BEF107E0019D748 /* XDXListViewController.swift */; };
+		B37D3A372BEF3F6F0019D748 /* XDXPreviewView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B37D3A262BEF3F6F0019D748 /* XDXPreviewView.mm */; };
 		B391C7642BE9CE9900FAF0A3 /* chapter_1.c in Sources */ = {isa = PBXBuildFile; fileRef = B391C7632BE9CE9900FAF0A3 /* chapter_1.c */; };
 		B391C7682BE9D20100FAF0A3 /* chapter_2.c in Sources */ = {isa = PBXBuildFile; fileRef = B391C7672BE9D20100FAF0A3 /* chapter_2.c */; };
 		B391C76C2BE9FBF200FAF0A3 /* StudyVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B391C76B2BE9FBF200FAF0A3 /* StudyVideoViewController.m */; };
@@ -67,7 +72,6 @@
 		B391CF372BEB7CB800FAF0A3 /* FFAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B391CF272BEB7CB800FAF0A3 /* FFAudioPlayer.swift */; };
 		B391CF382BEB7CB800FAF0A3 /* FFPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B391CF282BEB7CB800FAF0A3 /* FFPlayer.swift */; };
 		B391CF3B2BEB801B00FAF0A3 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B391CF3A2BEB801B00FAF0A3 /* VideoHelper.swift */; };
-		B391CF3E2BEB84CA00FAF0A3 /* XDXPreviewView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B391CF3D2BEB84CA00FAF0A3 /* XDXPreviewView.mm */; };
 		B391CF412BEB859900FAF0A3 /* CVideoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B391CF402BEB859900FAF0A3 /* CVideoHelper.m */; };
 		B391CF442BEB9D9400FAF0A3 /* testh264.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B391CF422BEB9D9300FAF0A3 /* testh264.MOV */; };
 		B391CF452BEB9D9400FAF0A3 /* testh265.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B391CF432BEB9D9400FAF0A3 /* testh265.MOV */; };
@@ -86,6 +90,7 @@
 		B3B36DEA2BEDEE050024DF08 /* SMScreenRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B36DE82BEDEE050024DF08 /* SMScreenRecording.m */; };
 		B3B36DEC2BEDEEC20024DF08 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B36DEB2BEDEEC20024DF08 /* RecorderViewController.swift */; };
 		B3B36DEF2BEE075B0024DF08 /* ZYSScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B36DED2BEE075B0024DF08 /* ZYSScreenRecorder.m */; };
+		B3B61A922BFB3A99000EA18F /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B61A912BFB3A99000EA18F /* GestureViewController.swift */; };
 		B3B9E0A22B19BC3E0004B9F8 /* CRSCastScreenDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B9E0A12B19BC3E0004B9F8 /* CRSCastScreenDataController.swift */; };
 		B3B9E0A52B19C8E20004B9F8 /* CRSCastScreenDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B9E0A32B19C8E20004B9F8 /* CRSCastScreenDataCell.swift */; };
 		B3B9E0A62B19C8E20004B9F8 /* CRSCastScreenDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3B9E0A42B19C8E20004B9F8 /* CRSCastScreenDataCell.xib */; };
@@ -155,6 +160,8 @@
 		B3CA36062B87167E00D0B319 /* CRSClimbProListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3CA36042B87167E00D0B319 /* CRSClimbProListCell.xib */; };
 		B3CA36082B872B4F00D0B319 /* UITableView+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */; };
 		B3CA360B2B872DA500D0B319 /* CRSClimbListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */; };
+		B3D7841F2C32C704002340F1 /* CRSDragMoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7841E2C32C704002340F1 /* CRSDragMoveButton.swift */; };
+		B3D784212C32D6BC002340F1 /* CRSDragMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D784202C32D6BC002340F1 /* CRSDragMoveView.swift */; };
 		B3DF7CEA2AD7D4520042E755 /* JSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */; };
 		B3F2E77C2B8C6A7200E830FD /* ExplorePullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */; };
 		B3F9814E2BD1007C0005AA44 /* CCFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */; };
@@ -203,11 +210,18 @@
 		B34D5B032B678ABE00C6E097 /* UIDevice+CC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+CC.swift"; sourceTree = "<group>"; };
 		B35C2F552BD2021B00684958 /* ExploreFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreFileManager.swift; sourceTree = "<group>"; };
 		B368B0662AB3F87800ED6E43 /* ImageStudyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStudyController.swift; sourceTree = "<group>"; };
+		B36AADDD2BFD9C01003A9BAC /* CRSCastScreenUserTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenUserTipView.swift; sourceTree = "<group>"; };
+		B36AADDF2BFDC3A6003A9BAC /* CorosUserTipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorosUserTipViewController.swift; sourceTree = "<group>"; };
 		B3793A3E2B216D1600A038D8 /* CRSCastScreenDataStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataStyle.swift; sourceTree = "<group>"; };
 		B3793A402B21766A00A038D8 /* CastScreenDataTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastScreenDataTestController.swift; sourceTree = "<group>"; };
 		B3793A432B2199C200A038D8 /* CRSCastScreenDataSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataSettingController.swift; sourceTree = "<group>"; };
 		B3793A4B2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenOrderCell.swift; sourceTree = "<group>"; };
 		B3793A4C2B21A0AF00A038D8 /* CRSCastScreenOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSCastScreenOrderCell.xib; sourceTree = "<group>"; };
+		B37D39EB2BEF0FC90019D748 /* XDXDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXDemoViewController.h; sourceTree = "<group>"; };
+		B37D39EC2BEF0FC90019D748 /* XDXDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXDemoViewController.m; sourceTree = "<group>"; };
+		B37D39EE2BEF107E0019D748 /* XDXListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDXListViewController.swift; sourceTree = "<group>"; };
+		B37D3A262BEF3F6F0019D748 /* XDXPreviewView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XDXPreviewView.mm; sourceTree = "<group>"; };
+		B37D3A272BEF3F6F0019D748 /* XDXPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDXPreviewView.h; sourceTree = "<group>"; };
 		B391C7622BE9CE9900FAF0A3 /* chapter_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapter_1.h; sourceTree = "<group>"; };
 		B391C7632BE9CE9900FAF0A3 /* chapter_1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapter_1.c; sourceTree = "<group>"; };
 		B391C7662BE9D20100FAF0A3 /* chapter_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapter_2.h; sourceTree = "<group>"; };
@@ -390,8 +404,6 @@
 		B391CF272BEB7CB800FAF0A3 /* FFAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFAudioPlayer.swift; sourceTree = "<group>"; };
 		B391CF282BEB7CB800FAF0A3 /* FFPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFPlayer.swift; sourceTree = "<group>"; };
 		B391CF3A2BEB801B00FAF0A3 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
-		B391CF3C2BEB84CA00FAF0A3 /* XDXPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDXPreviewView.h; sourceTree = "<group>"; };
-		B391CF3D2BEB84CA00FAF0A3 /* XDXPreviewView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XDXPreviewView.mm; sourceTree = "<group>"; };
 		B391CF3F2BEB859900FAF0A3 /* CVideoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVideoHelper.h; sourceTree = "<group>"; };
 		B391CF402BEB859900FAF0A3 /* CVideoHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVideoHelper.m; sourceTree = "<group>"; };
 		B391CF422BEB9D9300FAF0A3 /* testh264.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = testh264.MOV; sourceTree = "<group>"; };
@@ -417,6 +429,7 @@
 		B3B36DEB2BEDEEC20024DF08 /* RecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
 		B3B36DED2BEE075B0024DF08 /* ZYSScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSScreenRecorder.m; sourceTree = "<group>"; };
 		B3B36DEE2BEE075B0024DF08 /* ZYSScreenRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSScreenRecorder.h; sourceTree = "<group>"; };
+		B3B61A912BFB3A99000EA18F /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		B3B9E0A12B19BC3E0004B9F8 /* CRSCastScreenDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataController.swift; sourceTree = "<group>"; };
 		B3B9E0A32B19C8E20004B9F8 /* CRSCastScreenDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCastScreenDataCell.swift; sourceTree = "<group>"; };
 		B3B9E0A42B19C8E20004B9F8 /* CRSCastScreenDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSCastScreenDataCell.xib; sourceTree = "<group>"; };
@@ -491,6 +504,8 @@
 		B3CA36042B87167E00D0B319 /* CRSClimbProListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSClimbProListCell.xib; sourceTree = "<group>"; };
 		B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+CC.swift"; sourceTree = "<group>"; };
 		B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbListItem.swift; sourceTree = "<group>"; };
+		B3D7841E2C32C704002340F1 /* CRSDragMoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDragMoveButton.swift; sourceTree = "<group>"; };
+		B3D784202C32D6BC002340F1 /* CRSDragMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDragMoveView.swift; sourceTree = "<group>"; };
 		B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewController.swift; sourceTree = "<group>"; };
 		B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePullUpController.swift; sourceTree = "<group>"; };
 		B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFileManager.swift; sourceTree = "<group>"; };
@@ -617,6 +632,8 @@
 		B34D5AFA2B67878900C6E097 /* COROS */ = {
 			isa = PBXGroup;
 			children = (
+				B3D7841D2C32C6BB002340F1 /* CastScreen */,
+				B36AADDC2BFD9BD3003A9BAC /* MapUserHead */,
 				B3F981592BD120AF0005AA44 /* CastTrackCacheManager */,
 				B3F981542BD11F5C0005AA44 /* PB */,
 				B34D5AFD2B6788B900C6E097 /* CastAlert */,
@@ -651,6 +668,15 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		B36AADDC2BFD9BD3003A9BAC /* MapUserHead */ = {
+			isa = PBXGroup;
+			children = (
+				B36AADDD2BFD9C01003A9BAC /* CRSCastScreenUserTipView.swift */,
+				B36AADDF2BFDC3A6003A9BAC /* CorosUserTipViewController.swift */,
+			);
+			path = MapUserHead;
+			sourceTree = "<group>";
+		};
 		B3793A422B21999700A038D8 /* Coros */ = {
 			isa = PBXGroup;
 			children = (
@@ -673,18 +699,38 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		B37D3A222BEF16C60019D748 /* xdx */ = {
+			isa = PBXGroup;
+			children = (
+				B37D3A252BEF3F6F0019D748 /* Render */,
+			);
+			path = xdx;
+			sourceTree = "<group>";
+		};
+		B37D3A252BEF3F6F0019D748 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				B37D3A262BEF3F6F0019D748 /* XDXPreviewView.mm */,
+				B37D3A272BEF3F6F0019D748 /* XDXPreviewView.h */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
 		B391C7522BE8CC6B00FAF0A3 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				B37D3A222BEF16C60019D748 /* xdx */,
 				B391CF392BEB7FC000FAF0A3 /* helper */,
 				B391CF112BEB7CB800FAF0A3 /* player */,
 				B391CF0F2BEB7C5800FAF0A3 /* 3d */,
-				B391CF0B2BEB7C2900FAF0A3 /* View */,
 				B391CC4E2BEA45EE00FAF0A3 /* FFExamples */,
 				B391C76E2BE9FD8900FAF0A3 /* Chapter */,
 				B391C76A2BE9FBF200FAF0A3 /* StudyVideoViewController.h */,
 				B391C76B2BE9FBF200FAF0A3 /* StudyVideoViewController.m */,
 				B391CDD52BEB4C3900FAF0A3 /* VideoPlayViewController.swift */,
+				B37D39EE2BEF107E0019D748 /* XDXListViewController.swift */,
+				B37D39EB2BEF0FC90019D748 /* XDXDemoViewController.h */,
+				B37D39EC2BEF0FC90019D748 /* XDXDemoViewController.m */,
 				B391CDD92BEB4D4F00FAF0A3 /* 1280x720.mp4 */,
 				B391CDDA2BEB5B6200FAF0A3 /* i-see-fire.mp4 */,
 				B391CF422BEB9D9300FAF0A3 /* testh264.MOV */,
@@ -959,15 +1005,6 @@
 			path = pkgconfig;
 			sourceTree = "<group>";
 		};
-		B391CF0B2BEB7C2900FAF0A3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B391CF3C2BEB84CA00FAF0A3 /* XDXPreviewView.h */,
-				B391CF3D2BEB84CA00FAF0A3 /* XDXPreviewView.mm */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		B391CF0F2BEB7C5800FAF0A3 /* 3d */ = {
 			isa = PBXGroup;
 			children = (
@@ -1118,6 +1155,14 @@
 				B3B36DE82BEDEE050024DF08 /* SMScreenRecording.m */,
 			);
 			path = SMScreenRecording;
+			sourceTree = "<group>";
+		};
+		B3B61A902BFB3A71000EA18F /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				B3B61A912BFB3A99000EA18F /* GestureViewController.swift */,
+			);
+			path = Gesture;
 			sourceTree = "<group>";
 		};
 		B3B9E0A02B19BBD30004B9F8 /* DataCollect */ = {
@@ -1369,6 +1414,7 @@
 		B3C45E532A9C6A1500AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3B61A902BFB3A71000EA18F /* Gesture */,
 				B3B36DE22BEDCC0C0024DF08 /* Recoder */,
 				B3B36DDE2BEC73100024DF08 /* Gyro */,
 				B391C7522BE8CC6B00FAF0A3 /* Video */,
@@ -1563,6 +1609,15 @@
 				B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B3D7841D2C32C6BB002340F1 /* CastScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B3D7841E2C32C704002340F1 /* CRSDragMoveButton.swift */,
+				B3D784202C32D6BC002340F1 /* CRSDragMoveView.swift */,
+			);
+			path = CastScreen;
 			sourceTree = "<group>";
 		};
 		B3DF7CE82AD7D4320042E755 /* JSON */ = {
@@ -1836,7 +1891,9 @@
 				B3C45EF32AA81AE100AD3586 /* CellEditViewController.swift in Sources */,
 				B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */,
 				B3C45E412A98AC9100AD3586 /* CCBaseViewController.swift in Sources */,
+				B37D39EF2BEF107E0019D748 /* XDXListViewController.swift in Sources */,
 				B3C45E472A98AF0700AD3586 /* UIColor+CC.swift in Sources */,
+				B36AADE02BFDC3A6003A9BAC /* CorosUserTipViewController.swift in Sources */,
 				B391CF362BEB7CB800FAF0A3 /* FFMediaAudioContext.swift in Sources */,
 				B3C45E612A9C6B3B00AD3586 /* ExpandCellItem.swift in Sources */,
 				B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */,
@@ -1845,6 +1902,7 @@
 				B3DF7CEA2AD7D4520042E755 /* JSONViewController.swift in Sources */,
 				B343501F2B5CF40700D974AA /* CRSTrackClimbChartView.swift in Sources */,
 				B34D5AFC2B6787B500C6E097 /* COROSDemoListController.swift in Sources */,
+				B37D3A372BEF3F6F0019D748 /* XDXPreviewView.mm in Sources */,
 				B391CF332BEB7CB800FAF0A3 /* FFVideoCacheObject.swift in Sources */,
 				B3B1EFCB2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift in Sources */,
 				B3CA35FD2B87153400D0B319 /* CRSClimbProDetailController.swift in Sources */,
@@ -1867,7 +1925,6 @@
 				B3C45EE92AA71C1D00AD3586 /* CRSPageSegmentView.swift in Sources */,
 				B3C45E7E2A9C930600AD3586 /* PageStudyViewController.swift in Sources */,
 				B3C45E732A9C83AF00AD3586 /* Int+CC.swift in Sources */,
-				B391CF3E2BEB84CA00FAF0A3 /* XDXPreviewView.mm in Sources */,
 				B391CC582BEA4FDC00FAF0A3 /* ff_decode_video.c in Sources */,
 				B391CF322BEB7CB800FAF0A3 /* FFAudioCacheObject.swift in Sources */,
 				B3C45EE72AA71BE700AD3586 /* SegmentViewController.swift in Sources */,
@@ -1879,6 +1936,7 @@
 				B3C45E042A98754C00AD3586 /* ViewController.swift in Sources */,
 				B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */,
 				B391CDD62BEB4C3900FAF0A3 /* VideoPlayViewController.swift in Sources */,
+				B3D7841F2C32C704002340F1 /* CRSDragMoveButton.swift in Sources */,
 				B391CF302BEB7CB800FAF0A3 /* KxAudioManager.m in Sources */,
 				B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */,
 				B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */,
@@ -1906,12 +1964,14 @@
 				B3C45EA52AA0260B00AD3586 /* AppleMapStyleChangeController.swift in Sources */,
 				B3C45E872A9C93CF00AD3586 /* PageGuide3ViewController.swift in Sources */,
 				B391CF2F2BEB7CB800FAF0A3 /* KxMovieGLView.m in Sources */,
+				B3D784212C32D6BC002340F1 /* CRSDragMoveView.swift in Sources */,
 				B3C45E902A9F26DA00AD3586 /* TableCollectionController.swift in Sources */,
 				B3B1EFCD2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift in Sources */,
 				B391CF412BEB859900FAF0A3 /* CVideoHelper.m in Sources */,
 				B3C45E502A9C3C6B00AD3586 /* ItemListViewController.swift in Sources */,
 				B391C76C2BE9FBF200FAF0A3 /* StudyVideoViewController.m in Sources */,
 				B3CA36022B87164800D0B319 /* CRSClimbProListHeaderView.swift in Sources */,
+				B36AADDE2BFD9C01003A9BAC /* CRSCastScreenUserTipView.swift in Sources */,
 				B303175F2B45706400D8B8F9 /* AliPlayerViewController.swift in Sources */,
 				B3C45E3B2A98ABD400AD3586 /* ThirdViewController.swift in Sources */,
 				B3C45E4C2A9C3AF500AD3586 /* ExpandCellViewController.swift in Sources */,
@@ -1934,6 +1994,7 @@
 				B3C19ED22BE8A450001EE68B /* bar.c in Sources */,
 				B3C45E002A98754C00AD3586 /* AppDelegate.swift in Sources */,
 				B31849072B340A0100D9B9B8 /* CCAnimateListController.swift in Sources */,
+				B3B61A922BFB3A99000EA18F /* GestureViewController.swift in Sources */,
 				B3C45E302A98A6B800AD3586 /* SceneDelegate.swift in Sources */,
 				B3C45EA32AA025B200AD3586 /* AppleMapViewController.swift in Sources */,
 				B391CF2B2BEB7CB800FAF0A3 /* FFRGBRender.swift in Sources */,
@@ -1943,6 +2004,7 @@
 				B3C45E3D2A98ABE000AD3586 /* CollectViewController.swift in Sources */,
 				B3F2E77C2B8C6A7200E830FD /* ExplorePullUpController.swift in Sources */,
 				B391CF4D2BEBA21600FAF0A3 /* chapter_3.c in Sources */,
+				B37D39ED2BEF0FC90019D748 /* XDXDemoViewController.m in Sources */,
 				B3B36DE42BEDCC330024DF08 /* CCScreenRecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

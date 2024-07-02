@@ -312,3 +312,18 @@ extension CGRect {
         return CGPoint(x: minX, y: minY)
     }
 }
+
+extension UIView {
+    // 阴影
+    func shadowOffset(_ size: CGSize = CGSize(width: 0, height: 8),
+                      radius: CGFloat = 12,
+                      color: UIColor = .black,
+                      opacity: Float = 0.1) {
+        let path = UIBezierPath(rect: self.bounds)
+        self.layer.shadowPath = path.cgPath
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOpacity = opacity
+        self.layer.shadowRadius = radius
+        self.layer.shadowOffset = size
+    }
+}

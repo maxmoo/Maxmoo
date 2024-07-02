@@ -22,13 +22,14 @@ class ChartViewController: UIViewController {
 //        return chart
 //    }()
 //    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        view.backgroundColor = .white
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
 //        
 //        view.addSubview(button)
 //        view.addSubview(chart)
-//    }
+        addDragMove()
+    }
 //
 //    
 //    @objc
@@ -41,4 +42,16 @@ class ChartViewController: UIViewController {
 //        let hei = preVC.showHeight(with: 2)
 //        addPullUpController(preVC, initialStickyPointOffset: hei, animated: true)
 //    }
+    
+    func addDragMove() {
+        let button = CRSDragMoveButton(frame: CGRect(x: 100, y: 100, width: 50, height: 50))
+        button.backgroundColor = .red
+        button.assistiveType = .horizon
+        view.addSubview(button)
+        
+        //点击事件
+        button.action = {(sender) in
+            print("click---->",123344)
+        }
+    }
 }

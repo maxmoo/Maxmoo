@@ -14,7 +14,7 @@ class CCTransitionUtilListController: UIViewController {
     private lazy var circleTransUtil: ExploreTransitionCircle = {
         let circleTransUtil = ExploreTransitionCircle()
         circleTransUtil.duration = 0.5
-        circleTransUtil.centerPoint = presentActionButton.center
+        circleTransUtil.centerPoint = circleActionButton.center
         return circleTransUtil
     }()
     private lazy var photoTransUtil: ExploreTransitionPhoto = {
@@ -25,7 +25,7 @@ class CCTransitionUtilListController: UIViewController {
     }()
     
     lazy var testImageView: UIImageView = {
-        let imageView = UIImageView(frame: CGRect(x: 100, y: 400, width: 100, height: 100))
+        let imageView = UIImageView(frame: CGRect(x: 100, y: 500, width: 100, height: 100))
         imageView.image = UIImage(named: "icon_maleAvatar")
         return imageView
     }()
@@ -46,8 +46,16 @@ class CCTransitionUtilListController: UIViewController {
         return button
     }()
     
-    lazy var photoActionButton: UIButton = {
+    lazy var circleActionButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 50, y: 300, width: 100, height: 50))
+        button.backgroundColor = .randomColor
+        button.setTitle("circle", for: .normal)
+        button.addTarget(self, action: #selector(circleAction), for: .touchUpInside)
+        return button
+    }()
+    
+    lazy var photoActionButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 50, y: 400, width: 100, height: 50))
         button.backgroundColor = .randomColor
         button.setTitle("photo", for: .normal)
         button.addTarget(self, action: #selector(photoAction), for: .touchUpInside)
@@ -60,6 +68,7 @@ class CCTransitionUtilListController: UIViewController {
         
         view.addSubview(pushActionButton)
         view.addSubview(presentActionButton)
+        view.addSubview(circleActionButton)
         view.addSubview(photoActionButton)
         view.addSubview(testImageView)
     }
@@ -75,6 +84,15 @@ class CCTransitionUtilListController: UIViewController {
     
     @objc
     func presentAction() {
+        let present = CCTransPresentController()
+        transitionUtil.animateType = .present
+        present.transitioningDelegate = transitionUtil
+        present.modalPresentationStyle = .custom
+        self.present(present, animated: true)
+    }
+    
+    @objc
+    func circleAction() {
         let present = CCTransPresentController()
         present.transitioningDelegate = circleTransUtil
         present.modalPresentationStyle = .custom

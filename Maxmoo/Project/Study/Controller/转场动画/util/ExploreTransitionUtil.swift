@@ -35,6 +35,14 @@ enum ExploreModalOperation {
     case dismissal
 }
 
+/// 转场动画效果
+enum ExploreTransitionAnimateType {
+    // 和push类似从右至左推入
+    case push
+    // 从下到上弹出
+    case present
+}
+
 /// 转场类型
 enum ExploreTransitionType {
     case push(_ operation: ExploreModalOperation)
@@ -45,6 +53,8 @@ enum ExploreTransitionType {
 class ExploreTransitionUtil: NSObject {
     /// 过渡动画的时长
     public var duration: TimeInterval = 0.23
+    /// 动画类型
+    public var animateType: ExploreTransitionAnimateType = .push
     /// 交互转场
     public var interactive = false
     /// 可交互对象
@@ -80,7 +90,7 @@ class ExploreTransitionUtil: NSObject {
         let toView = toVC.view!
         
         let xOffset = containerView.frame.width
-//        let yOffset = containerView.frame.height
+        let yOffset = containerView.frame.height
         var fromTransform = CGAffineTransform.identity
         var toTransform = CGAffineTransform.identity
         
@@ -96,12 +106,23 @@ class ExploreTransitionUtil: NSObject {
                 containerView.insertSubview(toView, at: 0)
             }
         case .present(let operation):
-            let fromX = operation == .presentation ? 0 : xOffset
-            fromTransform = CGAffineTransform(translationX: fromX, y: 0)
-            let toX = operation == .presentation ? xOffset : 0
-            toTransform = CGAffineTransform(translationX: toX, y: 0)
-            if operation == .presentation {
-                containerView.addSubview(toView)
+            switch animateType {
+            case .push:
+                let fromX = operation == .presentation ? 0 : xOffset
+                fromTransform = CGAffineTransform(translationX: fromX, y: 0)
+                let toX = operation == .presentation ? xOffset : 0
+                toTransform = CGAffineTransform(translationX: toX, y: 0)
+                if operation == .presentation {
+                    containerView.addSubview(toView)
+                }
+            case .present:
+                let fromY = operation == .presentation ? 0 : yOffset
+                fromTransform = CGAffineTransform(translationX: 0, y: fromY)
+                let toY = operation == .presentation ? yOffset : 0
+                toTransform = CGAffineTransform(translationX: 0, y: toY)
+                if operation == .presentation {
+                    containerView.addSubview(toView)
+                }
             }
         }
         

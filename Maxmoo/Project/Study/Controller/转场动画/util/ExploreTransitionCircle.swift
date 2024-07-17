@@ -12,6 +12,12 @@ class ExploreTransitionCircle: ExploreTransitionUtil {
     var circleColor: UIColor = .white
     
     override func transitionAnimation(transitionContext: UIViewControllerContextTransitioning) {
+        if !isPresentation() {
+            duration = 0.23
+            super.transitionAnimation(transitionContext: transitionContext)
+            return
+        }
+        
         //获得容器视图（转场动画发生的地方）
         let containerView = transitionContext.containerView
         

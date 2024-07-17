@@ -12,7 +12,9 @@ class COROSDemoListController: ItemListViewController {
     override var items: [[String]] {
         return [["CRS图表-ChartViewController",
                  "投屏提醒-CRSAlertViewController",
-                 "地图用户头像-CorosUserTipViewController"]]
+                 "地图用户头像-CorosUserTipViewController",
+                 "聚合-CCMapClusterController",
+                 "高德聚合-AnnotationClusterViewController"]]
     }
     
     override func viewDidLoad() {

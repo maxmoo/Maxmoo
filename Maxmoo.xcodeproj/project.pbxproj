@@ -80,6 +80,10 @@
 		B391CF4D2BEBA21600FAF0A3 /* chapter_3.c in Sources */ = {isa = PBXBuildFile; fileRef = B391CF4C2BEBA21600FAF0A3 /* chapter_3.c */; };
 		B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39842382B5524A70028D32B /* OCStudyViewController.m */; };
 		B398423C2B561FC10028D32B /* CStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B398423B2B561FC10028D32B /* CStudyViewController.m */; };
+		B39A4ADA2C3E2A7C00B23FBD /* CRSMapClusterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A4AD92C3E2A7C00B23FBD /* CRSMapClusterAnnotation.swift */; };
+		B39A4AE02C3E2A8100B23FBD /* CoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B39A4ADC2C3E2A8100B23FBD /* CoordinateQuadTree.m */; };
+		B39A4AE12C3E2A8100B23FBD /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B39A4ADD2C3E2A8100B23FBD /* QuadTree.m */; };
+		B39A4AE42C3E2AAA00B23FBD /* ClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B39A4AE22C3E2AAA00B23FBD /* ClusterAnnotation.m */; };
 		B3AF184D2B502182004FD144 /* SQLiteSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF184C2B502182004FD144 /* SQLiteSwiftViewController.swift */; };
 		B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */; };
 		B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */; };
@@ -153,6 +157,13 @@
 		B3C45EF32AA81AE100AD3586 /* CellEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EF22AA81AE100AD3586 /* CellEditViewController.swift */; };
 		B3C45EF62AA81CDA00AD3586 /* CellEditMoveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C45EF42AA81CDA00AD3586 /* CellEditMoveCell.swift */; };
 		B3C45EF72AA81CDA00AD3586 /* CellEditMoveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C45EF52AA81CDA00AD3586 /* CellEditMoveCell.xib */; };
+		B3C6B2D42C47946600F4C736 /* CCTransitionUtilListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6B2D32C47946600F4C736 /* CCTransitionUtilListController.swift */; };
+		B3C6B2D62C47949E00F4C736 /* ExploreTransitionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6B2D52C47949E00F4C736 /* ExploreTransitionUtil.swift */; };
+		B3C6B2D82C479B8000F4C736 /* CCTransPresentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6B2D72C479B8000F4C736 /* CCTransPresentController.swift */; };
+		B3C6B2DA2C479B9200F4C736 /* CCTransPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6B2D92C479B9200F4C736 /* CCTransPushViewController.swift */; };
+		B3C6B2DD2C47AE9600F4C736 /* ExploreTransitionPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6B2DC2C47AE9600F4C736 /* ExploreTransitionPhoto.swift */; };
+		B3C6B2DF2C47B25A00F4C736 /* ExploreTransitionCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6B2DE2C47B25A00F4C736 /* ExploreTransitionCircle.swift */; };
+		B3C6B2E12C47BAC000F4C736 /* CCTransPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6B2E02C47BAC000F4C736 /* CCTransPhotoViewController.swift */; };
 		B3CA35FD2B87153400D0B319 /* CRSClimbProDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA35FC2B87153400D0B319 /* CRSClimbProDetailController.swift */; };
 		B3CA36002B87162700D0B319 /* CRSClimbProChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA35FF2B87162700D0B319 /* CRSClimbProChartHeaderView.swift */; };
 		B3CA36022B87164800D0B319 /* CRSClimbProListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA36012B87164800D0B319 /* CRSClimbProListHeaderView.swift */; };
@@ -162,6 +173,14 @@
 		B3CA360B2B872DA500D0B319 /* CRSClimbListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */; };
 		B3D7841F2C32C704002340F1 /* CRSDragMoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7841E2C32C704002340F1 /* CRSDragMoveButton.swift */; };
 		B3D784212C32D6BC002340F1 /* CRSDragMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D784202C32D6BC002340F1 /* CRSDragMoveView.swift */; };
+		B3D784322C3435AC002340F1 /* CCTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D784312C3435AC002340F1 /* CCTextViewController.swift */; };
+		B3D784352C343627002340F1 /* CCTextTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D784342C343627002340F1 /* CCTextTools.m */; };
+		B3D7843A2C34E216002340F1 /* CCMapClusterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D784392C34E216002340F1 /* CCMapClusterController.swift */; };
+		B3D7844C2C366DF9002340F1 /* ClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D784452C366DF9002340F1 /* ClusterAnnotationView.m */; };
+		B3D7844D2C366DF9002340F1 /* ClusterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D784462C366DF9002340F1 /* ClusterTableViewCell.m */; };
+		B3D7844E2C366DF9002340F1 /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D784472C366DF9002340F1 /* CustomCalloutView.m */; };
+		B3D784502C366E21002340F1 /* AnnotationClusterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7844F2C366E21002340F1 /* AnnotationClusterViewController.swift */; };
+		B3D784532C367377002340F1 /* PoiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D784512C367377002340F1 /* PoiDetailViewController.m */; };
 		B3DF7CEA2AD7D4520042E755 /* JSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */; };
 		B3F2E77C2B8C6A7200E830FD /* ExplorePullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */; };
 		B3F9814E2BD1007C0005AA44 /* CCFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */; };
@@ -417,6 +436,13 @@
 		B39842382B5524A70028D32B /* OCStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCStudyViewController.m; sourceTree = "<group>"; };
 		B398423A2B561FC10028D32B /* CStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CStudyViewController.h; sourceTree = "<group>"; };
 		B398423B2B561FC10028D32B /* CStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CStudyViewController.m; sourceTree = "<group>"; };
+		B39A4AD92C3E2A7C00B23FBD /* CRSMapClusterAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRSMapClusterAnnotation.swift; sourceTree = "<group>"; };
+		B39A4ADC2C3E2A8100B23FBD /* CoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateQuadTree.m; sourceTree = "<group>"; };
+		B39A4ADD2C3E2A8100B23FBD /* QuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadTree.m; sourceTree = "<group>"; };
+		B39A4ADE2C3E2A8100B23FBD /* CoordinateQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateQuadTree.h; sourceTree = "<group>"; };
+		B39A4ADF2C3E2A8100B23FBD /* QuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
+		B39A4AE22C3E2AAA00B23FBD /* ClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotation.m; sourceTree = "<group>"; };
+		B39A4AE32C3E2AAA00B23FBD /* ClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotation.h; sourceTree = "<group>"; };
 		B3AF184C2B502182004FD144 /* SQLiteSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteSwiftViewController.swift; sourceTree = "<group>"; };
 		B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchScrollController.swift; sourceTree = "<group>"; };
 		B3B1EFC82AA99FF8005E6E06 /* CRSCusSpoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCusSpoPageView.swift; sourceTree = "<group>"; };
@@ -497,6 +523,13 @@
 		B3C45EF22AA81AE100AD3586 /* CellEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEditViewController.swift; sourceTree = "<group>"; };
 		B3C45EF42AA81CDA00AD3586 /* CellEditMoveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEditMoveCell.swift; sourceTree = "<group>"; };
 		B3C45EF52AA81CDA00AD3586 /* CellEditMoveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellEditMoveCell.xib; sourceTree = "<group>"; };
+		B3C6B2D32C47946600F4C736 /* CCTransitionUtilListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTransitionUtilListController.swift; sourceTree = "<group>"; };
+		B3C6B2D52C47949E00F4C736 /* ExploreTransitionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTransitionUtil.swift; sourceTree = "<group>"; };
+		B3C6B2D72C479B8000F4C736 /* CCTransPresentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTransPresentController.swift; sourceTree = "<group>"; };
+		B3C6B2D92C479B9200F4C736 /* CCTransPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTransPushViewController.swift; sourceTree = "<group>"; };
+		B3C6B2DC2C47AE9600F4C736 /* ExploreTransitionPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTransitionPhoto.swift; sourceTree = "<group>"; };
+		B3C6B2DE2C47B25A00F4C736 /* ExploreTransitionCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTransitionCircle.swift; sourceTree = "<group>"; };
+		B3C6B2E02C47BAC000F4C736 /* CCTransPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTransPhotoViewController.swift; sourceTree = "<group>"; };
 		B3CA35FC2B87153400D0B319 /* CRSClimbProDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbProDetailController.swift; sourceTree = "<group>"; };
 		B3CA35FF2B87162700D0B319 /* CRSClimbProChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbProChartHeaderView.swift; sourceTree = "<group>"; };
 		B3CA36012B87164800D0B319 /* CRSClimbProListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbProListHeaderView.swift; sourceTree = "<group>"; };
@@ -506,6 +539,19 @@
 		B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbListItem.swift; sourceTree = "<group>"; };
 		B3D7841E2C32C704002340F1 /* CRSDragMoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDragMoveButton.swift; sourceTree = "<group>"; };
 		B3D784202C32D6BC002340F1 /* CRSDragMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDragMoveView.swift; sourceTree = "<group>"; };
+		B3D784312C3435AC002340F1 /* CCTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTextViewController.swift; sourceTree = "<group>"; };
+		B3D784332C343627002340F1 /* CCTextTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTextTools.h; sourceTree = "<group>"; };
+		B3D784342C343627002340F1 /* CCTextTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTextTools.m; sourceTree = "<group>"; };
+		B3D784392C34E216002340F1 /* CCMapClusterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMapClusterController.swift; sourceTree = "<group>"; };
+		B3D784432C366DF9002340F1 /* ClusterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterTableViewCell.h; sourceTree = "<group>"; };
+		B3D784442C366DF9002340F1 /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
+		B3D784452C366DF9002340F1 /* ClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotationView.m; sourceTree = "<group>"; };
+		B3D784462C366DF9002340F1 /* ClusterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterTableViewCell.m; sourceTree = "<group>"; };
+		B3D784472C366DF9002340F1 /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
+		B3D784482C366DF9002340F1 /* ClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotationView.h; sourceTree = "<group>"; };
+		B3D7844F2C366E21002340F1 /* AnnotationClusterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationClusterViewController.swift; sourceTree = "<group>"; };
+		B3D784512C367377002340F1 /* PoiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiDetailViewController.m; sourceTree = "<group>"; };
+		B3D784522C367377002340F1 /* PoiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiDetailViewController.h; sourceTree = "<group>"; };
 		B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewController.swift; sourceTree = "<group>"; };
 		B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePullUpController.swift; sourceTree = "<group>"; };
 		B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFileManager.swift; sourceTree = "<group>"; };
@@ -632,6 +678,7 @@
 		B34D5AFA2B67878900C6E097 /* COROS */ = {
 			isa = PBXGroup;
 			children = (
+				B3D784222C33D131002340F1 /* 聚合 */,
 				B3D7841D2C32C6BB002340F1 /* CastScreen */,
 				B36AADDC2BFD9BD3003A9BAC /* MapUserHead */,
 				B3F981592BD120AF0005AA44 /* CastTrackCacheManager */,
@@ -1111,6 +1158,27 @@
 			path = C;
 			sourceTree = "<group>";
 		};
+		B39A4AD82C3E2A7C00B23FBD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B39A4AD92C3E2A7C00B23FBD /* CRSMapClusterAnnotation.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B39A4ADB2C3E2A8100B23FBD /* tree */ = {
+			isa = PBXGroup;
+			children = (
+				B39A4AE32C3E2AAA00B23FBD /* ClusterAnnotation.h */,
+				B39A4AE22C3E2AAA00B23FBD /* ClusterAnnotation.m */,
+				B39A4ADE2C3E2A8100B23FBD /* CoordinateQuadTree.h */,
+				B39A4ADC2C3E2A8100B23FBD /* CoordinateQuadTree.m */,
+				B39A4ADF2C3E2A8100B23FBD /* QuadTree.h */,
+				B39A4ADD2C3E2A8100B23FBD /* QuadTree.m */,
+			);
+			path = tree;
+			sourceTree = "<group>";
+		};
 		B3AF184B2B502155004FD144 /* SQL */ = {
 			isa = PBXGroup;
 			children = (
@@ -1414,6 +1482,8 @@
 		B3C45E532A9C6A1500AD3586 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3C6B2D22C47943800F4C736 /* 转场动画 */,
+				B3D784302C343583002340F1 /* Text */,
 				B3B61A902BFB3A71000EA18F /* Gesture */,
 				B3B36DE22BEDCC0C0024DF08 /* Recoder */,
 				B3B36DDE2BEC73100024DF08 /* Gyro */,
@@ -1592,6 +1662,28 @@
 			path = Segment;
 			sourceTree = "<group>";
 		};
+		B3C6B2D22C47943800F4C736 /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				B3C6B2DB2C479B9A00F4C736 /* util */,
+				B3C6B2D32C47946600F4C736 /* CCTransitionUtilListController.swift */,
+				B3C6B2D72C479B8000F4C736 /* CCTransPresentController.swift */,
+				B3C6B2D92C479B9200F4C736 /* CCTransPushViewController.swift */,
+				B3C6B2E02C47BAC000F4C736 /* CCTransPhotoViewController.swift */,
+			);
+			path = "转场动画";
+			sourceTree = "<group>";
+		};
+		B3C6B2DB2C479B9A00F4C736 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B3C6B2D52C47949E00F4C736 /* ExploreTransitionUtil.swift */,
+				B3C6B2DC2C47AE9600F4C736 /* ExploreTransitionPhoto.swift */,
+				B3C6B2DE2C47B25A00F4C736 /* ExploreTransitionCircle.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		B3CA35FE2B8715FE00D0B319 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1618,6 +1710,43 @@
 				B3D784202C32D6BC002340F1 /* CRSDragMoveView.swift */,
 			);
 			path = CastScreen;
+			sourceTree = "<group>";
+		};
+		B3D784222C33D131002340F1 /* 聚合 */ = {
+			isa = PBXGroup;
+			children = (
+				B39A4ADB2C3E2A8100B23FBD /* tree */,
+				B39A4AD82C3E2A7C00B23FBD /* model */,
+				B3D784522C367377002340F1 /* PoiDetailViewController.h */,
+				B3D784512C367377002340F1 /* PoiDetailViewController.m */,
+				B3D7844F2C366E21002340F1 /* AnnotationClusterViewController.swift */,
+				B3D784422C366DF9002340F1 /* View */,
+				B3D784392C34E216002340F1 /* CCMapClusterController.swift */,
+			);
+			path = "聚合";
+			sourceTree = "<group>";
+		};
+		B3D784302C343583002340F1 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				B3D784312C3435AC002340F1 /* CCTextViewController.swift */,
+				B3D784332C343627002340F1 /* CCTextTools.h */,
+				B3D784342C343627002340F1 /* CCTextTools.m */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		B3D784422C366DF9002340F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3D784432C366DF9002340F1 /* ClusterTableViewCell.h */,
+				B3D784442C366DF9002340F1 /* CustomCalloutView.h */,
+				B3D784452C366DF9002340F1 /* ClusterAnnotationView.m */,
+				B3D784462C366DF9002340F1 /* ClusterTableViewCell.m */,
+				B3D784472C366DF9002340F1 /* CustomCalloutView.m */,
+				B3D784482C366DF9002340F1 /* ClusterAnnotationView.h */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B3DF7CE82AD7D4320042E755 /* JSON */ = {
@@ -1891,6 +2020,7 @@
 				B3C45EF32AA81AE100AD3586 /* CellEditViewController.swift in Sources */,
 				B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */,
 				B3C45E412A98AC9100AD3586 /* CCBaseViewController.swift in Sources */,
+				B3D7844E2C366DF9002340F1 /* CustomCalloutView.m in Sources */,
 				B37D39EF2BEF107E0019D748 /* XDXListViewController.swift in Sources */,
 				B3C45E472A98AF0700AD3586 /* UIColor+CC.swift in Sources */,
 				B36AADE02BFDC3A6003A9BAC /* CorosUserTipViewController.swift in Sources */,
@@ -1906,10 +2036,12 @@
 				B391CF332BEB7CB800FAF0A3 /* FFVideoCacheObject.swift in Sources */,
 				B3B1EFCB2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift in Sources */,
 				B3CA35FD2B87153400D0B319 /* CRSClimbProDetailController.swift in Sources */,
+				B3D784532C367377002340F1 /* PoiDetailViewController.m in Sources */,
 				B3C45E832A9C93B500AD3586 /* PageGuide1ViewController.swift in Sources */,
 				B391CF3B2BEB801B00FAF0A3 /* VideoHelper.swift in Sources */,
 				B3C45E5D2A9C6A9E00AD3586 /* ExpandTableViewCell.swift in Sources */,
 				B3F981572BD11F5C0005AA44 /* poi.pb.swift in Sources */,
+				B39A4ADA2C3E2A7C00B23FBD /* CRSMapClusterAnnotation.swift in Sources */,
 				B3F9814E2BD1007C0005AA44 /* CCFileManager.swift in Sources */,
 				B3C45E392A98ABC600AD3586 /* StudyViewController.swift in Sources */,
 				B31849172B353AD400D9B9B8 /* SUHello.swift in Sources */,
@@ -1918,11 +2050,13 @@
 				B31849092B340A4F00D9B9B8 /* CCCircleAnimateController.swift in Sources */,
 				B3C45E6F2A9C829600AD3586 /* CCPublic.swift in Sources */,
 				B3C45E712A9C839E00AD3586 /* Double+CC.swift in Sources */,
+				B3C6B2D82C479B8000F4C736 /* CCTransPresentController.swift in Sources */,
 				B3CA36082B872B4F00D0B319 /* UITableView+CC.swift in Sources */,
 				B3C45E7B2A9C85C900AD3586 /* UIViewController+CC.swift in Sources */,
 				B391CF2C2BEB7CB800FAF0A3 /* FFMediaVideoContext.swift in Sources */,
 				B3C45E6D2A9C819D00AD3586 /* CCMacro.swift in Sources */,
 				B3C45EE92AA71C1D00AD3586 /* CRSPageSegmentView.swift in Sources */,
+				B3C6B2DD2C47AE9600F4C736 /* ExploreTransitionPhoto.swift in Sources */,
 				B3C45E7E2A9C930600AD3586 /* PageStudyViewController.swift in Sources */,
 				B3C45E732A9C83AF00AD3586 /* Int+CC.swift in Sources */,
 				B391CC582BEA4FDC00FAF0A3 /* ff_decode_video.c in Sources */,
@@ -1934,12 +2068,16 @@
 				B3B9E0A52B19C8E20004B9F8 /* CRSCastScreenDataCell.swift in Sources */,
 				B3B36DEC2BEDEEC20024DF08 /* RecorderViewController.swift in Sources */,
 				B3C45E042A98754C00AD3586 /* ViewController.swift in Sources */,
+				B3C6B2D42C47946600F4C736 /* CCTransitionUtilListController.swift in Sources */,
 				B3B1EFC62AA96F44005E6E06 /* WatchScrollController.swift in Sources */,
 				B391CDD62BEB4C3900FAF0A3 /* VideoPlayViewController.swift in Sources */,
 				B3D7841F2C32C704002340F1 /* CRSDragMoveButton.swift in Sources */,
+				B3D784322C3435AC002340F1 /* CCTextViewController.swift in Sources */,
 				B391CF302BEB7CB800FAF0A3 /* KxAudioManager.m in Sources */,
 				B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */,
 				B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */,
+				B3D7843A2C34E216002340F1 /* CCMapClusterController.swift in Sources */,
+				B39A4AE12C3E2A8100B23FBD /* QuadTree.m in Sources */,
 				B3B36DEF2BEE075B0024DF08 /* ZYSScreenRecorder.m in Sources */,
 				B391CF352BEB7CB800FAF0A3 /* FFAudioInformation.swift in Sources */,
 				B34350242B5D04A000D974AA /* UIBezierPath+curved.m in Sources */,
@@ -1948,28 +2086,35 @@
 				B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */,
 				B34D5B042B678ABE00C6E097 /* UIDevice+CC.swift in Sources */,
 				B3B36DE02BEC732B0024DF08 /* GyroViewController.swift in Sources */,
+				B3C6B2E12C47BAC000F4C736 /* CCTransPhotoViewController.swift in Sources */,
 				B391CF342BEB7CB800FAF0A3 /* FFEngine.swift in Sources */,
+				B39A4AE42C3E2AAA00B23FBD /* ClusterAnnotation.m in Sources */,
 				B3C45E492A9C334A00AD3586 /* String+CC.swift in Sources */,
 				B3F9AC392B889BC700492144 /* AMapViewController.swift in Sources */,
 				B3AF184D2B502182004FD144 /* SQLiteSwiftViewController.swift in Sources */,
 				B35C2F562BD2021B00684958 /* ExploreFileManager.swift in Sources */,
 				B31849152B35354F00D9B9B8 /* SwiftUIHelloController.swift in Sources */,
+				B3D7844C2C366DF9002340F1 /* ClusterAnnotationView.m in Sources */,
 				B391C7682BE9D20100FAF0A3 /* chapter_2.c in Sources */,
 				B3C45E852A9C93C300AD3586 /* PageGuide2ViewController.swift in Sources */,
 				B3C45E802A9C934700AD3586 /* PageGuideViewController.swift in Sources */,
 				B31849122B3534E700D9B9B8 /* SwiftUIController.swift in Sources */,
 				B391CF2E2BEB7CB800FAF0A3 /* FFFilter.swift in Sources */,
+				B3C6B2D62C47949E00F4C736 /* ExploreTransitionUtil.swift in Sources */,
 				B3793A412B21766A00A038D8 /* CastScreenDataTestController.swift in Sources */,
 				B391CF2D2BEB7CB800FAF0A3 /* FFMetalRender.swift in Sources */,
 				B3C45EA52AA0260B00AD3586 /* AppleMapStyleChangeController.swift in Sources */,
+				B3D784502C366E21002340F1 /* AnnotationClusterViewController.swift in Sources */,
 				B3C45E872A9C93CF00AD3586 /* PageGuide3ViewController.swift in Sources */,
 				B391CF2F2BEB7CB800FAF0A3 /* KxMovieGLView.m in Sources */,
 				B3D784212C32D6BC002340F1 /* CRSDragMoveView.swift in Sources */,
 				B3C45E902A9F26DA00AD3586 /* TableCollectionController.swift in Sources */,
 				B3B1EFCD2AA9E8EE005E6E06 /* CRSCusSpoPageIndicator.swift in Sources */,
+				B3C6B2DA2C479B9200F4C736 /* CCTransPushViewController.swift in Sources */,
 				B391CF412BEB859900FAF0A3 /* CVideoHelper.m in Sources */,
 				B3C45E502A9C3C6B00AD3586 /* ItemListViewController.swift in Sources */,
 				B391C76C2BE9FBF200FAF0A3 /* StudyVideoViewController.m in Sources */,
+				B3D784352C343627002340F1 /* CCTextTools.m in Sources */,
 				B3CA36022B87164800D0B319 /* CRSClimbProListHeaderView.swift in Sources */,
 				B36AADDE2BFD9C01003A9BAC /* CRSCastScreenUserTipView.swift in Sources */,
 				B303175F2B45706400D8B8F9 /* AliPlayerViewController.swift in Sources */,
@@ -1991,6 +2136,7 @@
 				B398423C2B561FC10028D32B /* CStudyViewController.m in Sources */,
 				B3793A4D2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift in Sources */,
 				B391CF2A2BEB7CB800FAF0A3 /* FFVideoPlayer.swift in Sources */,
+				B3D7844D2C366DF9002340F1 /* ClusterTableViewCell.m in Sources */,
 				B3C19ED22BE8A450001EE68B /* bar.c in Sources */,
 				B3C45E002A98754C00AD3586 /* AppDelegate.swift in Sources */,
 				B31849072B340A0100D9B9B8 /* CCAnimateListController.swift in Sources */,
@@ -1998,12 +2144,14 @@
 				B3C45E302A98A6B800AD3586 /* SceneDelegate.swift in Sources */,
 				B3C45EA32AA025B200AD3586 /* AppleMapViewController.swift in Sources */,
 				B391CF2B2BEB7CB800FAF0A3 /* FFRGBRender.swift in Sources */,
+				B39A4AE02C3E2A8100B23FBD /* CoordinateQuadTree.m in Sources */,
 				B34D5B022B67893F00C6E097 /* CRSCastScreenAlertView.swift in Sources */,
 				B3C046B72AD1597100A275BD /* ReadFileViewController.swift in Sources */,
 				B3B36DEA2BEDEE050024DF08 /* SMScreenRecording.m in Sources */,
 				B3C45E3D2A98ABE000AD3586 /* CollectViewController.swift in Sources */,
 				B3F2E77C2B8C6A7200E830FD /* ExplorePullUpController.swift in Sources */,
 				B391CF4D2BEBA21600FAF0A3 /* chapter_3.c in Sources */,
+				B3C6B2DF2C47B25A00F4C736 /* ExploreTransitionCircle.swift in Sources */,
 				B37D39ED2BEF0FC90019D748 /* XDXDemoViewController.m in Sources */,
 				B3B36DE42BEDCC330024DF08 /* CCScreenRecoder.swift in Sources */,
 			);
@@ -2184,7 +2332,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QUT35UC9Q8;
+				DEVELOPMENT_TEAM = NCW52493Y3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -2216,7 +2364,7 @@
 					"$(PROJECT_DIR)/Maxmoo/Lib/ffmpeg/lib",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.coros.Maxmoo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coros.coros;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Maxmoo/Head/Maxmoo-Bridging-Header.h";
@@ -2235,7 +2383,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QUT35UC9Q8;
+				DEVELOPMENT_TEAM = NCW52493Y3;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2262,7 +2410,7 @@
 					"$(PROJECT_DIR)/Maxmoo/Lib/ffmpeg/lib",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.coros.Maxmoo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coros.coros;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Maxmoo/Head/Maxmoo-Bridging-Header.h";

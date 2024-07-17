@@ -16,6 +16,20 @@
 #import "XDXPreviewView.h"
 #import "SMScreenRecording.h"
 #import "ZYSScreenRecorder.h"
+#import "CCTextTools.h"
+//#import "CoordinateQuadTree.h"
+
+#import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
+#import "CoordinateQuadTree.h"
+#import "ClusterAnnotation.h"
+
+#import "ClusterAnnotationView.h"
+#import "ClusterTableViewCell.h"
+#import "CustomCalloutView.h"
+#import "PoiDetailViewController.h"
 
 static int READ_END_OF_FILE = AVERROR_EOF;
 static int64_t PTS_INVALID = AV_NOPTS_VALUE;

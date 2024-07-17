@@ -10,7 +10,9 @@ import UIKit
 class StudyViewController: ItemListViewController {
 
     override var items: [[String]] {
-        return [["COROS-COROSDemoListController",
+        return [["COROS-COROSDemoListController", 
+                 "转场动画-CCTransitionUtilListController",
+                 "文本-CCTextViewController",
                  "OC-OCStudyViewController",
                  "C-CStudyViewController",
                  "Video-StudyVideoViewController",

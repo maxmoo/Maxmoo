@@ -44,7 +44,7 @@ class CCTransPhotoViewController: UIViewController {
     
     @objc
     func back() {
-        testImageView.isHidden = true
+//        testImageView.isHidden = true
         if let transitionDelegate {
             transitionDelegate.forwardPhoto?.image = testImageView.image
         }

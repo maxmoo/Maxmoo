@@ -40,7 +40,7 @@ class ExploreTransitionPhoto: ExploreTransitionUtil {
             break
         case .present(let operation):
             if operation != .presentation {
-                fromView.alpha = 1
+                fromView.alpha = 0
                 oriImageView.frame = forwardPhoto.targetFrame
                 finalShowFrame = forwardPhoto.originalFrame
             } else {

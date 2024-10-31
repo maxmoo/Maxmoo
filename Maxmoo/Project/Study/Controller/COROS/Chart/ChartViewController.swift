@@ -28,7 +28,16 @@ class ChartViewController: UIViewController {
 //        
 //        view.addSubview(button)
 //        view.addSubview(chart)
-        addDragMove()
+//        addDragMove()
+        
+        let selectView = CRSSegmentMemberSelectView(frame: CGRect(x: 0, y: 300, width: kScreenWidth, height: 128))
+        selectView.backgroundColor = .randomColor
+        view.addSubview(selectView)
+        
+        let animateMenu = CRSAnimateCircleMenuView(frame: CGRect(x: kScreenWidth / 2, y: 500, width: 40, height: 40))
+        animateMenu.backgroundColor = .randomColor
+        view.addSubview(animateMenu)
+        
     }
 //
 //    

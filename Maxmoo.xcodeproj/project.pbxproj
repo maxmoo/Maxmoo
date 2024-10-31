@@ -15,6 +15,8 @@
 		B31849122B3534E700D9B9B8 /* SwiftUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31849112B3534E700D9B9B8 /* SwiftUIController.swift */; };
 		B31849152B35354F00D9B9B8 /* SwiftUIHelloController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31849142B35354F00D9B9B8 /* SwiftUIHelloController.swift */; };
 		B31849172B353AD400D9B9B8 /* SUHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31849162B353AD400D9B9B8 /* SUHello.swift */; };
+		B33348F92C4FC96800FA631F /* UIImageView+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33348F82C4FC96800FA631F /* UIImageView+CC.swift */; };
+		B33348FC2C50ED6000FA631F /* CCCenterCluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33348FB2C50ED6000FA631F /* CCCenterCluster.swift */; };
 		B343501C2B5CF36A00D974AA /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343501B2B5CF36A00D974AA /* ChartViewController.swift */; };
 		B343501F2B5CF40700D974AA /* CRSTrackClimbChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */; };
 		B34350242B5D04A000D974AA /* UIBezierPath+curved.m in Sources */ = {isa = PBXBuildFile; fileRef = B34350222B5D04A000D974AA /* UIBezierPath+curved.m */; };
@@ -78,6 +80,7 @@
 		B391CF472BEBA06C00FAF0A3 /* fuzhou.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B391CF462BEBA06C00FAF0A3 /* fuzhou.mp4 */; };
 		B391CF492BEBA1D700FAF0A3 /* empty.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B391CF482BEBA1D700FAF0A3 /* empty.mp4 */; };
 		B391CF4D2BEBA21600FAF0A3 /* chapter_3.c in Sources */ = {isa = PBXBuildFile; fileRef = B391CF4C2BEBA21600FAF0A3 /* chapter_3.c */; };
+		B394EED12C9AA97E00C3DC35 /* CRSAnimateCircleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B394EED02C9AA97E00C3DC35 /* CRSAnimateCircleMenuView.swift */; };
 		B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39842382B5524A70028D32B /* OCStudyViewController.m */; };
 		B398423C2B561FC10028D32B /* CStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B398423B2B561FC10028D32B /* CStudyViewController.m */; };
 		B39A4ADA2C3E2A7C00B23FBD /* CRSMapClusterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A4AD92C3E2A7C00B23FBD /* CRSMapClusterAnnotation.swift */; };
@@ -171,6 +174,7 @@
 		B3CA36062B87167E00D0B319 /* CRSClimbProListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3CA36042B87167E00D0B319 /* CRSClimbProListCell.xib */; };
 		B3CA36082B872B4F00D0B319 /* UITableView+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */; };
 		B3CA360B2B872DA500D0B319 /* CRSClimbListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */; };
+		B3D58AD12C7472940018C7DB /* CRSSegmentMemberSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D58AD02C7472940018C7DB /* CRSSegmentMemberSelectView.swift */; };
 		B3D7841F2C32C704002340F1 /* CRSDragMoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7841E2C32C704002340F1 /* CRSDragMoveButton.swift */; };
 		B3D784212C32D6BC002340F1 /* CRSDragMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D784202C32D6BC002340F1 /* CRSDragMoveView.swift */; };
 		B3D784322C3435AC002340F1 /* CCTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D784312C3435AC002340F1 /* CCTextViewController.swift */; };
@@ -182,7 +186,17 @@
 		B3D784502C366E21002340F1 /* AnnotationClusterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7844F2C366E21002340F1 /* AnnotationClusterViewController.swift */; };
 		B3D784532C367377002340F1 /* PoiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D784512C367377002340F1 /* PoiDetailViewController.m */; };
 		B3DF7CEA2AD7D4520042E755 /* JSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */; };
+		B3F136B52CD1DDA100C9BDDD /* CRSDSBottomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F136B42CD1DDA100C9BDDD /* CRSDSBottomListViewController.swift */; };
+		B3F136B72CD1DED900C9BDDD /* CRSDataScreenItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F136B62CD1DED900C9BDDD /* CRSDataScreenItemListView.swift */; };
+		B3F136BA2CD1FD6600C9BDDD /* CRSDSItemGroupListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F136B82CD1FD6600C9BDDD /* CRSDSItemGroupListCell.swift */; };
+		B3F136BB2CD1FD6600C9BDDD /* CRSDSItemGroupListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F136B92CD1FD6600C9BDDD /* CRSDSItemGroupListCell.xib */; };
+		B3F136C22CD1FDF200C9BDDD /* CRSDSItemDetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F136C02CD1FDF200C9BDDD /* CRSDSItemDetailListCell.swift */; };
+		B3F136C32CD1FDF200C9BDDD /* CRSDSItemDetailListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F136C12CD1FDF200C9BDDD /* CRSDSItemDetailListCell.xib */; };
+		B3F136C62CD204F900C9BDDD /* CRSDSItemDetailChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F136C42CD204F900C9BDDD /* CRSDSItemDetailChartCell.swift */; };
+		B3F136C72CD204F900C9BDDD /* CRSDSItemDetailChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F136C52CD204F900C9BDDD /* CRSDSItemDetailChartCell.xib */; };
 		B3F2E77C2B8C6A7200E830FD /* ExplorePullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */; };
+		B3F323BD2C62134100140046 /* CRSWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F323BC2C62134100140046 /* CRSWeatherController.swift */; };
+		B3F323BF2C62147500140046 /* CRSMapWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F323BE2C62147500140046 /* CRSMapWeatherView.swift */; };
 		B3F9814E2BD1007C0005AA44 /* CCFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */; };
 		B3F981512BD101EF0005AA44 /* CCFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F981502BD101EF0005AA44 /* CCFileViewController.swift */; };
 		B3F981572BD11F5C0005AA44 /* poi.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F981552BD11F5C0005AA44 /* poi.pb.swift */; };
@@ -219,6 +233,8 @@
 		B31849112B3534E700D9B9B8 /* SwiftUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIController.swift; sourceTree = "<group>"; };
 		B31849142B35354F00D9B9B8 /* SwiftUIHelloController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIHelloController.swift; sourceTree = "<group>"; };
 		B31849162B353AD400D9B9B8 /* SUHello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUHello.swift; sourceTree = "<group>"; };
+		B33348F82C4FC96800FA631F /* UIImageView+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+CC.swift"; sourceTree = "<group>"; };
+		B33348FB2C50ED6000FA631F /* CCCenterCluster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCenterCluster.swift; sourceTree = "<group>"; };
 		B343501B2B5CF36A00D974AA /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		B343501E2B5CF40700D974AA /* CRSTrackClimbChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSTrackClimbChartView.swift; sourceTree = "<group>"; };
 		B34350222B5D04A000D974AA /* UIBezierPath+curved.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+curved.m"; sourceTree = "<group>"; };
@@ -431,6 +447,7 @@
 		B391CF482BEBA1D700FAF0A3 /* empty.mp4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty.mp4; sourceTree = "<group>"; };
 		B391CF4B2BEBA21600FAF0A3 /* chapter_3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapter_3.h; sourceTree = "<group>"; };
 		B391CF4C2BEBA21600FAF0A3 /* chapter_3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapter_3.c; sourceTree = "<group>"; };
+		B394EED02C9AA97E00C3DC35 /* CRSAnimateCircleMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSAnimateCircleMenuView.swift; sourceTree = "<group>"; };
 		B39842362B5524A70028D32B /* Maxmoo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maxmoo-Bridging-Header.h"; sourceTree = "<group>"; };
 		B39842372B5524A70028D32B /* OCStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCStudyViewController.h; sourceTree = "<group>"; };
 		B39842382B5524A70028D32B /* OCStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCStudyViewController.m; sourceTree = "<group>"; };
@@ -537,6 +554,7 @@
 		B3CA36042B87167E00D0B319 /* CRSClimbProListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSClimbProListCell.xib; sourceTree = "<group>"; };
 		B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+CC.swift"; sourceTree = "<group>"; };
 		B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbListItem.swift; sourceTree = "<group>"; };
+		B3D58AD02C7472940018C7DB /* CRSSegmentMemberSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSSegmentMemberSelectView.swift; sourceTree = "<group>"; };
 		B3D7841E2C32C704002340F1 /* CRSDragMoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDragMoveButton.swift; sourceTree = "<group>"; };
 		B3D784202C32D6BC002340F1 /* CRSDragMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDragMoveView.swift; sourceTree = "<group>"; };
 		B3D784312C3435AC002340F1 /* CCTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTextViewController.swift; sourceTree = "<group>"; };
@@ -553,7 +571,17 @@
 		B3D784512C367377002340F1 /* PoiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiDetailViewController.m; sourceTree = "<group>"; };
 		B3D784522C367377002340F1 /* PoiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiDetailViewController.h; sourceTree = "<group>"; };
 		B3DF7CE92AD7D4520042E755 /* JSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewController.swift; sourceTree = "<group>"; };
+		B3F136B42CD1DDA100C9BDDD /* CRSDSBottomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDSBottomListViewController.swift; sourceTree = "<group>"; };
+		B3F136B62CD1DED900C9BDDD /* CRSDataScreenItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDataScreenItemListView.swift; sourceTree = "<group>"; };
+		B3F136B82CD1FD6600C9BDDD /* CRSDSItemGroupListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDSItemGroupListCell.swift; sourceTree = "<group>"; };
+		B3F136B92CD1FD6600C9BDDD /* CRSDSItemGroupListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSDSItemGroupListCell.xib; sourceTree = "<group>"; };
+		B3F136C02CD1FDF200C9BDDD /* CRSDSItemDetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDSItemDetailListCell.swift; sourceTree = "<group>"; };
+		B3F136C12CD1FDF200C9BDDD /* CRSDSItemDetailListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSDSItemDetailListCell.xib; sourceTree = "<group>"; };
+		B3F136C42CD204F900C9BDDD /* CRSDSItemDetailChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDSItemDetailChartCell.swift; sourceTree = "<group>"; };
+		B3F136C52CD204F900C9BDDD /* CRSDSItemDetailChartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSDSItemDetailChartCell.xib; sourceTree = "<group>"; };
 		B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePullUpController.swift; sourceTree = "<group>"; };
+		B3F323BC2C62134100140046 /* CRSWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSWeatherController.swift; sourceTree = "<group>"; };
+		B3F323BE2C62147500140046 /* CRSMapWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSMapWeatherView.swift; sourceTree = "<group>"; };
 		B3F9814D2BD1007C0005AA44 /* CCFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFileManager.swift; sourceTree = "<group>"; };
 		B3F981502BD101EF0005AA44 /* CCFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFileViewController.swift; sourceTree = "<group>"; };
 		B3F981552BD11F5C0005AA44 /* poi.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = poi.pb.swift; sourceTree = "<group>"; };
@@ -653,6 +681,14 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
+		B33348FA2C50ED2D00FA631F /* 中心点聚合 */ = {
+			isa = PBXGroup;
+			children = (
+				B33348FB2C50ED6000FA631F /* CCCenterCluster.swift */,
+			);
+			path = "中心点聚合";
+			sourceTree = "<group>";
+		};
 		B343501A2B5CF35300D974AA /* Chart */ = {
 			isa = PBXGroup;
 			children = (
@@ -678,6 +714,10 @@
 		B34D5AFA2B67878900C6E097 /* COROS */ = {
 			isa = PBXGroup;
 			children = (
+				B3F136B32CD1DD5500C9BDDD /* DataScreen列表 */,
+				B394EECF2C9AA90800C3DC35 /* 拓展屏动画菜单 */,
+				B3D58ACF2C7472640018C7DB /* Strava */,
+				B3F323BB2C62131E00140046 /* 天气UI */,
 				B3D784222C33D131002340F1 /* 聚合 */,
 				B3D7841D2C32C6BB002340F1 /* CastScreen */,
 				B36AADDC2BFD9BD3003A9BAC /* MapUserHead */,
@@ -1135,6 +1175,14 @@
 				B391CF4C2BEBA21600FAF0A3 /* chapter_3.c */,
 			);
 			path = chapter03;
+			sourceTree = "<group>";
+		};
+		B394EECF2C9AA90800C3DC35 /* 拓展屏动画菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				B394EED02C9AA97E00C3DC35 /* CRSAnimateCircleMenuView.swift */,
+			);
+			path = "拓展屏动画菜单";
 			sourceTree = "<group>";
 		};
 		B39842352B5524770028D32B /* OC */ = {
@@ -1597,6 +1645,7 @@
 				B3C45E762A9C851F00AD3586 /* UIImage+CC.swift */,
 				B3C45E7A2A9C85C900AD3586 /* UIViewController+CC.swift */,
 				B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */,
+				B33348F82C4FC96800FA631F /* UIImageView+CC.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1703,6 +1752,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		B3D58ACF2C7472640018C7DB /* Strava */ = {
+			isa = PBXGroup;
+			children = (
+				B3D58AD02C7472940018C7DB /* CRSSegmentMemberSelectView.swift */,
+			);
+			path = Strava;
+			sourceTree = "<group>";
+		};
 		B3D7841D2C32C6BB002340F1 /* CastScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -1715,6 +1772,7 @@
 		B3D784222C33D131002340F1 /* 聚合 */ = {
 			isa = PBXGroup;
 			children = (
+				B33348FA2C50ED2D00FA631F /* 中心点聚合 */,
 				B39A4ADB2C3E2A8100B23FBD /* tree */,
 				B39A4AD82C3E2A7C00B23FBD /* model */,
 				B3D784522C367377002340F1 /* PoiDetailViewController.h */,
@@ -1757,12 +1815,36 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		B3F136B32CD1DD5500C9BDDD /* DataScreen列表 */ = {
+			isa = PBXGroup;
+			children = (
+				B3F136B42CD1DDA100C9BDDD /* CRSDSBottomListViewController.swift */,
+				B3F136B62CD1DED900C9BDDD /* CRSDataScreenItemListView.swift */,
+				B3F136B82CD1FD6600C9BDDD /* CRSDSItemGroupListCell.swift */,
+				B3F136B92CD1FD6600C9BDDD /* CRSDSItemGroupListCell.xib */,
+				B3F136C02CD1FDF200C9BDDD /* CRSDSItemDetailListCell.swift */,
+				B3F136C12CD1FDF200C9BDDD /* CRSDSItemDetailListCell.xib */,
+				B3F136C42CD204F900C9BDDD /* CRSDSItemDetailChartCell.swift */,
+				B3F136C52CD204F900C9BDDD /* CRSDSItemDetailChartCell.xib */,
+			);
+			path = "DataScreen列表";
+			sourceTree = "<group>";
+		};
 		B3F2E77A2B8C6A5900E830FD /* PullUp */ = {
 			isa = PBXGroup;
 			children = (
 				B3F2E77B2B8C6A7200E830FD /* ExplorePullUpController.swift */,
 			);
 			path = PullUp;
+			sourceTree = "<group>";
+		};
+		B3F323BB2C62131E00140046 /* 天气UI */ = {
+			isa = PBXGroup;
+			children = (
+				B3F323BC2C62134100140046 /* CRSWeatherController.swift */,
+				B3F323BE2C62147500140046 /* CRSMapWeatherView.swift */,
+			);
+			path = "天气UI";
 			sourceTree = "<group>";
 		};
 		B3F9814F2BD101DC0005AA44 /* File */ = {
@@ -1911,6 +1993,7 @@
 				B391CD732BEB45AB00FAF0A3 /* libswresample.pc in Resources */,
 				B3C046BC2AD15AC500A275BD /* keyCodeAble.json in Resources */,
 				B391CD722BEB45AB00FAF0A3 /* libswscale.pc in Resources */,
+				B3F136C72CD204F900C9BDDD /* CRSDSItemDetailChartCell.xib in Resources */,
 				B3C45E092A98754D00AD3586 /* Assets.xcassets in Resources */,
 				B391CD762BEB45AB00FAF0A3 /* libavformat.pc in Resources */,
 				B30317612B4573A400D8B8F9 /* license.crt in Resources */,
@@ -1920,6 +2003,7 @@
 				B3C19E992BE8791B001EE68B /* hello.txt in Resources */,
 				B391CD752BEB45AB00FAF0A3 /* libavcodec.pc in Resources */,
 				B3CA36062B87167E00D0B319 /* CRSClimbProListCell.xib in Resources */,
+				B3F136BB2CD1FD6600C9BDDD /* CRSDSItemGroupListCell.xib in Resources */,
 				B391CD782BEB45AB00FAF0A3 /* libavfilter.pc in Resources */,
 				B391CF492BEBA1D700FAF0A3 /* empty.mp4 in Resources */,
 				B3C45E5E2A9C6A9E00AD3586 /* ExpandTableViewCell.xib in Resources */,
@@ -1928,6 +2012,7 @@
 				B391CF472BEBA06C00FAF0A3 /* fuzhou.mp4 in Resources */,
 				B391CF442BEB9D9400FAF0A3 /* testh264.MOV in Resources */,
 				B391CD772BEB45AB00FAF0A3 /* libavutil.pc in Resources */,
+				B3F136C32CD1FDF200C9BDDD /* CRSDSItemDetailListCell.xib in Resources */,
 				B391CD742BEB45AB00FAF0A3 /* libavdevice.pc in Resources */,
 				B3B9E0A62B19C8E20004B9F8 /* CRSCastScreenDataCell.xib in Resources */,
 				B391CDDB2BEB5B6300FAF0A3 /* i-see-fire.mp4 in Resources */,
@@ -2020,10 +2105,12 @@
 				B3C45EF32AA81AE100AD3586 /* CellEditViewController.swift in Sources */,
 				B3793A3F2B216D1600A038D8 /* CRSCastScreenDataStyle.swift in Sources */,
 				B3C45E412A98AC9100AD3586 /* CCBaseViewController.swift in Sources */,
+				B3D58AD12C7472940018C7DB /* CRSSegmentMemberSelectView.swift in Sources */,
 				B3D7844E2C366DF9002340F1 /* CustomCalloutView.m in Sources */,
 				B37D39EF2BEF107E0019D748 /* XDXListViewController.swift in Sources */,
 				B3C45E472A98AF0700AD3586 /* UIColor+CC.swift in Sources */,
 				B36AADE02BFDC3A6003A9BAC /* CorosUserTipViewController.swift in Sources */,
+				B3F136C62CD204F900C9BDDD /* CRSDSItemDetailChartCell.swift in Sources */,
 				B391CF362BEB7CB800FAF0A3 /* FFMediaAudioContext.swift in Sources */,
 				B3C45E612A9C6B3B00AD3586 /* ExpandCellItem.swift in Sources */,
 				B3B1EFC92AA99FF8005E6E06 /* CRSCusSpoPageView.swift in Sources */,
@@ -2057,6 +2144,7 @@
 				B3C45E6D2A9C819D00AD3586 /* CCMacro.swift in Sources */,
 				B3C45EE92AA71C1D00AD3586 /* CRSPageSegmentView.swift in Sources */,
 				B3C6B2DD2C47AE9600F4C736 /* ExploreTransitionPhoto.swift in Sources */,
+				B3F136B52CD1DDA100C9BDDD /* CRSDSBottomListViewController.swift in Sources */,
 				B3C45E7E2A9C930600AD3586 /* PageStudyViewController.swift in Sources */,
 				B3C45E732A9C83AF00AD3586 /* Int+CC.swift in Sources */,
 				B391CC582BEA4FDC00FAF0A3 /* ff_decode_video.c in Sources */,
@@ -2076,11 +2164,14 @@
 				B391CF302BEB7CB800FAF0A3 /* KxAudioManager.m in Sources */,
 				B368B0672AB3F87800ED6E43 /* ImageStudyController.swift in Sources */,
 				B3C45E662A9C77F100AD3586 /* CRSSinglePickerController.swift in Sources */,
+				B3F323BD2C62134100140046 /* CRSWeatherController.swift in Sources */,
 				B3D7843A2C34E216002340F1 /* CCMapClusterController.swift in Sources */,
+				B33348FC2C50ED6000FA631F /* CCCenterCluster.swift in Sources */,
 				B39A4AE12C3E2A8100B23FBD /* QuadTree.m in Sources */,
 				B3B36DEF2BEE075B0024DF08 /* ZYSScreenRecorder.m in Sources */,
 				B391CF352BEB7CB800FAF0A3 /* FFAudioInformation.swift in Sources */,
 				B34350242B5D04A000D974AA /* UIBezierPath+curved.m in Sources */,
+				B394EED12C9AA97E00C3DC35 /* CRSAnimateCircleMenuView.swift in Sources */,
 				B3C45E772A9C851F00AD3586 /* UIImage+CC.swift in Sources */,
 				B3F981582BD11F5C0005AA44 /* CRSLExplore.pb.swift in Sources */,
 				B39842392B5524A70028D32B /* OCStudyViewController.m in Sources */,
@@ -2096,6 +2187,7 @@
 				B31849152B35354F00D9B9B8 /* SwiftUIHelloController.swift in Sources */,
 				B3D7844C2C366DF9002340F1 /* ClusterAnnotationView.m in Sources */,
 				B391C7682BE9D20100FAF0A3 /* chapter_2.c in Sources */,
+				B3F136BA2CD1FD6600C9BDDD /* CRSDSItemGroupListCell.swift in Sources */,
 				B3C45E852A9C93C300AD3586 /* PageGuide2ViewController.swift in Sources */,
 				B3C45E802A9C934700AD3586 /* PageGuideViewController.swift in Sources */,
 				B31849122B3534E700D9B9B8 /* SwiftUIController.swift in Sources */,
@@ -2119,6 +2211,7 @@
 				B36AADDE2BFD9C01003A9BAC /* CRSCastScreenUserTipView.swift in Sources */,
 				B303175F2B45706400D8B8F9 /* AliPlayerViewController.swift in Sources */,
 				B3C45E3B2A98ABD400AD3586 /* ThirdViewController.swift in Sources */,
+				B3F136B72CD1DED900C9BDDD /* CRSDataScreenItemListView.swift in Sources */,
 				B3C45E4C2A9C3AF500AD3586 /* ExpandCellViewController.swift in Sources */,
 				B3C45EF62AA81CDA00AD3586 /* CellEditMoveCell.swift in Sources */,
 				B3C45E4E2A9C3B1800AD3586 /* CellViewController.swift in Sources */,
@@ -2129,6 +2222,7 @@
 				B3C45E8E2A9F1E8800AD3586 /* AddAnimateCollectionController.swift in Sources */,
 				B34D5AFF2B6788D800C6E097 /* CRSAlertViewController.swift in Sources */,
 				B391CF312BEB7CB800FAF0A3 /* FFCacheQueue.swift in Sources */,
+				B3F136C22CD1FDF200C9BDDD /* CRSDSItemDetailListCell.swift in Sources */,
 				B3C45E632A9C76F400AD3586 /* CRSSingleRowPickerView.swift in Sources */,
 				B391CF372BEB7CB800FAF0A3 /* FFAudioPlayer.swift in Sources */,
 				B3F981512BD101EF0005AA44 /* CCFileViewController.swift in Sources */,
@@ -2137,11 +2231,13 @@
 				B3793A4D2B21A0AF00A038D8 /* CRSCastScreenOrderCell.swift in Sources */,
 				B391CF2A2BEB7CB800FAF0A3 /* FFVideoPlayer.swift in Sources */,
 				B3D7844D2C366DF9002340F1 /* ClusterTableViewCell.m in Sources */,
+				B33348F92C4FC96800FA631F /* UIImageView+CC.swift in Sources */,
 				B3C19ED22BE8A450001EE68B /* bar.c in Sources */,
 				B3C45E002A98754C00AD3586 /* AppDelegate.swift in Sources */,
 				B31849072B340A0100D9B9B8 /* CCAnimateListController.swift in Sources */,
 				B3B61A922BFB3A99000EA18F /* GestureViewController.swift in Sources */,
 				B3C45E302A98A6B800AD3586 /* SceneDelegate.swift in Sources */,
+				B3F323BF2C62147500140046 /* CRSMapWeatherView.swift in Sources */,
 				B3C45EA32AA025B200AD3586 /* AppleMapViewController.swift in Sources */,
 				B391CF2B2BEB7CB800FAF0A3 /* FFRGBRender.swift in Sources */,
 				B39A4AE02C3E2A8100B23FBD /* CoordinateQuadTree.m in Sources */,

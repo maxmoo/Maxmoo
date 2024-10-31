@@ -45,6 +45,17 @@ class AMapViewController: UIViewController {
 //        mapView.zoomingInPivotsAroundAnchorPoint = false
         
         view.addSubview(mapView)
+        
+        let tapView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        tapView.backgroundColor = .randomColor
+        tapView.addTapGesture {
+            print("dasdasdadasdada")
+        }
+        view.addSubview(tapView)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        print("touchesBegan")
+    }
 }

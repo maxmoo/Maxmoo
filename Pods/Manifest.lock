@@ -15,6 +15,9 @@ PODS:
     - AMapFoundation-NO-IDFA (>= 1.8.0)
   - DatabaseVisual (0.0.2)
   - RtsSDK (2.2.0)
+  - SDWebImage (5.19.4):
+    - SDWebImage/Core (= 5.19.4)
+  - SDWebImage/Core (5.19.4)
   - SnapKit (5.6.0)
   - SQLite.swift (0.14.1):
     - SQLite.swift/standard (= 0.14.1)
@@ -30,6 +33,7 @@ DEPENDENCIES:
   - AMapSearch-NO-IDFA
   - DatabaseVisual
   - RtsSDK (= 2.2.0)
+  - SDWebImage
   - SnapKit
   - SQLite.swift (~> 0.14.0)
   - SwiftProtobuf
@@ -45,6 +49,7 @@ SPEC REPOS:
     - AMapSearch-NO-IDFA
     - DatabaseVisual
     - RtsSDK
+    - SDWebImage
     - SnapKit
     - SQLite.swift
     - SwiftProtobuf
@@ -59,10 +64,11 @@ SPEC CHECKSUMS:
   AMapSearch-NO-IDFA: 749f73d5a773758f01a24eb8872f8798c8b47cb4
   DatabaseVisual: dce6db47d054e4e88a496003309146c3fd92a3a2
   RtsSDK: 6301f94561f3273f04caa974a8744f48dbc055d2
+  SDWebImage: 066c47b573f408f18caa467d71deace7c0f8280d
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SQLite.swift: 2992550ebf3c5b268bf4352603e3df87d2a4ed72
   SwiftProtobuf: 7773c4e96a99d7b8ab7cda0fc30a883732ff93b1
 
-PODFILE CHECKSUM: 7630d31e479c8a354d32d4141492877e86020351
+PODFILE CHECKSUM: 14afd93bdf9ff1d4c46503172c84b42308246754
 
 COCOAPODS: 1.15.2

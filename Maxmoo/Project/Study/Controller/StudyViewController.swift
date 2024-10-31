@@ -46,6 +46,37 @@ class StudyViewController: ItemListViewController {
         let bf = Int(floor(b))
         
         print("[11111] \(ac) \(af) \(bc) \(bf)")
+        
+        let result = compareVersions(version1: "3.9.4.2", version2: "3.10.16")
+
+        switch result {
+            case .orderedAscending:
+                print("3.11.4.2 小于 3.10.16")
+            case .orderedDescending:
+                print("3.11.4.2 大于 3.10.16")
+            case .orderedSame:
+                print("3.11.4.2 等于 3.10.16")
+        }
     }
 
+    func compareVersions(version1: String, version2: String) -> ComparisonResult {
+        let components1 = version1.split(separator: ".").map { Int($0)! }
+        let components2 = version2.split(separator: ".").map { Int($0)! }
+        
+        let maxCount = max(components1.count, components2.count)
+        
+        for i in 0..<maxCount {
+            let component1 = i < components1.count ? components1[i] : 0
+            let component2 = i < components2.count ? components2[i] : 0
+            
+            if component1 < component2 {
+                return .orderedAscending
+            } else if component1 > component2 {
+                return .orderedDescending
+            }
+        }
+        
+        return .orderedSame
+    }
+    
 }

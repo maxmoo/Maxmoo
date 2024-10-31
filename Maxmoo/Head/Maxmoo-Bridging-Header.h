@@ -31,6 +31,8 @@
 #import "CustomCalloutView.h"
 #import "PoiDetailViewController.h"
 
+#import "OCStudyViewController.h"
+
 static int READ_END_OF_FILE = AVERROR_EOF;
 static int64_t PTS_INVALID = AV_NOPTS_VALUE;
 static const uint8_t ** getPointer(AVFrame *frame) {

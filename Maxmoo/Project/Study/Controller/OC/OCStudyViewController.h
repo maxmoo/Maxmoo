@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OCStudyViewController : UIViewController
 
+- (NSAttributedString *)attLeftValue:(NSString *)leftValue rightValue:(NSString *)rightValue unit:(NSString *)unitString;
+
 @end
 
 NS_ASSUME_NONNULL_END

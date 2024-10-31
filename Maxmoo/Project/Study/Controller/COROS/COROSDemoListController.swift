@@ -10,11 +10,13 @@ import UIKit
 class COROSDemoListController: ItemListViewController {
 
     override var items: [[String]] {
-        return [["CRS图表-ChartViewController",
+        return [["DataScreen底部列表-CRSDSBottomListViewController",
+                 "CRS图表-ChartViewController",
                  "投屏提醒-CRSAlertViewController",
                  "地图用户头像-CorosUserTipViewController",
                  "聚合-CCMapClusterController",
-                 "高德聚合-AnnotationClusterViewController"]]
+                 "高德聚合-AnnotationClusterViewController",
+                 "weatherUI-CRSWeatherController"]]
     }
     
     override func viewDidLoad() {

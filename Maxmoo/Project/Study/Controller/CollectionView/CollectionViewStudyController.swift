@@ -10,7 +10,8 @@ import UIKit
 class CollectionViewStudyController: ItemListViewController {
 
     override var items: [[String]] {
-        return [["竖直滑动Collection-VWatchCollectionViewController",
+        return [["拖拽-CRSCollectionDragCellController",
+                 "竖直滑动Collection-VWatchCollectionViewController",
                 "增加删除动画-AddAnimateCollectionController",
                 "使用tableView实现增删动画-TableCollectionController",
                 "scroll模拟增加移除-WatchScrollController",

@@ -20,6 +20,7 @@ target 'Maxmoo' do
   pod 'AMapSearch-NO-IDFA'
   pod 'AMapLocation-NO-IDFA'
   
+  pod 'FLEX', :configurations => ['Debug']
 end
 
 post_install do |installer|

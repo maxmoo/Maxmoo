@@ -174,6 +174,9 @@
 		B3CA36062B87167E00D0B319 /* CRSClimbProListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3CA36042B87167E00D0B319 /* CRSClimbProListCell.xib */; };
 		B3CA36082B872B4F00D0B319 /* UITableView+CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */; };
 		B3CA360B2B872DA500D0B319 /* CRSClimbListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */; };
+		B3D207462D11187500CC6BAA /* CRSCollectionDragCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D207452D11187500CC6BAA /* CRSCollectionDragCellController.swift */; };
+		B3D207482D11234A00CC6BAA /* CRSDSThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D207472D11234A00CC6BAA /* CRSDSThumbnailView.swift */; };
+		B3D2074B2D114D2400CC6BAA /* CRSDSThumbnailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D2074A2D114D2400CC6BAA /* CRSDSThumbnailContentView.swift */; };
 		B3D58AD12C7472940018C7DB /* CRSSegmentMemberSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D58AD02C7472940018C7DB /* CRSSegmentMemberSelectView.swift */; };
 		B3D7841F2C32C704002340F1 /* CRSDragMoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7841E2C32C704002340F1 /* CRSDragMoveButton.swift */; };
 		B3D784212C32D6BC002340F1 /* CRSDragMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D784202C32D6BC002340F1 /* CRSDragMoveView.swift */; };
@@ -554,6 +557,9 @@
 		B3CA36042B87167E00D0B319 /* CRSClimbProListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSClimbProListCell.xib; sourceTree = "<group>"; };
 		B3CA36072B872B4F00D0B319 /* UITableView+CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+CC.swift"; sourceTree = "<group>"; };
 		B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSClimbListItem.swift; sourceTree = "<group>"; };
+		B3D207452D11187500CC6BAA /* CRSCollectionDragCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSCollectionDragCellController.swift; sourceTree = "<group>"; };
+		B3D207472D11234A00CC6BAA /* CRSDSThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDSThumbnailView.swift; sourceTree = "<group>"; };
+		B3D2074A2D114D2400CC6BAA /* CRSDSThumbnailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDSThumbnailContentView.swift; sourceTree = "<group>"; };
 		B3D58AD02C7472940018C7DB /* CRSSegmentMemberSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSSegmentMemberSelectView.swift; sourceTree = "<group>"; };
 		B3D7841E2C32C704002340F1 /* CRSDragMoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDragMoveButton.swift; sourceTree = "<group>"; };
 		B3D784202C32D6BC002340F1 /* CRSDragMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSDragMoveView.swift; sourceTree = "<group>"; };
@@ -1690,6 +1696,8 @@
 				B3C45E8F2A9F26DA00AD3586 /* TableCollectionController.swift */,
 				B3B1EFC52AA96F44005E6E06 /* WatchScrollController.swift */,
 				B3B1EFCA2AA9AD45005E6E06 /* CRSCusSpoDataScreenController.swift */,
+				B3D207452D11187500CC6BAA /* CRSCollectionDragCellController.swift */,
+				B3D207492D114CD700CC6BAA /* COROSDrag */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -1750,6 +1758,15 @@
 				B3CA360A2B872DA500D0B319 /* CRSClimbListItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B3D207492D114CD700CC6BAA /* COROSDrag */ = {
+			isa = PBXGroup;
+			children = (
+				B3D207472D11234A00CC6BAA /* CRSDSThumbnailView.swift */,
+				B3D2074A2D114D2400CC6BAA /* CRSDSThumbnailContentView.swift */,
+			);
+			path = COROSDrag;
 			sourceTree = "<group>";
 		};
 		B3D58ACF2C7472640018C7DB /* Strava */ = {
@@ -2145,6 +2162,7 @@
 				B3C45EE92AA71C1D00AD3586 /* CRSPageSegmentView.swift in Sources */,
 				B3C6B2DD2C47AE9600F4C736 /* ExploreTransitionPhoto.swift in Sources */,
 				B3F136B52CD1DDA100C9BDDD /* CRSDSBottomListViewController.swift in Sources */,
+				B3D207462D11187500CC6BAA /* CRSCollectionDragCellController.swift in Sources */,
 				B3C45E7E2A9C930600AD3586 /* PageStudyViewController.swift in Sources */,
 				B3C45E732A9C83AF00AD3586 /* Int+CC.swift in Sources */,
 				B391CC582BEA4FDC00FAF0A3 /* ff_decode_video.c in Sources */,
@@ -2219,6 +2237,7 @@
 				B3CA36052B87167E00D0B319 /* CRSClimbProListCell.swift in Sources */,
 				B343501C2B5CF36A00D974AA /* ChartViewController.swift in Sources */,
 				B3C45E6A2A9C7F8E00AD3586 /* CALayer+CC.swift in Sources */,
+				B3D2074B2D114D2400CC6BAA /* CRSDSThumbnailContentView.swift in Sources */,
 				B3C45E8E2A9F1E8800AD3586 /* AddAnimateCollectionController.swift in Sources */,
 				B34D5AFF2B6788D800C6E097 /* CRSAlertViewController.swift in Sources */,
 				B391CF312BEB7CB800FAF0A3 /* FFCacheQueue.swift in Sources */,
@@ -2233,6 +2252,7 @@
 				B3D7844D2C366DF9002340F1 /* ClusterTableViewCell.m in Sources */,
 				B33348F92C4FC96800FA631F /* UIImageView+CC.swift in Sources */,
 				B3C19ED22BE8A450001EE68B /* bar.c in Sources */,
+				B3D207482D11234A00CC6BAA /* CRSDSThumbnailView.swift in Sources */,
 				B3C45E002A98754C00AD3586 /* AppDelegate.swift in Sources */,
 				B31849072B340A0100D9B9B8 /* CCAnimateListController.swift in Sources */,
 				B3B61A922BFB3A99000EA18F /* GestureViewController.swift in Sources */,
@@ -2460,7 +2480,7 @@
 					"$(PROJECT_DIR)/Maxmoo/Lib/ffmpeg/lib",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.coros.coros;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coros.coros.maxmoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Maxmoo/Head/Maxmoo-Bridging-Header.h";
@@ -2506,7 +2526,7 @@
 					"$(PROJECT_DIR)/Maxmoo/Lib/ffmpeg/lib",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.coros.coros;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coros.coros.maxmoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Maxmoo/Head/Maxmoo-Bridging-Header.h";

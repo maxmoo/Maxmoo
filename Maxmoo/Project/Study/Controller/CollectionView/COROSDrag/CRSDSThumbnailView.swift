@@ -32,6 +32,8 @@ class CRSDSThumbnailView: UIView {
     // 是否自动滚动（在滑动后）
     private var isAutoScroll: Bool = false
     
+    private var isShouldDragRefresh: Bool = false
+    
     lazy var collectionView: UICollectionView = {
         var layout = UICollectionViewFlowLayout()
         if isAutoScroll {
@@ -136,7 +138,7 @@ class CRSDSThumbnailView: UIView {
     }
     
     // 交换两个item
-    func swapItems(at firstIndex: Int, with secondIndex: Int) {
+    func swapItems(at firstIndex: Int, with secondIndex: Int, animate: Bool = true) {
         guard firstIndex > 0, firstIndex < items.count,
               secondIndex > 0 , secondIndex < items.count else { return }
         
@@ -148,14 +150,21 @@ class CRSDSThumbnailView: UIView {
         items[firstIndexPath.item] = items[secondIndexPath.item]
         items[secondIndexPath.item] = tmp
 
-        // 执行交换动画
-        collectionView.performBatchUpdates({
-            collectionView.moveItem(at: firstIndexPath, to: secondIndexPath)
-            collectionView.moveItem(at: secondIndexPath, to: firstIndexPath)
-        }) { [weak self] success in
-            guard let self else { return }
-            if success, self.isAutoScroll {
-                self.scrollToSelectedIndex()
+        if animate {
+            // 执行交换动画
+            collectionView.performBatchUpdates({
+                collectionView.moveItem(at: firstIndexPath, to: secondIndexPath)
+                collectionView.moveItem(at: secondIndexPath, to: firstIndexPath)
+            }) { [weak self] success in
+                guard let self else { return }
+                if success, self.isAutoScroll {
+                    self.scrollToSelectedIndex()
+                }
+            }
+        } else {
+            collectionView.reloadData()
+            if isAutoScroll {
+                scrollToSelectedIndex()
             }
         }
     }
@@ -392,14 +401,21 @@ extension CRSDSThumbnailView: UICollectionViewDropDelegate, UICollectionViewDrag
         }
         switch coordinator.proposal.operation {
         case .move:
+            UIView.setAnimationsEnabled(false)
+
             let items = coordinator.items
             if let item = items.first,let sourceIndexPath = item.sourceIndexPath {
-                // 执行批量更新
-                collectionView.performBatchUpdates { [weak self] in
-                    let obj = self?.items.remove(at: sourceIndexPath.row)
-                    self?.items.insert(obj!, at: destinationIndexPath.row)
-                    collectionView.deleteItems(at: [sourceIndexPath])
-                    collectionView.insertItems(at: [destinationIndexPath])
+                if sourceIndexPath.row != destinationIndexPath.row {
+                    // 执行批量更新
+                    collectionView.performBatchUpdates { [weak self] in
+                        if let obj = self?.items.remove(at: sourceIndexPath.row) {
+                            self?.items.insert(obj, at: destinationIndexPath.row)
+                            collectionView.deleteItems(at: [sourceIndexPath])
+                            collectionView.insertItems(at: [destinationIndexPath])
+                        }
+                    }
+                    
+                    isShouldDragRefresh = true
                 }
                 coordinator.drop(item.dragItem, toItemAt: destinationIndexPath)
             }
@@ -419,10 +435,11 @@ extension CRSDSThumbnailView: UICollectionViewDropDelegate, UICollectionViewDrag
     
     // 当dropSession 完成时会被调用，不管结果如何。一般进行清理或刷新操作
     func collectionView(_ collectionView: UICollectionView, dropSessionDidEnd session: UIDropSession) {
-        let animationsEnabled = UIView.areAnimationsEnabled
-        UIView.setAnimationsEnabled(false)
-        collectionView.reloadSections(IndexSet(integer: 0))
-        UIView.setAnimationsEnabled(animationsEnabled)
+        if isShouldDragRefresh {
+            collectionView.reloadSections(IndexSet(integer: 0))
+            isShouldDragRefresh = false
+        }
+        UIView.setAnimationsEnabled(true)
     }
     
     // 当drop会话进入到 collectionView 的坐标区域内就会调用

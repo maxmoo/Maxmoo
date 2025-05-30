@@ -39,6 +39,14 @@ extension UIView {
         clipsToBounds = true
     }
     
+    // 父视图
+    func parentView<T: UIView>(of _: T.Type) -> T? {
+        guard let view = superview else {
+            return nil
+        }
+        return (view as? T) ?? view.parentView(of: T.self)
+    }
+    
     // 转图片
     // 将某个view 转换成图像
     func image(rect: CGRect? = nil) -> UIImage? {

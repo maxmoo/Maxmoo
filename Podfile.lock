@@ -6,18 +6,19 @@ PODS:
   - AliPlayerSDK_iOS_ARTC (5.4.7.1):
     - AliPlayerSDK_iOS_ARTC/AliPlayerSDK (= 5.4.7.1)
   - AliPlayerSDK_iOS_ARTC/AliPlayerSDK (5.4.7.1)
-  - AMap3DMap-NO-IDFA (9.7.0):
+  - AMap3DMap-NO-IDFA (10.1.200):
     - AMapFoundation-NO-IDFA (>= 1.8.0)
   - AMapFoundation-NO-IDFA (1.8.2)
   - AMapLocation-NO-IDFA (2.10.0):
     - AMapFoundation-NO-IDFA (>= 1.8.0)
-  - AMapSearch-NO-IDFA (9.7.0):
+  - AMapSearch-NO-IDFA (9.7.4):
     - AMapFoundation-NO-IDFA (>= 1.8.0)
   - DatabaseVisual (0.0.2)
+  - FLEX (5.22.10)
   - RtsSDK (2.2.0)
-  - SDWebImage (5.19.4):
-    - SDWebImage/Core (= 5.19.4)
-  - SDWebImage/Core (5.19.4)
+  - SDWebImage (5.21.0):
+    - SDWebImage/Core (= 5.21.0)
+  - SDWebImage/Core (5.21.0)
   - SnapKit (5.6.0)
   - SQLite.swift (0.14.1):
     - SQLite.swift/standard (= 0.14.1)
@@ -32,11 +33,12 @@ DEPENDENCIES:
   - AMapLocation-NO-IDFA
   - AMapSearch-NO-IDFA
   - DatabaseVisual
+  - FLEX
   - RtsSDK (= 2.2.0)
   - SDWebImage
-  - SnapKit
+  - SnapKit (~> 5.6.0)
   - SQLite.swift (~> 0.14.0)
-  - SwiftProtobuf
+  - SwiftProtobuf (~> 1.22.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -48,6 +50,7 @@ SPEC REPOS:
     - AMapLocation-NO-IDFA
     - AMapSearch-NO-IDFA
     - DatabaseVisual
+    - FLEX
     - RtsSDK
     - SDWebImage
     - SnapKit
@@ -58,17 +61,18 @@ SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   AliPlayerSDK_iOS: f5214cba6536e635b21c0d625a438b05deecbadf
   AliPlayerSDK_iOS_ARTC: 4912553663d47f5956e71f340693dd2269a23916
-  AMap3DMap-NO-IDFA: a3516859f2e82eda9fe9309c57d862f1543c2de4
+  AMap3DMap-NO-IDFA: 595999463230cf460ef7bdfa6e8dbf21ba342642
   AMapFoundation-NO-IDFA: 6ce0ef596d4eb8d934ff498e56747b6de1247b05
   AMapLocation-NO-IDFA: 735791aeb1ba52dff666e4158b86caf4b68b5be7
-  AMapSearch-NO-IDFA: 749f73d5a773758f01a24eb8872f8798c8b47cb4
+  AMapSearch-NO-IDFA: 53b2193244be8f07f3be0a4d5161200236960587
   DatabaseVisual: dce6db47d054e4e88a496003309146c3fd92a3a2
+  FLEX: f21ee4f498eed3f8a1eded66b21939fd3b7a22ce
   RtsSDK: 6301f94561f3273f04caa974a8744f48dbc055d2
-  SDWebImage: 066c47b573f408f18caa467d71deace7c0f8280d
+  SDWebImage: f84b0feeb08d2d11e6a9b843cb06d75ebf5b8868
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SQLite.swift: 2992550ebf3c5b268bf4352603e3df87d2a4ed72
   SwiftProtobuf: 7773c4e96a99d7b8ab7cda0fc30a883732ff93b1
 
-PODFILE CHECKSUM: 14afd93bdf9ff1d4c46503172c84b42308246754
+PODFILE CHECKSUM: b6f2e3a38700748c78018a6c4f0de69fab939322
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

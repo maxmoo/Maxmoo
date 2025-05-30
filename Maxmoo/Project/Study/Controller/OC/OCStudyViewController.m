@@ -6,8 +6,8 @@
 //
 
 #import "OCStudyViewController.h"
-#import "avformat.h"
-#include <libavcodec/avcodec.h>
+//#import "avformat.h"
+//#include <libavcodec/avcodec.h>
 
 @interface OCStudyViewController ()
 
@@ -19,7 +19,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     
-    printf("%s",avcodec_configuration());
+//    printf("%s",avcodec_configuration());
 }
 
 - (NSAttributedString *)attLeftValue:(NSString *)leftValue rightValue:(NSString *)rightValue unit:(NSString *)unitString {

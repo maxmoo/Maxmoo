@@ -16,6 +16,12 @@ class CRSWeatherController: UIViewController {
         return weather
     }()
     
+    lazy var water: CRSWaterConditionHeaderView = {
+        let wa = CRSWaterConditionHeaderView()
+        wa.backgroundColor = .randomColor
+        return wa
+    }()
+    
     lazy var button: UIButton = {
         let btn = UIButton(frame: .zero)
         btn.backgroundColor = .red
@@ -41,6 +47,13 @@ class CRSWeatherController: UIViewController {
             make.top.equalTo(200)
             make.height.width.equalTo(50)
             make.left.equalTo(100)
+        }
+        
+        view.addSubview(water)
+        water.snp.makeConstraints { make in
+            make.left.equalTo(16)
+            make.right.equalTo(-16)
+            make.top.equalTo(300)
         }
     }
 

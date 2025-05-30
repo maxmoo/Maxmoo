@@ -182,6 +182,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/AliPlayerSDK_iOS/AliyunMediaDownloader.framework"
   install_framework "${PODS_ROOT}/AliPlayerSDK_iOS_ARTC/artcSource.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DatabaseVisual/DatabaseVisual.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework"
   install_framework "${PODS_ROOT}/RtsSDK/RtsSDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework"

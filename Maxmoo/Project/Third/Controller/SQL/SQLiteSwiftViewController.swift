@@ -63,10 +63,10 @@ class SQLiteSwiftViewController: UIViewController {
         })
         
         // 申明
-        let id = Expression<Int64>("id")
-        let email = Expression<String?>("email")
-        let balance = Expression<Double?>("balance")
-        let name = Expression<String?>("name")
+//        let id = Expression<Int64>("id")
+//        let email = Expression<String?>("email")
+//        let balance = Expression<Double?>("balance")
+//        let name = Expression<String?>("name")
         
         // 创建表
         let users = Table("users")
@@ -80,7 +80,7 @@ class SQLiteSwiftViewController: UIViewController {
 //        _ = try? db.run(users.insert(email <- "alice@mac.com", name <- "Alice"))
         // INSERT INTO "users" ("email", "name") VALUES ('alice@mac.com', 'Alice')
 
-        _ = try? db.run(users.insert(or: .replace, email <- "aliceaaaaa@mac.com", name <- "Aliceaa B."))
+//        _ = try? db.run(users.insert(or: .replace, email <- "aliceaaaaa@mac.com", name <- "Aliceaa B."))
         // INSERT OR REPLACE INTO "users" ("email", "name") VALUES ('alice@mac.com', 'Alice B.')
 
 //        do {

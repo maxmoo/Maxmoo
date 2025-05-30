@@ -6,8 +6,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'Maxmoo' do
   # Comment the next line if you don't want to use dynamic frameworks
   pod 'Alamofire', '~> 5.4.4'
-  pod 'SnapKit'
-  pod 'SwiftProtobuf'
+  pod 'SnapKit', '~> 5.6.0'
+  pod 'SwiftProtobuf', '~> 1.22.1'
   pod 'AliPlayerSDK_iOS', '5.4.7.1'
   pod 'AliPlayerSDK_iOS_ARTC', '5.4.7.1'
   pod 'RtsSDK', '2.2.0'

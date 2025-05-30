@@ -16,7 +16,8 @@ class COROSDemoListController: ItemListViewController {
                  "地图用户头像-CorosUserTipViewController",
                  "聚合-CCMapClusterController",
                  "高德聚合-AnnotationClusterViewController",
-                 "weatherUI-CRSWeatherController"]]
+                 "weatherUI-CRSWeatherController",
+                 "cellMove-CRSCellMoveController"]]
     }
     
     override func viewDidLoad() {
